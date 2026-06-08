@@ -202,6 +202,50 @@ body {
     display: none !important;
 }
 
+.nav-discord {
+    font-size: 1.3rem;
+    transition: all 0.3s ease;
+}
+
+.nav-discord:hover {
+    transform: scale(1.2);
+    text-shadow: 0 0 15px rgba(212, 175, 55, 0.4) !important;
+}
+
+.nav-discord::after {
+    display: none !important;
+}
+
+/* Social Icons Section */
+.social-icons-section {
+    background: var(--midnight-dark);
+    padding: 3rem 0;
+    border-top: 2px solid var(--gold);
+    border-bottom: 2px solid var(--gold);
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+}
+
+.social-icon {
+    font-size: 2.5rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.2));
+    display: inline-block;
+    line-height: 1;
+}
+
+.social-icon:hover {
+    transform: scale(1.2) translateY(-5px);
+    filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.4));
+}
+
 /* Hero Section */
 .hero {
     background: linear-gradient(135deg, var(--midnight-deep-purple) 0%, var(--midnight-blue) 50%, var(--midnight-dark) 100%);
@@ -1422,7 +1466,7 @@ body {
 
 .panel-content {
     padding: 1.5rem;
-    background: linear-gradient(180deg, rgba(45, 27, 78, 0.7) 0%, rgba(45, 27, 78, 0.4) 50%, rgba(45, 27, 78, 0.05) 100%);
+    background: linear-gradient(180deg, rgba(45, 27, 78, 0.7) 0%, rgba(45, 27, 78, 0.3) 40%, rgba(45, 27, 78, 0) 100%);
     text-align: center;
 }
 
