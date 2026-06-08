@@ -94,6 +94,13 @@ body {
     font-weight: bold;
 }
 
+.hero-logo {
+    max-width: 250px;
+    height: auto;
+    margin-bottom: 2rem;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+}
+
 .hero-content p {
     font-size: 1.3rem;
     margin-bottom: 0.5rem;
@@ -261,6 +268,20 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.schedule-image-container {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.schedule-image {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .schedule-item {
@@ -574,6 +595,19 @@ body {
     background-color: var(--text-light);
 }
 
+.leadership-image-container {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.leadership-image {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
 .leadership-note {
     background: linear-gradient(135deg, #f8f9fa 0%, #f0f1f3 100%);
     padding: 2rem;
@@ -657,6 +691,26 @@ body {
 
 .progress-box {
     margin-bottom: 2rem;
+}
+
+.tier-image-container {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.tier-kill-image {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.image-caption {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    font-style: italic;
 }
 
 .progress-label {
