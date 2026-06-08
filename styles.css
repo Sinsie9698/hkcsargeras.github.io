@@ -205,11 +205,28 @@ body {
 .nav-discord {
     font-size: 1.3rem;
     transition: all 0.3s ease;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 !important;
+}
+
+.nav-discord img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: all 0.3s ease;
+    filter: brightness(1) drop-shadow(0 0 8px rgba(212, 175, 55, 0.2));
 }
 
 .nav-discord:hover {
-    transform: scale(1.2);
-    text-shadow: 0 0 15px rgba(212, 175, 55, 0.4) !important;
+    transform: scale(1.15);
+}
+
+.nav-discord:hover img {
+    filter: brightness(1.1) drop-shadow(0 0 15px rgba(212, 175, 55, 0.4));
 }
 
 .nav-discord::after {
@@ -1594,8 +1611,79 @@ body {
     background: rgba(212, 175, 55, 0.05);
 }
 
-/* Contact Box */
-.contact-box {
+/* Contact Table */
+.contact-table {
+    width: 100%;
+    background: linear-gradient(135deg, var(--midnight-purple) 0%, var(--midnight-deep-purple) 100%);
+    border: 2px solid var(--gold);
+    border-radius: 0;
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.15);
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.contact-table thead {
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.2) 0%, rgba(212, 175, 55, 0.1) 100%);
+    border-bottom: 2px solid var(--gold);
+}
+
+.contact-table th {
+    color: var(--gold);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1rem;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+.contact-table td {
+    padding: 1rem;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+    color: var(--text-light);
+}
+
+.contact-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.contact-table tbody tr:nth-child(even) {
+    background: rgba(212, 175, 55, 0.05);
+}
+
+.contact-table td:first-child {
+    color: var(--gold);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 0.9rem;
+}
+
+.contact-table td:nth-child(2) {
+    font-weight: 600;
+}
+
+.table-discord-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+}
+
+.table-discord-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: all 0.3s ease;
+    filter: brightness(1) drop-shadow(0 0 5px rgba(212, 175, 55, 0.2));
+}
+
+.table-discord-icon:hover img {
+    filter: brightness(1.2) drop-shadow(0 0 12px rgba(212, 175, 55, 0.4));
+    transform: scale(1.1);
+}
     background: linear-gradient(135deg, var(--midnight-purple) 0%, var(--midnight-deep-purple) 100%);
     border: 2px solid var(--gold);
     border-radius: 0;
