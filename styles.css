@@ -42,7 +42,7 @@ body {
     font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
     line-height: 1.6;
     color: var(--text-light);
-    background: linear-gradient(135deg, rgba(10, 14, 39, 0.3) 0%, rgba(45, 27, 78, 0.3) 50%, rgba(10, 14, 39, 0.3) 100%), url('images/BackgroundImage.jpg') center/cover no-repeat fixed;
+    background: linear-gradient(135deg, rgba(10, 14, 39, 0.45) 0%, rgba(45, 27, 78, 0.45) 50%, rgba(10, 14, 39, 0.45) 100%), url('images/BackgroundImage.jpg') center/cover no-repeat fixed;
     background-attachment: fixed;
     min-height: 100vh;
 }
@@ -520,7 +520,7 @@ body {
 
 /* Features Section */
 .features {
-    background: rgba(10, 14, 39, 0.6);
+    background: rgba(10, 14, 39, 0.7);
     padding: 5rem 0;
 }
 
@@ -694,7 +694,7 @@ body {
 
 /* Socials */
 .socials {
-    background: rgba(10, 14, 39, 0.6);
+    background: rgba(10, 14, 39, 0.7);
     padding: 5rem 0;
 }
 
@@ -785,7 +785,7 @@ body {
 
 /* Content Section */
 .content-section {
-    background: rgba(10, 14, 39, 0.6);
+    background: rgba(10, 14, 39, 0.7);
     padding: 4rem 0;
 }
 
@@ -1170,7 +1170,7 @@ body {
 
 /* Leadership Section */
 .leadership-section {
-    background: rgba(10, 14, 39, 0.6);
+    background: rgba(10, 14, 39, 0.7);
 }
 
 .leadership-image-container {
@@ -1244,7 +1244,7 @@ body {
 
 /* Recruitment */
 .roles-section {
-    background: rgba(10, 14, 39, 0.6);
+    background: rgba(10, 14, 39, 0.7);
 }
 
 .recruitment-info {
@@ -1483,7 +1483,7 @@ body {
 
 /* Feature Panels */
 .feature-panels {
-    background: rgba(10, 14, 39, 0.6);
+    background: rgba(10, 14, 39, 0.7);
     padding: 4rem 0;
     border-bottom: 2px solid var(--gold);
 }
@@ -1566,7 +1566,7 @@ body {
 
 /* Main Content Grid */
 .main-content {
-    background: rgba(10, 14, 39, 0.6);
+    background: rgba(10, 14, 39, 0.7);
     padding: 4rem 0;
 }
 
