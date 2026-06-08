@@ -407,6 +407,10 @@ body {
     text-shadow: none;
 }
 
+.carousel-btn {
+    margin: 1.5rem 0;
+}
+
 .btn-secondary {
     background: transparent;
     color: var(--gold);
