@@ -260,6 +260,11 @@ body {
     gap: 1.5rem;
     flex-wrap: wrap;
     margin-bottom: 1.5rem;
+    background: linear-gradient(135deg, rgba(45, 27, 78, 0.5) 0%, rgba(45, 27, 78, 0.3) 100%);
+    padding: 1.5rem 2rem;
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.1);
 }
 
 .social-icon {
