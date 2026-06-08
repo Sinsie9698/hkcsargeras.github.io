@@ -183,19 +183,18 @@ body {
 .nav-store {
     padding: 0.5rem 1rem !important;
     background: transparent !important;
-    color: var(--gold) !important;
-    border: 2px solid var(--gold) !important;
-    border-radius: 4px;
+    color: var(--text-light) !important;
     font-weight: 700 !important;
     transition: all 0.3s ease;
-    text-shadow: 0 0 10px rgba(212, 175, 55, 0.3) !important;
+    text-shadow: none !important;
+    font-size: 1.3rem;
 }
 
 .nav-store:hover {
-    background: linear-gradient(135deg, rgba(212, 175, 55, 0.15) 0%, rgba(212, 175, 55, 0.05) 100%) !important;
-    transform: translateY(-2px);
-    box-shadow: 0 0 20px rgba(212, 175, 55, 0.4) !important;
-    color: var(--gold-light) !important;
+    background: transparent !important;
+    transform: scale(1.15);
+    text-shadow: 0 0 15px rgba(212, 175, 55, 0.4) !important;
+    color: var(--gold) !important;
 }
 
 .nav-store::after {
@@ -211,6 +210,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 0 !important;
+    transform: translateY(-3px);
 }
 
 .nav-discord img {
@@ -222,7 +222,7 @@ body {
 }
 
 .nav-discord:hover {
-    transform: scale(1.15);
+    transform: scale(1.15) translateY(-3px);
 }
 
 .nav-discord:hover img {
@@ -1638,12 +1638,16 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
+.contact-table th:first-child {
+    text-align: left;
+}
     padding: 1rem;
     text-align: center;
     font-size: 0.9rem;
 }
 
 .contact-table td {
+    text-align: center;
     padding: 1rem;
     border-bottom: 1px solid rgba(212, 175, 55, 0.2);
     color: var(--text-light);
@@ -1663,6 +1667,9 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.5px;
     font-size: 0.9rem;
+}
+.contact-table td:first-child {
+    text-align: left;
 }
 
 .contact-table td:nth-child(2) {
