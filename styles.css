@@ -1177,7 +1177,289 @@ body {
     line-height: 1.6;
 }
 
+/* Carousel Section */
+.carousel-section {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    background: var(--midnight-blue);
+    border: 3px solid var(--gold);
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-slide.active {
+    opacity: 1;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, rgba(10, 14, 39, 0.7) 0%, rgba(45, 27, 78, 0.7) 100%);
+    z-index: 10;
+    text-align: center;
+}
+
+.carousel-overlay h1 {
+    font-size: 3rem;
+    color: var(--gold);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 0 0 20px rgba(212, 175, 55, 0.5), 0 4px 10px rgba(0, 0, 0, 0.5);
+    margin: 0;
+}
+
+.carousel-overlay h2 {
+    font-size: 2.5rem;
+    color: var(--gold-light);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 20px rgba(212, 175, 55, 0.4), 0 4px 10px rgba(0, 0, 0, 0.5);
+    margin: 0.5rem 0;
+}
+
+.carousel-overlay h3 {
+    font-size: 2rem;
+    color: var(--text-light);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 15px rgba(212, 175, 55, 0.3), 0 4px 10px rgba(0, 0, 0, 0.5);
+    margin: 0.5rem 0 2rem 0;
+}
+
+/* Feature Panels */
+.feature-panels {
+    background: var(--midnight-dark);
+    padding: 4rem 0;
+    border-bottom: 2px solid var(--gold);
+}
+
+.panels-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.panel-card {
+    background: linear-gradient(135deg, var(--midnight-purple) 0%, var(--midnight-deep-purple) 100%);
+    border: 2px solid var(--gold);
+    border-radius: 0;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+}
+
+.panel-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px rgba(212, 175, 55, 0.4), inset 0 0 20px rgba(212, 175, 55, 0.1);
+    border-color: var(--gold-light);
+}
+
+.panel-image {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    background: var(--midnight-blue);
+}
+
+.panel-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.panel-card:hover .panel-image img {
+    transform: scale(1.05);
+}
+
+.panel-content {
+    padding: 1.5rem;
+    background: linear-gradient(135deg, var(--midnight-purple) 0%, var(--midnight-deep-purple) 100%);
+    text-align: center;
+}
+
+.panel-content h3 {
+    color: var(--gold-light);
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.panel-content p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+/* Main Content Grid */
+.main-content {
+    background: var(--midnight-dark);
+    padding: 4rem 0;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+.left-column h2,
+.right-column h2 {
+    color: var(--gold);
+    font-size: 1.8rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 15px rgba(212, 175, 55, 0.2);
+    margin-bottom: 2rem;
+}
+
+/* Schedule Table */
+.schedule-table {
+    background: linear-gradient(135deg, var(--midnight-purple) 0%, var(--midnight-deep-purple) 100%);
+    border: 2px solid var(--gold);
+    border-radius: 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.15);
+}
+
+.schedule-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.2) 0%, rgba(212, 175, 55, 0.1) 100%);
+    border-bottom: 2px solid var(--gold);
+    padding: 1rem;
+    font-weight: 700;
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.85rem;
+}
+
+.schedule-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+.schedule-row:last-child {
+    border-bottom: none;
+}
+
+.schedule-row:nth-child(even) {
+    background: rgba(212, 175, 55, 0.05);
+}
+
+/* Contact Box */
+.contact-box {
+    background: linear-gradient(135deg, var(--midnight-purple) 0%, var(--midnight-deep-purple) 100%);
+    border: 2px solid var(--gold);
+    border-radius: 0;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.15);
+}
+
+.contact-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+.contact-item:last-child {
+    border-bottom: none;
+}
+
+.contact-item strong {
+    color: var(--gold);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.contact-item span {
+    color: var(--text-secondary);
+}
+
+/* Apply Section */
+.apply-section {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, var(--midnight-purple) 0%, var(--midnight-deep-purple) 100%);
+    border: 2px solid var(--gold);
+    border-radius: 0;
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.15);
+}
+
+.apply-logo {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 1.5rem;
+    filter: drop-shadow(0 0 15px rgba(212, 175, 55, 0.3));
+}
+
 /* Responsive */
+@media (max-width: 1024px) {
+    .content-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .carousel-overlay h1 {
+        font-size: 2.2rem;
+    }
+
+    .carousel-overlay h2 {
+        font-size: 1.8rem;
+    }
+
+    .carousel-overlay h3 {
+        font-size: 1.5rem;
+    }
+}
+
 @media (max-width: 768px) {
     .nav-menu {
         gap: 1.5rem;
