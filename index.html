@@ -26,7 +26,28 @@
     <section class="carousel-section">
         <div class="carousel-container">
             <div class="carousel-slide active">
-                <img src="images/crown-of-the-cosmos-kill-3_edited.jpg" alt="Crown of the Cosmos Kill">
+                <img src="images/MidnightFallsCEKill.jpg" alt="Midnight Falls CE Kill">
+            </div>
+            <div class="carousel-slide">
+                <img src="images/CrownCEKill.jpg" alt="Crown CE Kill">
+            </div>
+            <div class="carousel-slide">
+                <img src="images/QueenAnsurekCEKill.jpg" alt="Queen Ansurek CE Kill">
+            </div>
+            <div class="carousel-slide">
+                <img src="images/RazsagethCEKill.jpg" alt="Razsageth CE Kill">
+            </div>
+            <div class="carousel-slide">
+                <img src="images/SarkarethCEKill.jpg" alt="Sarkareth CE Kill">
+            </div>
+            <div class="carousel-slide">
+                <img src="images/GallywixCEKill.jpg" alt="Gallywix CE Kill">
+            </div>
+            <div class="carousel-slide">
+                <img src="images/FyrakkCEKill.jpg" alt="Fyrakk CE Kill">
+            </div>
+            <div class="carousel-slide">
+                <img src="images/DimensiusCEKill.jpg" alt="Dimensius CE Kill">
             </div>
             <div class="carousel-overlay">
                 <h1>ARE YOU READY?</h1>
@@ -44,7 +65,7 @@
                 <!-- Progression Panel -->
                 <a href="progression.html" class="panel-card">
                     <div class="panel-image">
-                        <img src="images/crown-of-the-cosmos-kill-3_edited.jpg" alt="Progression">
+                        <img src="images/MidnightSeason1ProgressionHomeCard.jpg" alt="Progression">
                     </div>
                     <div class="panel-content">
                         <h3>Progression</h3>
@@ -55,7 +76,7 @@
                 <!-- Member List Panel -->
                 <a href="members.html" class="panel-card">
                     <div class="panel-image">
-                        <img src="images/leadership.png" alt="Legendary Raiders">
+                        <img src="images/LegendaryRaidersHomeCard.jpg" alt="Legendary Raiders">
                     </div>
                     <div class="panel-content">
                         <h3>Member List</h3>
@@ -66,7 +87,7 @@
                 <!-- History Panel -->
                 <a href="history.html" class="panel-card">
                     <div class="panel-image">
-                        <img src="images/leadership.png" alt="Guild History">
+                        <img src="images/HistoryHomeCard.jpg" alt="Guild History">
                     </div>
                     <div class="panel-content">
                         <h3>Learn More!</h3>
@@ -151,7 +172,7 @@
                     </div>
 
                     <div class="apply-section">
-                        <img src="images/XalatathKitty2.png" alt="Apply Now" class="apply-logo">
+                        <img src="images/HKCApplyNowHome.jpg" alt="Apply Now" class="apply-logo">
                         <a href="https://docs.google.com/forms/d/e/1FAIpQLSeGvWhN58axBGpihLhEaJ8JaHqRQLBWti2DVzmFm7hB1NTozg/viewform" class="btn btn-primary" target="_blank">Apply Now</a>
                     </div>
                 </div>
@@ -168,5 +189,25 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        // Carousel Auto-rotation
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-slide');
+        const totalSlides = slides.length;
+
+        function showSlide(n) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            slides[n].classList.add('active');
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            showSlide(currentSlide);
+        }
+
+        // Auto-rotate every 5 seconds
+        setInterval(nextSlide, 5000);
+    </script>
 </body>
 </html>
