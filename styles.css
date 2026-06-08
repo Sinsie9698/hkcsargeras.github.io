@@ -122,7 +122,7 @@ body {
 .nav-menu {
     display: flex;
     list-style: none;
-    gap: 2.5rem;
+    gap: 1.5rem;
     flex-wrap: wrap;
 }
 
@@ -1422,7 +1422,7 @@ body {
 
 .panel-content {
     padding: 1.5rem;
-    background: linear-gradient(135deg, rgba(45, 27, 78, 0.7) 0%, rgba(31, 13, 53, 0.7) 100%);
+    background: linear-gradient(180deg, rgba(45, 27, 78, 0.7) 0%, rgba(45, 27, 78, 0.7) 80%, rgba(45, 27, 78, 0.3) 100%);
     text-align: center;
 }
 
@@ -1463,6 +1463,36 @@ body {
     letter-spacing: 2px;
     text-shadow: 0 0 15px rgba(212, 175, 55, 0.2);
     margin-bottom: 2rem;
+}
+
+.right-column {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.right-column-content {
+    flex: 1;
+}
+
+.contact-section {
+    flex: 1;
+}
+
+.contact-section h2 {
+    color: var(--gold);
+    font-size: 1.8rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 15px rgba(212, 175, 55, 0.2);
+    margin-bottom: 2rem;
+}
+
+.apply-section {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: flex-start;
 }
 
 /* Schedule Table */
