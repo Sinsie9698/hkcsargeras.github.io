@@ -1422,7 +1422,7 @@ body {
 
 .panel-content {
     padding: 1.5rem;
-    background: linear-gradient(180deg, rgba(45, 27, 78, 0.7) 0%, rgba(45, 27, 78, 0.7) 80%, rgba(45, 27, 78, 0.3) 100%);
+    background: linear-gradient(180deg, rgba(45, 27, 78, 0.7) 0%, rgba(45, 27, 78, 0.4) 50%, rgba(45, 27, 78, 0.05) 100%);
     text-align: center;
 }
 
