@@ -181,21 +181,24 @@ body {
 }
 
 .nav-store {
-    padding: 0.5rem 1rem !important;
+    padding: 0 !important;
     background: transparent !important;
-    font-weight: 700 !important;
+    font-weight: 600 !important;
     transition: all 0.3s ease;
     text-shadow: none !important;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;
+    gap: 0.8rem;
     color: var(--text-light) !important;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .nav-store img {
-    width: 24px;
-    height: 24px;
+    width: 35px;
+    height: 35px;
     object-fit: contain;
     transition: all 0.3s ease;
     filter: brightness(0.9) drop-shadow(0 0 8px rgba(212, 175, 55, 0.2));
@@ -203,8 +206,8 @@ body {
 
 .nav-store:hover {
     background: transparent !important;
-    transform: scale(1.05);
     color: var(--gold) !important;
+    text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
 }
 
 .nav-store:hover img {
