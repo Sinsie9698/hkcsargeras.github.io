@@ -18,6 +18,7 @@
                 <li><a href="members.html">Members</a></li>
                 <li><a href="#socials">Socials</a></li>
                 <li><a href="https://discord.gg/5SM3q3UE7P" target="_blank">Discord</a></li>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeGvWhN58axBGpihLhEaJ8JaHqRQLBWti2DVzmFm7hB1NTozg/viewform" target="_blank" class="nav-apply">Apply</a></li>
             </ul>
         </div>
     </nav>
@@ -25,6 +26,8 @@
     <!-- Carousel/Slideshow Section -->
     <section class="carousel-section">
         <div class="carousel-container">
+            <button class="carousel-control carousel-prev" onclick="prevSlide()">❮</button>
+            
             <div class="carousel-slide active">
                 <img src="images/MidnightFallsCEKill.jpg" alt="Midnight Falls CE Kill">
             </div>
@@ -49,6 +52,9 @@
             <div class="carousel-slide">
                 <img src="images/DimensiusCEKill.jpg" alt="Dimensius CE Kill">
             </div>
+            
+            <button class="carousel-control carousel-next" onclick="nextSlide()">❯</button>
+            
             <div class="carousel-overlay">
                 <h1>ARE YOU READY?</h1>
                 <h2>JOIN US TODAY</h2>
@@ -147,7 +153,7 @@
                     <div class="contact-box">
                         <div class="contact-item">
                             <strong>Guild Master</strong>
-                            <span>Aurogarde</span>
+                            <span>Aurongodx</span>
                         </div>
                         <div class="contact-item">
                             <strong>Officers</strong>
@@ -155,15 +161,15 @@
                         </div>
                         <div class="contact-item">
                             <strong>Raid Leader</strong>
-                            <span>Toast</span>
+                            <span>Teed</span>
                         </div>
                         <div class="contact-item">
                             <strong>Recruitment</strong>
-                            <span>IronShh</span>
+                            <span>Borban</span>
                         </div>
                         <div class="contact-item">
                             <strong>Strategist</strong>
-                            <span>Evokuur</span>
+                            <span>Evokur</span>
                         </div>
                         <div class="contact-item">
                             <strong>Discord</strong>
@@ -172,8 +178,9 @@
                     </div>
 
                     <div class="apply-section">
-                        <img src="images/HKCApplyNowHome.jpg" alt="Apply Now" class="apply-logo">
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeGvWhN58axBGpihLhEaJ8JaHqRQLBWti2DVzmFm7hB1NTozg/viewform" class="btn btn-primary" target="_blank">Apply Now</a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeGvWhN58axBGpihLhEaJ8JaHqRQLBWti2DVzmFm7hB1NTozg/viewform" target="_blank" class="apply-link">
+                            <img src="images/HKCApplyNowHome.jpg" alt="Apply Now" class="apply-logo">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -191,10 +198,11 @@
     </footer>
 
     <script>
-        // Carousel Auto-rotation
+        // Carousel Auto-rotation with Manual Controls
         let currentSlide = 0;
         const slides = document.querySelectorAll('.carousel-slide');
         const totalSlides = slides.length;
+        let autoRotateTimer;
 
         function showSlide(n) {
             slides.forEach(slide => slide.classList.remove('active'));
@@ -204,10 +212,22 @@
         function nextSlide() {
             currentSlide = (currentSlide + 1) % totalSlides;
             showSlide(currentSlide);
+            resetAutoRotate();
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            showSlide(currentSlide);
+            resetAutoRotate();
+        }
+
+        function resetAutoRotate() {
+            clearInterval(autoRotateTimer);
+            autoRotateTimer = setInterval(nextSlide, 5000);
         }
 
         // Auto-rotate every 5 seconds
-        setInterval(nextSlide, 5000);
+        autoRotateTimer = setInterval(nextSlide, 5000);
     </script>
 </body>
 </html>

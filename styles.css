@@ -124,6 +124,26 @@ body {
     width: 100%;
 }
 
+.nav-apply {
+    padding: 0.5rem 1.2rem !important;
+    background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%) !important;
+    color: var(--midnight-dark) !important;
+    border-radius: 4px;
+    font-weight: 700 !important;
+    text-shadow: none !important;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+}
+
+.nav-apply:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 25px rgba(212, 175, 55, 0.5);
+}
+
+.nav-apply::after {
+    display: none !important;
+}
+
 /* Hero Section */
 .hero {
     background: linear-gradient(135deg, var(--midnight-deep-purple) 0%, var(--midnight-blue) 50%, var(--midnight-dark) 100%);
@@ -1181,7 +1201,7 @@ body {
 .carousel-section {
     position: relative;
     width: 100%;
-    height: 450px;
+    height: 350px;
     overflow: hidden;
     background: var(--midnight-blue);
     border: 3px solid var(--gold);
@@ -1209,6 +1229,42 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+/* Carousel Controls */
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 20;
+    background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+    color: var(--midnight-dark);
+    border: none;
+    width: 50px;
+    height: 50px;
+    font-size: 28px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-prev {
+    left: 20px;
+}
+
+.carousel-next {
+    right: 20px;
+}
+
+.carousel-control:hover {
+    background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 100%);
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 0 30px rgba(212, 175, 55, 0.6);
 }
 
 .carousel-overlay {
@@ -1298,6 +1354,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: top;
     transition: transform 0.4s ease;
 }
 
@@ -1426,18 +1483,37 @@ body {
 /* Apply Section */
 .apply-section {
     text-align: center;
-    padding: 2rem;
-    background: linear-gradient(135deg, var(--midnight-purple) 0%, var(--midnight-deep-purple) 100%);
-    border: 2px solid var(--gold);
+    padding: 0;
+    background: transparent;
+    border: none;
     border-radius: 0;
-    box-shadow: 0 0 20px rgba(212, 175, 55, 0.15);
+    box-shadow: none;
+}
+
+.apply-link {
+    display: block;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.apply-link:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.4));
 }
 
 .apply-logo {
-    max-width: 150px;
+    max-width: 100%;
     height: auto;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0;
     filter: drop-shadow(0 0 15px rgba(212, 175, 55, 0.3));
+    border: 2px solid var(--gold);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.apply-link:hover .apply-logo {
+    filter: drop-shadow(0 0 25px rgba(212, 175, 55, 0.5));
+    border-color: var(--gold-light);
 }
 
 /* Responsive */
