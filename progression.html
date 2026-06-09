@@ -5,9 +5,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raid Progression | Hello Kitty Club</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        main {
+            max-width: 1000px;
+            margin: 80px auto 0;
+            padding: 0 20px 40px;
+            display: block;
+        }
+        
+        .page-title {
+            font-size: 2.5rem;
+            color: #d4af37;
+            text-align: center;
+            margin: 40px 0;
+            letter-spacing: 2px;
+        }
+        
+        .content-box {
+            background: rgba(45, 27, 78, 0.5);
+            border: 2px solid #d4af37;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 40px;
+            color: #f4e4b8;
+            line-height: 1.8;
+        }
+        
+        .content-box h2 {
+            color: #d4af37;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .content-box p {
+            margin-bottom: 15px;
+        }
+        
+        .links-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .links-list li {
+            margin-bottom: 12px;
+            padding-left: 20px;
+        }
+        
+        .links-list li:before {
+            content: "▸ ";
+            color: #d4af37;
+            margin-right: 10px;
+            margin-left: -20px;
+        }
+        
+        .links-list a {
+            color: #d4af37;
+            text-decoration: none;
+        }
+        
+        .links-list a:hover {
+            color: #f4e4b8;
+        }
+        
+        .schedule-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: rgba(10, 14, 39, 0.8);
+            border: 1px solid #d4af37;
+        }
+        
+        .schedule-table th {
+            background: rgba(45, 27, 78, 0.8);
+            color: #d4af37;
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #d4af37;
+        }
+        
+        .schedule-table td {
+            color: #f4e4b8;
+            padding: 15px;
+            text-align: center;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .card {
+            background: rgba(10, 14, 39, 0.8);
+            border: 2px solid #b8860b;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .card h3 {
+            color: #d4af37;
+            margin-bottom: 10px;
+        }
+        
+        .card p {
+            color: #f4e4b8;
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
 <body>
-    <!-- Navigation Bar -->
+    <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
@@ -32,70 +142,74 @@
     </nav>
 
     <!-- Main Content -->
-    <main class="content-wrapper">
-        <section class="progression-section">
-            <h1 class="section-title">RAID PROGRESSION</h1>
+    <main>
+        <h1 class="page-title">RAID PROGRESSION</h1>
+        
+        <div class="content-box">
+            <p>Hello Kitty Club dominated the raid progression charts on Akama during Burning Crusade, Wrath of the Lich King, Mists of Pandaria, Warlords of Draenor, and Legion by posting many top server achievements before transferring to Sargeras. HKC continued its dominance while providing a friendly and competitive atmosphere throughout the remainder of Legion, Battle for Azeroth, Shadowlands, and Dragonflight.</p>
+            <p>HKC has achieved Ahead of the Curve every raid tier since its inception along with Cutting Edge achievements in the Emerald Nightmare, Ny'alotha, Vault of the Incarnates, Aberrus the Shadowed Crucible, Amirdrassil the Dream's Hope, Nerub'ar Palace, Liberation of Undermine, Manaforge Omega, The Dreamrift, The Voidspire, and The March on Quel'Danas! Hello Kitty Club is currently raiding Mythic The War Within content while residing on Sargeras.</p>
+        </div>
 
-            <div class="progression-intro">
-                <p>Hello Kitty Club dominated the raid progression charts on Akama during Burning Crusade, Wrath of the Lich King, Mists of Pandaria, Warlords of Draenor, and Legion by posting many top server achievements before transferring to Sargeras. HKC continued its dominance while providing a friendly and competitive atmosphere throughout the remainder of Legion, Battle for Azeroth, Shadowlands, and Dragonflight.</p>
-                <p>HKC has achieved Ahead of the Curve every raid tier since its inception along with Cutting Edge achievements in the Emerald Nightmare, Ny'alotha, Vault of the Incarnates, Aberrus the Shadowed Crucible, Amirdrassil the Dream's Hope, Nerub'ar Palace, Liberation of Undermine, Manaforge Omega, The Dreamrift, The Voidspire, and The March on Quel'Danas! Hello Kitty Club is currently raiding Mythic The War Within content while residing on Sargeras.</p>
-            </div>
+        <div class="content-box">
+            <h2>Current Rankings</h2>
+            <p>For the latest progression data and rankings, check out our standings on these platforms:</p>
+            <ul class="links-list">
+                <li><a href="https://www.warcraftlogs.com/guild/id/71495" target="_blank">Warcraft Logs - Detailed Combat Logs</a></li>
+                <li><a href="https://raider.io/guilds/us/sargeras/Hello%20Kitty%20Club" target="_blank">Raider IO - Mythic+ Rankings</a></li>
+                <li><a href="https://guildsofwow.com/hellokittyclub" target="_blank">Guilds of WoW - Server Standing</a></li>
+                <li><a href="https://www.wowprogress.com/guild/us/sargeras/Hello+Kitty+Club" target="_blank">WoW Progress - Global Rankings</a></li>
+            </ul>
+        </div>
 
-            <div class="progression-links">
-                <h2>Current Rankings</h2>
-                <p>For the latest progression data and rankings, check out our standings on these platforms:</p>
-                <ul class="links-list">
-                    <li><a href="https://www.warcraftlogs.com/guild/id/71495" target="_blank">Warcraft Logs - Detailed Combat Logs</a></li>
-                    <li><a href="https://raider.io/guilds/us/sargeras/Hello%20Kitty%20Club" target="_blank">Raider IO - Mythic+ Rankings</a></li>
-                    <li><a href="https://guildsofwow.com/hellokittyclub" target="_blank">Guilds of WoW - Server Standing</a></li>
-                    <li><a href="https://www.wowprogress.com/guild/us/sargeras/Hello+Kitty+Club" target="_blank">WoW Progress - Global Rankings</a></li>
-                </ul>
-            </div>
+        <div class="content-box">
+            <h2>Raid Schedule</h2>
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th>SERVER</th>
+                        <th>TIMEZONE</th>
+                        <th>HOURS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sargeras US</td>
+                        <td>Central</td>
+                        <td>Tue/Wed/Thu 8:00 PM - 11:00 PM</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-            <div class="raid-schedule-section">
-                <h2>Raid Schedule</h2>
-                <div class="raid-schedule-table">
-                    <div class="schedule-header">
-                        <div class="schedule-day">SERVER</div>
-                        <div class="schedule-time">TIMEZONE</div>
-                        <div class="schedule-hours">HOURS</div>
-                    </div>
-                    <div class="schedule-row">
-                        <div class="schedule-day">Sargeras US</div>
-                        <div class="schedule-time">Central</div>
-                        <div class="schedule-hours">Tue/Wed/Thu 8:00 PM - 11:00 PM</div>
-                    </div>
+        <div class="content-box">
+            <h2>Recent Achievements</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Cutting Edge</h3>
+                    <p>Multiple expansions of Mythic progression achievements</p>
+                </div>
+                <div class="card">
+                    <h3>Ahead of the Curve</h3>
+                    <p>Every raid tier since guild inception</p>
+                </div>
+                <div class="card">
+                    <h3>Top Server Rankings</h3>
+                    <p>Consistently ranked in top 1000 US guilds</p>
+                </div>
+                <div class="card">
+                    <h3>18 Years Strong</h3>
+                    <p>Founded 2006, still raiding at the highest level</p>
                 </div>
             </div>
+        </div>
 
-            <div class="achievements-section">
-                <h2>Recent Achievements</h2>
-                <div class="achievements-grid">
-                    <div class="achievement-card">
-                        <h3>Cutting Edge</h3>
-                        <p>Multiple expansions of Mythic progression achievements</p>
-                    </div>
-                    <div class="achievement-card">
-                        <h3>Ahead of the Curve</h3>
-                        <p>Every raid tier since guild inception</p>
-                    </div>
-                    <div class="achievement-card">
-                        <h3>Top Server Rankings</h3>
-                        <p>Consistently ranked in top 1000 US guilds</p>
-                    </div>
-                    <div class="achievement-card">
-                        <h3>18 Years Strong</h3>
-                        <p>Founded 2006, still raiding at the highest level</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="contact-section">
-                <h2>Get Involved</h2>
-                <p>Interested in raiding with Hello Kitty Club? We're always looking for talented and dedicated players!</p>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeGvWhN58axBGpihLhEaJ8JaHqRQLBWti2DVzmFm7hB1NTozg/viewform" target="_blank" class="apply-button">APPLY NOW</a>
-            </div>
-        </section>
+        <div class="content-box">
+            <h2>Get Involved</h2>
+            <p>Interested in raiding with Hello Kitty Club? We're always looking for talented and dedicated players!</p>
+            <p style="text-align: center; margin-top: 20px;">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeGvWhN58axBGpihLhEaJ8JaHqRQLBWti2DVzmFm7hB1NTozg/viewform" target="_blank" class="nav-apply" style="padding: 12px 40px; display: inline-block;">APPLY NOW</a>
+            </p>
+        </div>
     </main>
 
     <!-- Footer -->
