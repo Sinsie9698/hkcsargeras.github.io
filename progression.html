@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raid Progression | Hello Kitty Club</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=18">
     <style>
         main {
             max-width: 1000px;
@@ -119,116 +119,708 @@
 <body>
     <nav class="navbar">
         <div class="nav-container">
-            <div class="logo-section">
+            <a href="index.html" class="logo-section" title="Home">
                 <img src="images/XalatathKitty.jpg" alt="HKC Logo" class="nav-logo">
                 <div class="logo-text">
                     <div class="guild-name">Hello Kitty Club</div>
                     <div class="server-name">Sargeras US</div>
                 </div>
-            </div>
+            </a>
             <ul class="nav-menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="history.html">History</a></li>
                 <li><a href="progression.html" class="active">Progression</a></li>
                 <li><a href="members.html">Members</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="policies.html">Policies</a></li>
+                <li><a href="coming-soon.html">Guild Tools</a></li>
                 <li><a href="https://arma.gg/collections/hello-kitty-club" target="_blank" class="nav-store"><img src="images/StoreLogo.jpg" alt="Store">Store</a></li>
                 <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeGvWhN58axBGpihLhEaJ8JaHqRQLBWti2DVzmFm7hB1NTozg/viewform" target="_blank" class="nav-apply">Apply Now</a></li>
             </ul>
         </div>
     </nav>
 
-    <main>
-        <h1 class="page-title">RAID PROGRESSION</h1>
-        
+    <main class="story-main with-timeline">
+        <aside class="history-timeline page-timeline" aria-label="Progression page navigation">
+            <div class="timeline-track"><div class="timeline-fill"></div></div>
+            <ol class="timeline-list">
+                <li class="tl-era" data-sec="prog-top">
+                    <a href="#prog-top" class="tl-era-link"><span class="tl-icon dot"><span class="tl-dot"></span></span><span class="tl-name">Raid Progression</span></a>
+                </li>
+                <li class="tl-era" data-sec="current-progression">
+                    <a href="#current-progression" class="tl-era-link"><span class="tl-icon dot"><span class="tl-dot"></span></span><span class="tl-name">Current Progression</span></a>
+                </li>
+                <li class="tl-era" data-sec="season-midnight-season-1">
+                    <a href="#season-midnight-season-1" class="tl-era-link"><span class="tl-icon"><img src="images/eras/icon-midnight.png" alt=""></span><span class="tl-name">Midnight</span></a>
+                    <ol class="tl-subs">
+                        <li><a href="#season-midnight-season-1" data-target="season-midnight-season-1">Season 1</a></li>
+                    </ol>
+                </li>
+                <li class="tl-era" data-sec="season-the-war-within-season-3">
+                    <a href="#season-the-war-within-season-3" class="tl-era-link"><span class="tl-icon"><img src="images/eras/icon-the-war-within.png" alt=""></span><span class="tl-name">The War Within</span></a>
+                    <ol class="tl-subs">
+                        <li><a href="#season-the-war-within-season-3" data-target="season-the-war-within-season-3">Season 3</a></li>
+                        <li><a href="#season-the-war-within-season-2" data-target="season-the-war-within-season-2">Season 2</a></li>
+                        <li><a href="#season-the-war-within-season-1" data-target="season-the-war-within-season-1">Season 1</a></li>
+                    </ol>
+                </li>
+                <li class="tl-era" data-sec="season-dragonflight-season-4">
+                    <a href="#season-dragonflight-season-4" class="tl-era-link"><span class="tl-icon"><img src="images/eras/icon-dragonflight.png" alt=""></span><span class="tl-name">Dragonflight</span></a>
+                    <ol class="tl-subs">
+                        <li><a href="#season-dragonflight-season-4" data-target="season-dragonflight-season-4">Season 4</a></li>
+                        <li><a href="#season-dragonflight-season-3" data-target="season-dragonflight-season-3">Season 3</a></li>
+                        <li><a href="#season-dragonflight-season-2" data-target="season-dragonflight-season-2">Season 2</a></li>
+                        <li><a href="#season-dragonflight-season-1" data-target="season-dragonflight-season-1">Season 1</a></li>
+                    </ol>
+                </li>
+                <li class="tl-era" data-sec="season-shadowlands-season-4">
+                    <a href="#season-shadowlands-season-4" class="tl-era-link"><span class="tl-icon"><img src="images/eras/icon-shadowlands.png" alt=""></span><span class="tl-name">Shadowlands</span></a>
+                    <ol class="tl-subs">
+                        <li><a href="#season-shadowlands-season-4" data-target="season-shadowlands-season-4">Season 4</a></li>
+                        <li><a href="#season-shadowlands-season-3" data-target="season-shadowlands-season-3">Season 3</a></li>
+                        <li><a href="#season-shadowlands-season-2" data-target="season-shadowlands-season-2">Season 2</a></li>
+                        <li><a href="#season-shadowlands-season-1" data-target="season-shadowlands-season-1">Season 1</a></li>
+                    </ol>
+                </li>
+                <li class="tl-era" data-sec="season-battle-for-azeroth-season-4">
+                    <a href="#season-battle-for-azeroth-season-4" class="tl-era-link"><span class="tl-icon"><img src="images/eras/icon-battle-for-azeroth.png" alt=""></span><span class="tl-name">Battle for Azeroth</span></a>
+                    <ol class="tl-subs">
+                        <li><a href="#season-battle-for-azeroth-season-4" data-target="season-battle-for-azeroth-season-4">Season 4</a></li>
+                        <li><a href="#season-battle-for-azeroth-season-3" data-target="season-battle-for-azeroth-season-3">Season 3</a></li>
+                        <li><a href="#season-battle-for-azeroth-season-2" data-target="season-battle-for-azeroth-season-2">Season 2</a></li>
+                        <li><a href="#season-battle-for-azeroth-season-1" data-target="season-battle-for-azeroth-season-1">Season 1</a></li>
+                    </ol>
+                </li>
+                <li class="tl-era" data-sec="season-legion-season-3">
+                    <a href="#season-legion-season-3" class="tl-era-link"><span class="tl-icon"><img src="images/eras/icon-legion.png" alt=""></span><span class="tl-name">Legion</span></a>
+                    <ol class="tl-subs">
+                        <li><a href="#season-legion-season-3" data-target="season-legion-season-3">Season 3</a></li>
+                        <li><a href="#season-legion-season-2" data-target="season-legion-season-2">Season 2</a></li>
+                        <li><a href="#season-legion-season-1" data-target="season-legion-season-1">Season 1</a></li>
+                    </ol>
+                </li>
+                <li class="tl-era" data-sec="season-warlords-of-draenor-season-3">
+                    <a href="#season-warlords-of-draenor-season-3" class="tl-era-link"><span class="tl-icon"><img src="images/eras/icon-warlords-of-draenor.png" alt=""></span><span class="tl-name">Warlords of Draenor</span></a>
+                    <ol class="tl-subs">
+                        <li><a href="#season-warlords-of-draenor-season-3" data-target="season-warlords-of-draenor-season-3">Season 3</a></li>
+                        <li><a href="#season-warlords-of-draenor-season-2" data-target="season-warlords-of-draenor-season-2">Season 2</a></li>
+                        <li><a href="#season-warlords-of-draenor-season-1" data-target="season-warlords-of-draenor-season-1">Season 1</a></li>
+                    </ol>
+                </li>
+            </ol>
+        </aside>
+        <div class="story-body">
+        <h1 class="page-title" id="prog-top">Raid Progression</h1>
         <div class="content-box">
-            <p>Hello Kitty Club dominated the raid progression charts on Akama during Burning Crusade, Wrath of the Lich King, Mists of Pandaria, Warlords of Draenor, and Legion. HKC continued its dominance while providing a friendly and competitive atmosphere on Sargeras throughout Battle for Azeroth, Shadowlands, and Dragonflight.</p>
-            <p>HKC has achieved Ahead of the Curve every raid tier since its inception along with Cutting Edge achievements in Emerald Nightmare, Ny'alotha, Vault of the Incarnates, Aberrus the Shadowed Crucible, Amirdrassil the Dream's Hope, Nerub'ar Palace, Liberation of Undermine, Manaforge Omega, The Dreamrift, The Voidspire, and The March on Quel'Danas!</p>
+            <p><strong>Hello Kitty Club dominated the raid progression charts on Akama during Burning Crusade, Wrath of the Lich King, Mists of Pandaria, Warlords of Draenor, and Legion by posting many top server achievements before transferring to Sargeras. HKC continued it's dominance while providing a friendly and competitive atmosphere throughout the remainder of Legion, Battle for Azeroth, Shadowlands, and Dragonflight.</strong></p>
+            <p><strong>HKC has achieved Ahead of the Curve every raid tier since its inception along with Cutting Edge achievements in the Emerald Nightmare, Ny'alotha, Vault of the Incarnates, Aberrus the Shadowed Crucible, Amirdrassil the Dream's Hope, Nerub'ar Palace, Liberation of Undermine, Manaforge Omega, The Dreamrift, The Voidspire, and The March on Quel'Danas! Hello Kitty Club is currently raiding Mythic in Midnight Season 2 - Curse of Ula'tek while residing on Sargeras. Click the provided links for current standings!</strong></p>
         </div>
 
-        <div class="content-box">
-            <h2>Current Rankings</h2>
-            <p>For the latest progression data and rankings:</p>
-            <ul class="links-list">
-                <li><a href="https://www.warcraftlogs.com/guild/id/71495" target="_blank">Warcraft Logs - Detailed Combat Logs</a></li>
-                <li><a href="https://raider.io/guilds/us/sargeras/Hello%20Kitty%20Club" target="_blank">Raider IO - Mythic+ Rankings</a></li>
-                <li><a href="https://guildsofwow.com/hellokittyclub" target="_blank">Guilds of WoW - Server Standing</a></li>
-                <li><a href="https://www.wowprogress.com/guild/us/sargeras/Hello+Kitty+Club" target="_blank">WoW Progress - Global Rankings</a></li>
-            </ul>
-        </div>
+    <div class="rank-links">
+        <a href="https://www.warcraftlogs.com/guild/id/71495" target="_blank"><img src="images/ranks/warcraftlogs.png" alt="" onerror="this.remove()"><span>Warcraft Logs</span></a>
+        <a href="https://raider.io/guilds/us/sargeras/Hello%20Kitty%20Club" target="_blank"><img src="images/ranks/raiderio.png" alt="" onerror="this.remove()"><span>Raider IO</span></a>
+        <a href="https://guildsofwow.com/hellokittyclub" target="_blank"><img src="images/ranks/guildsofwow.png" alt="" onerror="this.remove()"><span>Guilds of WoW</span></a>
+        <a href="https://www.wowprogress.com/guild/us/sargeras/Hello+Kitty+Club" target="_blank"><img src="images/ranks/wowprogress.png" alt="" onerror="this.remove()"><span>WoW Progress</span></a>
+        <a href="coming-soon.html" class="gt"><img src="images/ranks/hkc-guild-tools.png" alt=""><span>HKC Guild Tools</span></a>
+    </div>
 
-        <div class="content-box">
-            <h2>Raid Schedule</h2>
-            <table class="schedule-table">
-                <thead>
-                    <tr>
-                        <th>SERVER</th>
-                        <th>TIMEZONE</th>
-                        <th>HOURS</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Sargeras US</td>
-                        <td>Central</td>
-                        <td>Tue/Wed/Thu 8:00 PM - 11:00 PM</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
 
-        <div class="content-box">
-            <h2>Achievements</h2>
-            <div class="card-grid">
-                <div class="card">
-                    <h3>Cutting Edge</h3>
-                    <p>Multiple expansions of Mythic progression</p>
-                </div>
-                <div class="card">
-                    <h3>Ahead of the Curve</h3>
-                    <p>Every raid tier since inception</p>
-                </div>
-                <div class="card">
-                    <h3>Top Rankings</h3>
-                    <p>Consistently top 1000 US guilds</p>
-                </div>
-                <div class="card">
-                    <h3>18 Years Strong</h3>
-                    <p>Founded 2006, still raiding</p>
+    <h2 class="page-title" id="current-progression">Current Progression</h2>
+    <div class="prog-hero">
+        <div class="prog-hero-main">
+            <div class="prog-season">Midnight Season 2</div>
+            <div class="prog-raid">The Venomous Abyss</div>
+            <div class="prog-count"><b>8/10</b> Mythic <span>· 10/10 Heroic</span></div>
+        </div>
+        <div class="prog-hero-ranks"><div class="rank-trio big"><span><small>World</small><span class="q-rare">1,301</span></span><span><small>Region</small><span class="q-rare">459</span></span><span><small>Realm</small><span class="q-rare">21</span></span></div></div>
+        <div class="prog-hero-stats">
+            <div><small>Progression pulls</small><b>417</b></div>
+            <div><small>Time in combat</small><b>22h 23m</b></div>
+            <div><small>Current boss</small><b>Ula&#x27;tek</b><span>best 86.0%</span></div>
+        </div>
+    </div>
+    <div class="boss-grid">
+            <div class="boss-card killed">
+                <img class="boss-icon" src="images/bosses/3470.jpg" alt="" onerror="this.style.visibility='hidden'">
+                <div class="boss-info">
+                    <div class="boss-name">Nek&#x27;zali the Soulcoiler</div>
+                    <span class="pstat killed">Killed Sep 8, 2026</span>
+                    <div class="boss-meta">2 pulls · 1 night · 12m</div>
+                    <div class="rank-trio"><span><small>World</small><span class="q-rare">809</span></span><span><small>Region</small><span class="q-rare">228</span></span><span><small>Realm</small><span class="q-rare">11</span></span></div>
                 </div>
             </div>
-        </div>
+            <div class="boss-card killed">
+                <img class="boss-icon" src="images/bosses/3445.jpg" alt="" onerror="this.style.visibility='hidden'">
+                <div class="boss-info">
+                    <div class="boss-name">Entombed Sentinels</div>
+                    <span class="pstat killed">Killed Sep 3, 2026</span>
+                    <div class="boss-meta">20 pulls · 1 night · 1h 28m</div>
+                    <div class="rank-trio"><span><small>World</small><span class="q-rare">546</span></span><span><small>Region</small><span class="q-rare">202</span></span><span><small>Realm</small><span class="q-epic">9</span></span></div>
+                </div>
+            </div>
+            <div class="boss-card killed">
+                <img class="boss-icon" src="images/bosses/3455.jpg" alt="" onerror="this.style.visibility='hidden'">
+                <div class="boss-info">
+                    <div class="boss-name">Vashnik the Malignant</div>
+                    <span class="pstat killed">Killed Sep 15, 2026</span>
+                    <div class="boss-meta">9 pulls · 2 nights · 30m</div>
+                    <div class="rank-trio"><span><small>World</small><span class="q-rare">1,259</span></span><span><small>Region</small><span class="q-rare">359</span></span><span><small>Realm</small><span class="q-rare">19</span></span></div>
+                </div>
+            </div>
+            <div class="boss-card killed">
+                <img class="boss-icon" src="images/bosses/3497.jpg" alt="" onerror="this.style.visibility='hidden'">
+                <div class="boss-info">
+                    <div class="boss-name">The Lost Explorers</div>
+                    <span class="pstat killed">Killed Sep 2, 2026</span>
+                    <div class="boss-meta">9 pulls · 1 night · 38m</div>
+                    <div class="rank-trio"><span><small>World</small><span class="q-rare">849</span></span><span><small>Region</small><span class="q-rare">235</span></span><span><small>Realm</small><span class="q-rare">11</span></span></div>
+                </div>
+            </div>
+            <div class="boss-card killed">
+                <img class="boss-icon" src="images/bosses/3420.jpg" alt="" onerror="this.style.visibility='hidden'">
+                <div class="boss-info">
+                    <div class="boss-name">Sszorak</div>
+                    <span class="pstat killed">Killed Sep 17, 2026</span>
+                    <div class="boss-meta">49 pulls · 2 nights · 1h 50m</div>
+                    <div class="rank-trio"><span><small>World</small><span class="q-rare">706</span></span><span><small>Region</small><span class="q-rare">218</span></span><span><small>Realm</small><span class="q-epic">10</span></span></div>
+                </div>
+            </div>
+            <div class="boss-card killed">
+                <img class="boss-icon" src="images/bosses/3421.jpg" alt="" onerror="this.style.visibility='hidden'">
+                <div class="boss-info">
+                    <div class="boss-name">The Twin Fangs</div>
+                    <span class="pstat killed">Killed Sep 24, 2026</span>
+                    <div class="boss-meta">56 pulls · 3 nights · 2h 21m</div>
+                    <div class="rank-trio"><span><small>World</small><span class="q-rare">598</span></span><span><small>Region</small><span class="q-rare">191</span></span><span><small>Realm</small><span class="q-epic">8</span></span></div>
+                </div>
+            </div>
+            <div class="boss-card killed">
+                <img class="boss-icon" src="images/bosses/3429.jpg" alt="" onerror="this.style.visibility='hidden'">
+                <div class="boss-info">
+                    <div class="boss-name">The Coiled Altar</div>
+                    <span class="pstat killed">Killed Oct 20, 2026</span>
+                    <div class="boss-meta">239 pulls · 10 nights · 14h 6m</div>
+                    <div class="rank-trio"><span><small>World</small><span class="q-rare">1,302</span></span><span><small>Region</small><span class="q-rare">460</span></span><span><small>Realm</small><span class="q-rare">21</span></span></div>
+                </div>
+            </div>
+            <div class="boss-card progress">
+                <img class="boss-icon" src="images/bosses/3492.jpg" alt="" onerror="this.style.visibility='hidden'">
+                <div class="boss-info">
+                    <div class="boss-name">Ula&#x27;tek</div>
+                    <span class="pstat prog">In progress · best 86.0%</span>
+                    <div class="boss-meta">23 pulls · 1 night · 39m</div>
+                    
+                </div>
+            </div>
+            <div class="boss-card killed">
+                <img class="boss-icon" src="images/bosses/3379.jpg" alt="" onerror="this.style.visibility='hidden'">
+                <div class="boss-info">
+                    <div class="boss-name">Nymrissa Wavecaller</div>
+                    <span class="pstat killed">Killed Sep 16, 2026</span>
+                    <div class="boss-meta">10 pulls · 2 nights · 40m</div>
+                    <div class="rank-trio"><span><small>World</small><span class="q-rare">1,729</span></span><span><small>Region</small><span class="q-rare">470</span></span><span><small>Realm</small><span class="q-rare">25</span></span></div>
+                </div>
+            </div>
+            <div class="boss-card notstarted">
+                <img class="boss-icon" src="images/bosses/3513.jpg" alt="" onerror="this.style.visibility='hidden'">
+                <div class="boss-info">
+                    <div class="boss-name">Kith&#x27;ix</div>
+                    <span class="pstat none">Not started</span>
+                    
+                    
+                </div>
+            </div>
+    </div>
 
-        <div class="content-box">
-            <h2>Join Our Team</h2>
-            <p>Interested in raiding with Hello Kitty Club? We're always looking for talented players!</p>
-            <p style="text-align: center; margin-top: 20px;">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeGvWhN58axBGpihLhEaJ8JaHqRQLBWti2DVzmFm7hB1NTozg/viewform" target="_blank" class="nav-apply" style="padding: 12px 40px; display: inline-block;">APPLY NOW</a>
-            </p>
+    <h2 class="page-title" id="raid-history">Raid History</h2>
+    <div class="season-list">
+            <div class="season-card" id="season-midnight-season-1">
+                <div class="season-name">Midnight Season 1</div>
+                <details class="raid-row">
+                    <summary>
+                        <span class="raid-name">The Voidspire</span>
+                        <span class="raid-prog"><b>6/6</b> M · 6/6 H</span>
+                        <span class="ach ce">Cutting Edge</span>
+                        <div class="rank-trio small"><span><small>World</small><span class="q-epic">436</span></span><span><small>Region</small><span class="q-epic">127</span></span><span><small>Realm</small><span class="q-epic">6</span></span></div>
+                    </summary>
+                    <table class="boss-table">
+                        <thead><tr><th>Boss</th><th>Mythic kill</th><th>Pulls</th><th>World</th><th>Region</th><th>Realm</th></tr></thead>
+                        <tbody><tr class="k"><td><img src="images/bosses/3176.jpg" alt="" onerror="this.style.visibility='hidden'">Imperator Averzian</td><td>Apr 1, 2026</td><td>13</td><td><span class="q-uncommon">2,306</span></td><td><span class="q-rare">676</span></td><td><span class="q-uncommon">30</span></td></tr><tr class="k"><td><img src="images/bosses/3177.jpg" alt="" onerror="this.style.visibility='hidden'">Vorasius</td><td>Apr 1, 2026</td><td>7</td><td><span class="q-rare">1,354</span></td><td><span class="q-rare">445</span></td><td><span class="q-rare">21</span></td></tr><tr class="k"><td><img src="images/bosses/3179.jpg" alt="" onerror="this.style.visibility='hidden'">Fallen-King Salhadaar</td><td>Apr 2, 2026</td><td>14</td><td><span class="q-rare">756</span></td><td><span class="q-rare">264</span></td><td><span class="q-rare">14</span></td></tr><tr class="k"><td><img src="images/bosses/3178.jpg" alt="" onerror="this.style.visibility='hidden'">Vaelgor &amp; Ezzorak</td><td>Apr 9, 2026</td><td>46</td><td><span class="q-rare">745</span></td><td><span class="q-rare">244</span></td><td><span class="q-rare">15</span></td></tr><tr class="k"><td><img src="images/bosses/3180.jpg" alt="" onerror="this.style.visibility='hidden'">Lightblinded Vanguard</td><td>Apr 16, 2026</td><td>42</td><td><span class="q-rare">570</span></td><td><span class="q-rare">188</span></td><td><span class="q-rare">13</span></td></tr><tr class="k"><td><img src="images/bosses/3181.jpg" alt="" onerror="this.style.visibility='hidden'">Crown of the Cosmos</td><td>Apr 30, 2026</td><td>92</td><td><span class="q-rare">573</span></td><td><span class="q-rare">172</span></td><td><span class="q-epic">7</span></td></tr></tbody>
+                    </table>
+                </details>
+                <details class="raid-row">
+                    <summary>
+                        <span class="raid-name">The Dreamrift</span>
+                        <span class="raid-prog"><b>1/1</b> M · 1/1 H</span>
+                        <span class="ach ce">Cutting Edge</span>
+                        <div class="rank-trio small"><span><small>World</small><span class="q-epic">436</span></span><span><small>Region</small><span class="q-epic">127</span></span><span><small>Realm</small><span class="q-epic">6</span></span></div>
+                    </summary>
+                    <table class="boss-table">
+                        <thead><tr><th>Boss</th><th>Mythic kill</th><th>Pulls</th><th>World</th><th>Region</th><th>Realm</th></tr></thead>
+                        <tbody><tr class="k"><td><img src="images/bosses/3306.jpg" alt="" onerror="this.style.visibility='hidden'">Chimaerus, the Undreamt God</td><td>Apr 2, 2026</td><td>10</td><td><span class="q-rare">1,144</span></td><td><span class="q-rare">328</span></td><td><span class="q-rare">20</span></td></tr></tbody>
+                    </table>
+                </details>
+                <details class="raid-row">
+                    <summary>
+                        <span class="raid-name">March on Quel’Danas</span>
+                        <span class="raid-prog"><b>2/2</b> M · 2/2 H</span>
+                        <span class="ach ce">Cutting Edge</span>
+                        <div class="rank-trio small"><span><small>World</small><span class="q-epic">436</span></span><span><small>Region</small><span class="q-epic">127</span></span><span><small>Realm</small><span class="q-epic">6</span></span></div>
+                    </summary>
+                    <table class="boss-table">
+                        <thead><tr><th>Boss</th><th>Mythic kill</th><th>Pulls</th><th>World</th><th>Region</th><th>Realm</th></tr></thead>
+                        <tbody><tr class="k"><td><img src="images/bosses/3182.jpg" alt="" onerror="this.style.visibility='hidden'">Belo’ren, Child of Al’ar</td><td>May 13, 2026</td><td>78</td><td><span class="q-rare">645</span></td><td><span class="q-rare">204</span></td><td><span class="q-rare">14</span></td></tr><tr class="k"><td><img src="images/bosses/3183.jpg" alt="" onerror="this.style.visibility='hidden'">Midnight Falls</td><td>Jun 4, 2026</td><td>346</td><td><span class="q-epic">437</span></td><td><span class="q-epic">127</span></td><td><span class="q-epic">6</span></td></tr></tbody>
+                    </table>
+                </details>
+                <details class="raid-row">
+                    <summary>
+                        <span class="raid-name">Sporefall</span>
+                        <span class="raid-prog"><b>1/1</b> M · 1/1 H</span>
+                        <span class="ach ce">Cutting Edge</span>
+                        <div class="rank-trio small"><span><small>World</small><span class="q-epic">165</span></span><span><small>Region</small><span class="q-epic">165</span></span><span><small>Realm</small><span class="q-epic">7</span></span></div>
+                    </summary>
+                    <table class="boss-table">
+                        <thead><tr><th>Boss</th><th>Mythic kill</th><th>Pulls</th><th>World</th><th>Region</th><th>Realm</th></tr></thead>
+                        <tbody><tr class="k"><td><img src="images/bosses/3159.jpg" alt="" onerror="this.style.visibility='hidden'">Rotmire</td><td>Jun 23, 2026</td><td>1</td><td><span class="q-epic">165</span></td><td><span class="q-epic">165</span></td><td><span class="q-epic">7</span></td></tr></tbody>
+                    </table>
+                </details>
+            </div>
+            <div class="season-card" id="season-the-war-within-season-3">
+                <div class="season-name">The War Within Season 3</div>
+                <details class="raid-row">
+                    <summary>
+                        <span class="raid-name">Manaforge Omega</span>
+                        <span class="raid-prog"><b>8/8</b> M · 8/8 H</span>
+                        <span class="ach ce">Cutting Edge</span>
+                        <div class="rank-trio small"><span><small>World</small><span class="q-rare">699</span></span><span><small>Region</small><span class="q-rare">232</span></span><span><small>Realm</small><span class="q-rare">16</span></span></div>
+                    </summary>
+                    <table class="boss-table">
+                        <thead><tr><th>Boss</th><th>Mythic kill</th><th>Pulls</th><th>World</th><th>Region</th><th>Realm</th></tr></thead>
+                        <tbody><tr class="k"><td><img src="images/bosses/3129.jpg" alt="" onerror="this.style.visibility='hidden'">Plexus Sentinel</td><td>Aug 21, 2025</td><td>6</td><td><span class="q-rare">1,009</span></td><td><span class="q-rare">368</span></td><td><span class="q-rare">21</span></td></tr><tr class="k"><td><img src="images/bosses/3131.jpg" alt="" onerror="this.style.visibility='hidden'">Loom&#x27;ithar</td><td>Aug 27, 2025</td><td>24</td><td><span class="q-rare">870</span></td><td><span class="q-rare">277</span></td><td><span class="q-rare">19</span></td></tr><tr class="k"><td><img src="images/bosses/3130.jpg" alt="" onerror="this.style.visibility='hidden'">Soulbinder Naazindhri</td><td>Aug 21, 2025</td><td>2</td><td><span class="q-rare">844</span></td><td><span class="q-rare">317</span></td><td><span class="q-rare">18</span></td></tr><tr class="k"><td><img src="images/bosses/3132.jpg" alt="" onerror="this.style.visibility='hidden'">Forgeweaver Araz</td><td>Aug 28, 2025</td><td>40</td><td><span class="q-epic">443</span></td><td><span class="q-epic">145</span></td><td><span class="q-epic">8</span></td></tr><tr class="k"><td><img src="images/bosses/3122.jpg" alt="" onerror="this.style.visibility='hidden'">The Soul Hunters</td><td>Sep 17, 2025</td><td>83</td><td><span class="q-rare">821</span></td><td><span class="q-rare">267</span></td><td><span class="q-rare">19</span></td></tr><tr class="k"><td><img src="images/bosses/3133.jpg" alt="" onerror="this.style.visibility='hidden'">Fractillus</td><td>Sep 4, 2025</td><td>27</td><td><span class="q-rare">658</span></td><td><span class="q-rare">221</span></td><td><span class="q-rare">14</span></td></tr><tr class="k"><td><img src="images/bosses/3134.jpg" alt="" onerror="this.style.visibility='hidden'">Nexus-King Salhadaar</td><td>Oct 8, 2025</td><td>213</td><td><span class="q-rare">658</span></td><td><span class="q-rare">221</span></td><td><span class="q-rare">13</span></td></tr><tr class="k"><td><img src="images/bosses/3135.jpg" alt="" onerror="this.style.visibility='hidden'">Dimensius, the All-Devouring</td><td>Nov 6, 2025</td><td>299</td><td><span class="q-rare">700</span></td><td><span class="q-rare">233</span></td><td><span class="q-rare">16</span></td></tr></tbody>
+                    </table>
+                </details>
+            </div>
+            <div class="season-card" id="season-the-war-within-season-2">
+                <div class="season-name">The War Within Season 2</div>
+                <details class="raid-row">
+                    <summary>
+                        <span class="raid-name">Liberation of Undermine</span>
+                        <span class="raid-prog"><b>8/8</b> M · 8/8 H</span>
+                        <span class="ach ce">Cutting Edge</span>
+                        <div class="rank-trio small"><span><small>World</small><span class="q-rare">510</span></span><span><small>Region</small><span class="q-rare">171</span></span><span><small>Realm</small><span class="q-rare">11</span></span></div>
+                    </summary>
+                    <table class="boss-table">
+                        <thead><tr><th>Boss</th><th>Mythic kill</th><th>Pulls</th><th>World</th><th>Region</th><th>Realm</th></tr></thead>
+                        <tbody><tr class="k"><td><img src="images/bosses/3009.jpg" alt="" onerror="this.style.visibility='hidden'">Vexie and the Geargrinders</td><td>Mar 18, 2025</td><td>3</td><td><span class="q-uncommon">2,090</span></td><td><span class="q-uncommon">746</span></td><td><span class="q-uncommon">29</span></td></tr><tr class="k"><td><img src="images/bosses/3010.jpg" alt="" onerror="this.style.visibility='hidden'">Cauldron of Carnage</td><td>Mar 19, 2025</td><td>8</td><td><span class="q-rare">1,037</span></td><td><span class="q-rare">357</span></td><td><span class="q-rare">17</span></td></tr><tr class="k"><td><img src="images/bosses/3011.jpg" alt="" onerror="this.style.visibility='hidden'">Rik Reverb</td><td>Mar 20, 2025</td><td>25</td><td><span class="q-rare">718</span></td><td><span class="q-rare">240</span></td><td><span class="q-rare">15</span></td></tr><tr class="k"><td><img src="images/bosses/3012.jpg" alt="" onerror="this.style.visibility='hidden'">Stix Bunkjunker</td><td>Apr 8, 2025</td><td>84</td><td><span class="q-rare">764</span></td><td><span class="q-rare">267</span></td><td><span class="q-rare">16</span></td></tr><tr class="k"><td><img src="images/bosses/3013.jpg" alt="" onerror="this.style.visibility='hidden'">Sprocketmonger Lockenstock</td><td>Apr 10, 2025</td><td>129</td><td><span class="q-rare">568</span></td><td><span class="q-rare">199</span></td><td><span class="q-rare">12</span></td></tr><tr class="k"><td><img src="images/bosses/3014.jpg" alt="" onerror="this.style.visibility='hidden'">One-Armed Bandit</td><td>Apr 29, 2025</td><td>198</td><td><span class="q-rare">545</span></td><td><span class="q-rare">190</span></td><td><span class="q-rare">13</span></td></tr><tr class="k"><td><img src="images/bosses/3015.jpg" alt="" onerror="this.style.visibility='hidden'">Mug&#x27;Zee, Heads of Security</td><td>May 8, 2025</td><td>135</td><td><span class="q-epic">494</span></td><td><span class="q-epic">166</span></td><td><span class="q-epic">9</span></td></tr><tr class="k"><td><img src="images/bosses/3016.jpg" alt="" onerror="this.style.visibility='hidden'">Chrome King Gallywix</td><td>May 20, 2025</td><td>89</td><td><span class="q-rare">529</span></td><td><span class="q-rare">171</span></td><td><span class="q-rare">11</span></td></tr></tbody>
+                    </table>
+                </details>
+            </div>
+            <div class="season-card" id="season-the-war-within-season-1">
+                <div class="season-name">The War Within Season 1</div>
+                <details class="raid-row">
+                    <summary>
+                        <span class="raid-name">Nerub-ar Palace</span>
+                        <span class="raid-prog"><b>8/8</b> M · 8/8 H</span>
+                        <span class="ach ce">Cutting Edge</span>
+                        <div class="rank-trio small"><span><small>World</small><span class="q-rare">738</span></span><span><small>Region</small><span class="q-rare">252</span></span><span><small>Realm</small><span class="q-rare">14</span></span></div>
+                    </summary>
+                    <table class="boss-table">
+                        <thead><tr><th>Boss</th><th>Mythic kill</th><th>Pulls</th><th>World</th><th>Region</th><th>Realm</th></tr></thead>
+                        <tbody><tr class="k"><td><img src="images/bosses/2902.jpg" alt="" onerror="this.style.visibility='hidden'">Ulgrax the Devourer</td><td>Sep 25, 2024</td><td>7</td><td><span class="q-rare">1,277</span></td><td><span class="q-rare">431</span></td><td><span class="q-rare">20</span></td></tr><tr class="k"><td><img src="images/bosses/2917.jpg" alt="" onerror="this.style.visibility='hidden'">The Bloodbound Horror</td><td>Sep 25, 2024</td><td>14</td><td><span class="q-rare">965</span></td><td><span class="q-rare">331</span></td><td><span class="q-rare">17</span></td></tr><tr class="k"><td><img src="images/bosses/2898.jpg" alt="" onerror="this.style.visibility='hidden'">Sikran, Captain of the Sureki</td><td>Sep 26, 2024</td><td>21</td><td><span class="q-rare">878</span></td><td><span class="q-rare">322</span></td><td><span class="q-rare">18</span></td></tr><tr class="k"><td><img src="images/bosses/2918.jpg" alt="" onerror="this.style.visibility='hidden'">Rasha&#x27;nan</td><td>Oct 2, 2024</td><td>12</td><td><span class="q-rare">908</span></td><td><span class="q-rare">302</span></td><td><span class="q-rare">14</span></td></tr><tr class="k"><td><img src="images/bosses/2919.jpg" alt="" onerror="this.style.visibility='hidden'">Broodtwister Ovi&#x27;nax</td><td>Oct 17, 2024</td><td>121</td><td><span class="q-rare">557</span></td><td><span class="q-rare">188</span></td><td><span class="q-rare">11</span></td></tr><tr class="k"><td><img src="images/bosses/2920.jpg" alt="" onerror="this.style.visibility='hidden'">Nexus-Princess Ky&#x27;veza</td><td>Nov 6, 2024</td><td>162</td><td><span class="q-rare">725</span></td><td><span class="q-rare">240</span></td><td><span class="q-rare">11</span></td></tr><tr class="k"><td><img src="images/bosses/2921.jpg" alt="" onerror="this.style.visibility='hidden'">The Silken Court</td><td>Dec 5, 2024</td><td>263</td><td><span class="q-rare">694</span></td><td><span class="q-rare">228</span></td><td><span class="q-rare">13</span></td></tr><tr class="k"><td><img src="images/bosses/2922.jpg" alt="" onerror="this.style.visibility='hidden'">Queen Ansurek</td><td>Jan 14, 2025</td><td>363</td><td><span class="q-rare">781</span></td><td><span class="q-rare">252</span></td><td><span class="q-rare">14</span></td></tr></tbody>
+                    </table>
+                </details>
+            </div>
+            <div class="season-card" id="season-dragonflight-season-4">
+                <div class="season-name">Dragonflight Season 4</div>
+                <details class="raid-row">
+                    <summary>
+                        <span class="raid-name">Vault of the Incarnates</span>
+                        <span class="raid-prog"><b>8/8</b> M · 8/8 H</span>
+                        <span class="ach ce">Cutting Edge</span>
+                        <div class="rank-trio small"><span><small>World</small><span class="q-rare">818</span></span><span><small>Region</small><span class="q-rare">293</span></span><span><small>Realm</small><span class="q-rare">16</span></span></div>
+                    </summary>
+                    <table class="boss-table">
+                        <thead><tr><th>Boss</th><th>Mythic kill</th><th>Pulls</th><th>World</th><th>Region</th><th>Realm</th></tr></thead>
+                        <tbody><tr class="k"><td><img src="images/bosses/2587.jpg" alt="" onerror="this.style.visibility='hidden'">Eranog</td><td>Apr 24, 2024</td><td>2</td><td><span class="q-rare">1,933</span></td><td><span class="q-uncommon">724</span></td><td><span class="q-uncommon">32</span></td></tr><tr class="k"><td><img src="images/bosses/2639.jpg" alt="" onerror="this.style.visibility='hidden'">Terros</td><td>May 14, 2024</td><td>2</td><td><span class="q-rare">1,106</span></td><td><span class="q-rare">407</span></td><td><span class="q-rare">19</span></td></tr><tr class="k"><td><img src="images/bosses/2590.jpg" alt="" onerror="this.style.visibility='hidden'">The Primal Council</td><td>Apr 24, 2024</td><td>2</td><td><span class="q-rare">1,755</span></td><td><span class="q-rare">629</span></td><td><span class="q-uncommon">31</span></td></tr><tr class="k"><td><img src="images/bosses/2592.jpg" alt="" onerror="this.style.visibility='hidden'">Sennarth, The Cold Breath</td><td>May 14, 2024</td><td>2</td><td><span class="q-rare">1,314</span></td><td><span class="q-rare">482</span></td><td><span class="q-rare">25</span></td></tr><tr class="k"><td><img src="images/bosses/2635.jpg" alt="" onerror="this.style.visibility='hidden'">Dathea, Ascended</td><td>May 15, 2024</td><td>7</td><td><span class="q-rare">1,296</span></td><td><span class="q-rare">480</span></td><td><span class="q-rare">23</span></td></tr><tr class="k"><td><img src="images/bosses/2605.jpg" alt="" onerror="this.style.visibility='hidden'">Kurog Grimtotem</td><td>May 15, 2024</td><td>3</td><td><span class="q-rare">1,054</span></td><td><span class="q-rare">395</span></td><td><span class="q-rare">19</span></td></tr><tr class="k"><td><img src="images/bosses/2614.jpg" alt="" onerror="this.style.visibility='hidden'">Broodkeeper Diurna</td><td>May 15, 2024</td><td>9</td><td><span class="q-rare">1,156</span></td><td><span class="q-rare">417</span></td><td><span class="q-rare">23</span></td></tr><tr class="k"><td><img src="images/bosses/2607.jpg" alt="" onerror="this.style.visibility='hidden'">Raszageth the Storm-Eater</td><td>Killed</td><td></td><td><span class="q-rare">820</span></td><td><span class="q-rare">295</span></td><td><span class="q-rare">16</span></td></tr></tbody>
+                    </table>
+                </details>
+                <details class="raid-row">
+                    <summary>
+                        <span class="raid-name">Aberrus, the Shadowed Crucible</span>
+                        <span class="raid-prog"><b>9/9</b> M · 9/9 H</span>
+                        <span class="ach ce">Cutting Edge</span>
+                        <div class="rank-trio small"><span><small>World</small><span class="q-rare">641</span></span><span><small>Region</small><span class="q-rare">222</span></span><span><small>Realm</small><span class="q-epic">10</span></span></div>
+                    </summary>
+                    <table class="boss-table">
+                        <thead><tr><th>Boss</th><th>Mythic kill</th><th>Pulls</th><th>World</th><th>Region</th><th>Realm</th></tr></thead>
+                        <tbody><tr class="k"><td><img src="images/bosses/2688.jpg" alt="" onerror="this.style.visibility='hidden'">Kazzara, the Hellforged</td><td>May 1, 2024</td><td>1</td><td><span class="q-legendary">48</span></td><td><span class="q-epic">39</span></td><td><span class="q-epic">4</span></td></tr><tr class="k"><td><img src="images/bosses/2687.jpg" alt="" onerror="this.style.visibility='hidden'">The Amalgamation Chamber</td><td>May 1, 2024</td><td>2</td><td><span class="q-rare">663</span></td><td><span class="q-rare">234</span></td><td><span class="q-rare">12</span></td></tr><tr class="k"><td><img src="images/bosses/2693.jpg" alt="" onerror="this.style.visibility='hidden'">The Forgotten Experiments</td><td>May 1, 2024</td><td>3</td><td><span class="q-rare">845</span></td><td><span class="q-rare">288</span></td><td><span class="q-rare">13</span></td></tr><tr class="k"><td><img src="images/bosses/2682.jpg" alt="" onerror="this.style.visibility='hidden'">Assault of the Zaqali</td><td>May 1, 2024</td><td>4</td><td><span class="q-rare">833</span></td><td><span class="q-rare">268</span></td><td><span class="q-rare">15</span></td></tr><tr class="k"><td><img src="images/bosses/2680.jpg" alt="" onerror="this.style.visibility='hidden'">Rashok, the Elder</td><td>May 22, 2024</td><td>9</td><td><span class="q-rare">586</span></td><td><span class="q-rare">195</span></td><td><span class="q-epic">7</span></td></tr><tr class="k"><td><img src="images/bosses/2689.jpg" alt="" onerror="this.style.visibility='hidden'">The Vigilant Steward, Zskarn</td><td>May 22, 2024</td><td>2</td><td><span class="q-rare">526</span></td><td><span class="q-rare">187</span></td><td><span class="q-epic">6</span></td></tr><tr class="k"><td><img src="images/bosses/2683.jpg" alt="" onerror="this.style.visibility='hidden'">Magmorax</td><td>May 22, 2024</td><td>3</td><td><span class="q-rare">536</span></td><td><span class="q-rare">194</span></td><td><span class="q-epic">7</span></td></tr><tr class="k"><td><img src="images/bosses/2684.jpg" alt="" onerror="this.style.visibility='hidden'">Echo of Neltharion</td><td>Killed</td><td></td><td><span class="q-rare">565</span></td><td><span class="q-rare">196</span></td><td><span class="q-epic">8</span></td></tr><tr class="k"><td><img src="images/bosses/2685.jpg" alt="" onerror="this.style.visibility='hidden'">Scalecommander Sarkareth</td><td>Killed</td><td></td><td><span class="q-rare">644</span></td><td><span class="q-rare">222</span></td><td><span class="q-epic">10</span></td></tr></tbody>
+                    </table>
+                </details>
+                <details class="raid-row">
+                    <summary>
+                        <span class="raid-name">Amirdrassil, the Dream&#x27;s Hope</span>
+                        <span class="raid-prog"><b>9/9</b> M · 9/9 H</span>
+                        <span class="ach ce">Cutting Edge</span>
+                        <div class="rank-trio small"><span><small>World</small><span class="q-rare">659</span></span><span><small>Region</small><span class="q-rare">236</span></span><span><small>Realm</small><span class="q-rare">13</span></span></div>
+                    </summary>
+                    <table class="boss-table">
+                        <thead><tr><th>Boss</th><th>Mythic kill</th><th>Pulls</th><th>World</th><th>Region</th><th>Realm</th></tr></thead>
+                        <tbody><tr class="k"><td><img src="images/bosses/2820.jpg" alt="" onerror="this.style.visibility='hidden'">Gnarlroot</td><td>May 7, 2024</td><td>1</td><td><span class="q-rare">805</span></td><td><span class="q-rare">269</span></td><td><span class="q-rare">14</span></td></tr><tr class="k"><td><img src="images/bosses/2709.jpg" alt="" onerror="this.style.visibility='hidden'">Igira the Cruel</td><td>May 7, 2024</td><td>1</td><td><span class="q-rare">1,470</span></td><td><span class="q-rare">477</span></td><td><span class="q-rare">22</span></td></tr><tr class="k"><td><img src="images/bosses/2737.jpg" alt="" onerror="this.style.visibility='hidden'">Volcoross</td><td>May 7, 2024</td><td>1</td><td><span class="q-rare">1,242</span></td><td><span class="q-rare">400</span></td><td><span class="q-rare">22</span></td></tr><tr class="k"><td><img src="images/bosses/2728.jpg" alt="" onerror="this.style.visibility='hidden'">Council of Dreams</td><td>May 8, 2024</td><td>2</td><td><span class="q-rare">862</span></td><td><span class="q-rare">279</span></td><td><span class="q-rare">16</span></td></tr><tr class="k"><td><img src="images/bosses/2731.jpg" alt="" onerror="this.style.visibility='hidden'">Larodar, Keeper of the Flame</td><td>May 8, 2024</td><td>7</td><td><span class="q-rare">764</span></td><td><span class="q-rare">281</span></td><td><span class="q-rare">16</span></td></tr><tr class="k"><td><img src="images/bosses/2708.jpg" alt="" onerror="this.style.visibility='hidden'">Nymue, Weaver of the Cycle</td><td>May 8, 2024</td><td>6</td><td><span class="q-rare">765</span></td><td><span class="q-rare">252</span></td><td><span class="q-rare">16</span></td></tr><tr class="k"><td><img src="images/bosses/2824.jpg" alt="" onerror="this.style.visibility='hidden'">Smolderon</td><td>Jun 4, 2024</td><td>5</td><td><span class="q-rare">788</span></td><td><span class="q-rare">285</span></td><td><span class="q-rare">16</span></td></tr><tr class="k"><td><img src="images/bosses/2786.jpg" alt="" onerror="this.style.visibility='hidden'">Tindral Sageswift, Seer of the Flame</td><td>Jun 4, 2024</td><td>7</td><td><span class="q-rare">889</span></td><td><span class="q-rare">322</span></td><td><span class="q-rare">17</span></td></tr><tr class="k"><td><img src="images/bosses/2677.jpg" alt="" onerror="this.style.visibility='hidden'">Fyrakk the Blazing</td><td>Jun 4, 2024</td><td>7</td><td><span class="q-rare">661</span></td><td><span class="q-rare">238</span></td><td><span class="q-rare">13</span></td></tr></tbody>
+                    </table>
+                </details>
+            </div>
+            <div class="season-card" id="season-dragonflight-season-3">
+                <div class="season-name">Dragonflight Season 3</div>
+                <details class="raid-row">
+                    <summary>
+                        <span class="raid-name">Amirdrassil, the Dream&#x27;s Hope</span>
+                        <span class="raid-prog"><b>9/9</b> M · 9/9 H</span>
+                        <span class="ach ce">Cutting Edge</span>
+                        <div class="rank-trio small"><span><small>World</small><span class="q-rare">659</span></span><span><small>Region</small><span class="q-rare">236</span></span><span><small>Realm</small><span class="q-rare">13</span></span></div>
+                    </summary>
+                    <table class="boss-table">
+                        <thead><tr><th>Boss</th><th>Mythic kill</th><th>Pulls</th><th>World</th><th>Region</th><th>Realm</th></tr></thead>
+                        <tbody><tr class="k"><td><img src="images/bosses/2820.jpg" alt="" onerror="this.style.visibility='hidden'">Gnarlroot</td><td>Nov 22, 2023</td><td>3</td><td><span class="q-rare">805</span></td><td><span class="q-rare">269</span></td><td><span class="q-rare">14</span></td></tr><tr class="k"><td><img src="images/bosses/2709.jpg" alt="" onerror="this.style.visibility='hidden'">Igira the Cruel</td><td>Nov 29, 2023</td><td>7</td><td><span class="q-rare">1,470</span></td><td><span class="q-rare">477</span></td><td><span class="q-rare">22</span></td></tr><tr class="k"><td><img src="images/bosses/2737.jpg" alt="" onerror="this.style.visibility='hidden'">Volcoross</td><td>Nov 29, 2023</td><td>4</td><td><span class="q-rare">1,242</span></td><td><span class="q-rare">400</span></td><td><span class="q-rare">22</span></td></tr><tr class="k"><td><img src="images/bosses/2728.jpg" alt="" onerror="this.style.visibility='hidden'">Council of Dreams</td><td>Nov 29, 2023</td><td>15</td><td><span class="q-rare">862</span></td><td><span class="q-rare">279</span></td><td><span class="q-rare">16</span></td></tr><tr class="k"><td><img src="images/bosses/2731.jpg" alt="" onerror="this.style.visibility='hidden'">Larodar, Keeper of the Flame</td><td>Dec 7, 2023</td><td>20</td><td><span class="q-rare">764</span></td><td><span class="q-rare">281</span></td><td><span class="q-rare">16</span></td></tr><tr class="k"><td><img src="images/bosses/2708.jpg" alt="" onerror="this.style.visibility='hidden'">Nymue, Weaver of the Cycle</td><td>Dec 6, 2023</td><td>47</td><td><span class="q-rare">765</span></td><td><span class="q-rare">252</span></td><td><span class="q-rare">16</span></td></tr><tr class="k"><td><img src="images/bosses/2824.jpg" alt="" onerror="this.style.visibility='hidden'">Smolderon</td><td>Jan 3, 2024</td><td>112</td><td><span class="q-rare">788</span></td><td><span class="q-rare">285</span></td><td><span class="q-rare">16</span></td></tr><tr class="k"><td><img src="images/bosses/2786.jpg" alt="" onerror="this.style.visibility='hidden'">Tindral Sageswift, Seer of the Flame</td><td>Feb 20, 2024</td><td>400</td><td><span class="q-rare">889</span></td><td><span class="q-rare">322</span></td><td><span class="q-rare">17</span></td></tr><tr class="k"><td><img src="images/bosses/2677.jpg" alt="" onerror="this.style.visibility='hidden'">Fyrakk the Blazing</td><td>Mar 14, 2024</td><td>304</td><td><span class="q-rare">661</span></td><td><span class="q-rare">238</span></td><td><span class="q-rare">13</span></td></tr></tbody>
+                    </table>
+                </details>
+            </div>
+            <div class="season-card" id="season-dragonflight-season-2">
+                <div class="season-name">Dragonflight Season 2</div>
+                <details class="raid-row">
+                    <summary>
+                        <span class="raid-name">Aberrus, the Shadowed Crucible</span>
+                        <span class="raid-prog"><b>9/9</b> M · 9/9 H</span>
+                        <span class="ach ce">Cutting Edge</span>
+                        <div class="rank-trio small"><span><small>World</small><span class="q-rare">641</span></span><span><small>Region</small><span class="q-rare">222</span></span><span><small>Realm</small><span class="q-epic">10</span></span></div>
+                    </summary>
+                    <table class="boss-table">
+                        <thead><tr><th>Boss</th><th>Mythic kill</th><th>Pulls</th><th>World</th><th>Region</th><th>Realm</th></tr></thead>
+                        <tbody><tr class="k"><td><img src="images/bosses/2688.jpg" alt="" onerror="this.style.visibility='hidden'">Kazzara, the Hellforged</td><td>May 10, 2023</td><td>9</td><td><span class="q-legendary">48</span></td><td><span class="q-epic">39</span></td><td><span class="q-epic">4</span></td></tr><tr class="k"><td><img src="images/bosses/2687.jpg" alt="" onerror="this.style.visibility='hidden'">The Amalgamation Chamber</td><td>May 17, 2023</td><td>14</td><td><span class="q-rare">663</span></td><td><span class="q-rare">234</span></td><td><span class="q-rare">12</span></td></tr><tr class="k"><td><img src="images/bosses/2693.jpg" alt="" onerror="this.style.visibility='hidden'">The Forgotten Experiments</td><td>May 24, 2023</td><td>39</td><td><span class="q-rare">845</span></td><td><span class="q-rare">288</span></td><td><span class="q-rare">13</span></td></tr><tr class="k"><td><img src="images/bosses/2682.jpg" alt="" onerror="this.style.visibility='hidden'">Assault of the Zaqali</td><td>May 17, 2023</td><td>4</td><td><span class="q-rare">833</span></td><td><span class="q-rare">268</span></td><td><span class="q-rare">15</span></td></tr><tr class="k"><td><img src="images/bosses/2680.jpg" alt="" onerror="this.style.visibility='hidden'">Rashok, the Elder</td><td>Jun 1, 2023</td><td>65</td><td><span class="q-rare">586</span></td><td><span class="q-rare">195</span></td><td><span class="q-epic">7</span></td></tr><tr class="k"><td><img src="images/bosses/2689.jpg" alt="" onerror="this.style.visibility='hidden'">The Vigilant Steward, Zskarn</td><td>Jun 14, 2023</td><td>115</td><td><span class="q-rare">526</span></td><td><span class="q-rare">187</span></td><td><span class="q-epic">6</span></td></tr><tr class="k"><td><img src="images/bosses/2683.jpg" alt="" onerror="this.style.visibility='hidden'">Magmorax</td><td>Jun 20, 2023</td><td>62</td><td><span class="q-rare">536</span></td><td><span class="q-rare">194</span></td><td><span class="q-epic">7</span></td></tr><tr class="k"><td><img src="images/bosses/2684.jpg" alt="" onerror="this.style.visibility='hidden'">Echo of Neltharion</td><td>Jul 5, 2023</td><td>164</td><td><span class="q-rare">565</span></td><td><span class="q-rare">196</span></td><td><span class="q-epic">8</span></td></tr><tr class="k"><td><img src="images/bosses/2685.jpg" alt="" onerror="this.style.visibility='hidden'">Scalecommander Sarkareth</td><td>Aug 10, 2023</td><td>298</td><td><span class="q-rare">644</span></td><td><span class="q-rare">222</span></td><td><span class="q-epic">10</span></td></tr></tbody>
+                    </table>
+                </details>
+            </div>
+            <div class="season-card" id="season-dragonflight-season-1">
+                <div class="season-name">Dragonflight Season 1</div>
+                <details class="raid-row">
+                    <summary>
+                        <span class="raid-name">Vault of the Incarnates</span>
+                        <span class="raid-prog"><b>8/8</b> M · 8/8 H</span>
+                        <span class="ach ce">Cutting Edge</span>
+                        <div class="rank-trio small"><span><small>World</small><span class="q-rare">818</span></span><span><small>Region</small><span class="q-rare">293</span></span><span><small>Realm</small><span class="q-rare">16</span></span></div>
+                    </summary>
+                    <table class="boss-table">
+                        <thead><tr><th>Boss</th><th>Mythic kill</th><th>Pulls</th><th>World</th><th>Region</th><th>Realm</th></tr></thead>
+                        <tbody><tr class="k"><td><img src="images/bosses/2587.jpg" alt="" onerror="this.style.visibility='hidden'">Eranog</td><td>Jan 1, 2023</td><td>11</td><td><span class="q-rare">1,933</span></td><td><span class="q-uncommon">724</span></td><td><span class="q-uncommon">32</span></td></tr><tr class="k"><td><img src="images/bosses/2639.jpg" alt="" onerror="this.style.visibility='hidden'">Terros</td><td>Jan 11, 2023</td><td>27</td><td><span class="q-rare">1,106</span></td><td><span class="q-rare">407</span></td><td><span class="q-rare">19</span></td></tr><tr class="k"><td><img src="images/bosses/2590.jpg" alt="" onerror="this.style.visibility='hidden'">The Primal Council</td><td>Jan 4, 2023</td><td>4</td><td><span class="q-rare">1,755</span></td><td><span class="q-rare">629</span></td><td><span class="q-uncommon">31</span></td></tr><tr class="k"><td><img src="images/bosses/2592.jpg" alt="" onerror="this.style.visibility='hidden'">Sennarth, The Cold Breath</td><td>Jan 24, 2023</td><td>62</td><td><span class="q-rare">1,314</span></td><td><span class="q-rare">482</span></td><td><span class="q-rare">25</span></td></tr><tr class="k"><td><img src="images/bosses/2635.jpg" alt="" onerror="this.style.visibility='hidden'">Dathea, Ascended</td><td>Feb 19, 2023</td><td>96</td><td><span class="q-rare">1,296</span></td><td><span class="q-rare">480</span></td><td><span class="q-rare">23</span></td></tr><tr class="k"><td><img src="images/bosses/2605.jpg" alt="" onerror="this.style.visibility='hidden'">Kurog Grimtotem</td><td>Feb 1, 2023</td><td>64</td><td><span class="q-rare">1,054</span></td><td><span class="q-rare">395</span></td><td><span class="q-rare">19</span></td></tr><tr class="k"><td><img src="images/bosses/2614.jpg" alt="" onerror="this.style.visibility='hidden'">Broodkeeper Diurna</td><td>Mar 5, 2023</td><td>96</td><td><span class="q-rare">1,156</span></td><td><span class="q-rare">417</span></td><td><span class="q-rare">23</span></td></tr><tr class="k"><td><img src="images/bosses/2607.jpg" alt="" onerror="this.style.visibility='hidden'">Raszageth the Storm-Eater</td><td>Apr 4, 2023</td><td>220</td><td><span class="q-rare">820</span></td><td><span class="q-rare">295</span></td><td><span class="q-rare">16</span></td></tr></tbody>
+                    </table>
+                </details>
+            </div>
+            <div class="season-card" id="season-shadowlands-season-4">
+                <div class="season-name">Shadowlands Season 4</div>
+                <details class="raid-row">
+                    <summary>
+                        <span class="raid-name">Castle Nathria</span>
+                        <span class="raid-prog"><b>9/10</b> M · 10/10 H</span>
+                        <span class="ach aotc">Ahead of the Curve</span>
+                        <div class="rank-trio small"><span><small>World</small><span class="q-uncommon">3,263</span></span><span><small>Region</small><span class="q-uncommon">1,172</span></span><span><small>Realm</small><span class="q-uncommon">50</span></span></div>
+                    </summary>
+                    <table class="boss-table">
+                        <thead><tr><th>Boss</th><th>Mythic kill</th><th>Pulls</th><th>World</th><th>Region</th><th>Realm</th></tr></thead>
+                        <tbody><tr class="k"><td><img src="images/bosses/2398.jpg" alt="" onerror="this.style.visibility='hidden'">Shriekwing</td><td>Aug 3, 2022</td><td>1</td><td><span class="q-uncommon">3,663</span></td><td><span class="q-uncommon">1,192</span></td><td><span class="q-uncommon">60</span></td></tr><tr class="k"><td><img src="images/bosses/2418.jpg" alt="" onerror="this.style.visibility='hidden'">Huntsman Altimor</td><td>Aug 3, 2022</td><td>1</td><td><span class="q-uncommon">3,394</span></td><td><span class="q-uncommon">1,077</span></td><td><span class="q-uncommon">49</span></td></tr><tr class="k"><td><img src="images/bosses/2383.jpg" alt="" onerror="this.style.visibility='hidden'">Hungering Destroyer</td><td>Aug 3, 2022</td><td>1</td><td><span class="q-uncommon">2,694</span></td><td><span class="q-uncommon">909</span></td><td><span class="q-uncommon">47</span></td></tr><tr class="k"><td><img src="images/bosses/2402.jpg" alt="" onerror="this.style.visibility='hidden'">Sun King&#x27;s Salvation</td><td>Aug 24, 2022</td><td>5</td><td><span class="q-uncommon">2,827</span></td><td><span class="q-uncommon">931</span></td><td><span class="q-uncommon">43</span></td></tr><tr class="k"><td><img src="images/bosses/2405.jpg" alt="" onerror="this.style.visibility='hidden'">Artificer Xy&#x27;mox</td><td>Aug 24, 2022</td><td>15</td><td><span class="q-uncommon">3,049</span></td><td><span class="q-uncommon">971</span></td><td><span class="q-uncommon">47</span></td></tr><tr class="k"><td><img src="images/bosses/2406.jpg" alt="" onerror="this.style.visibility='hidden'">Lady Inerva Darkvein</td><td>Aug 3, 2022</td><td>10</td><td><span class="q-uncommon">2,456</span></td><td><span class="q-uncommon">816</span></td><td><span class="q-uncommon">41</span></td></tr><tr class="k"><td><img src="images/bosses/2412.jpg" alt="" onerror="this.style.visibility='hidden'">The Council of Blood</td><td>Sep 13, 2022</td><td>7</td><td><span class="q-uncommon">2,930</span></td><td><span class="q-uncommon">945</span></td><td><span class="q-uncommon">44</span></td></tr><tr class="k"><td><img src="images/bosses/2399.jpg" alt="" onerror="this.style.visibility='hidden'">Sludgefist</td><td>Sep 14, 2022</td><td>3</td><td><span class="q-uncommon">2,819</span></td><td><span class="q-uncommon">927</span></td><td><span class="q-uncommon">39</span></td></tr><tr class="k"><td><img src="images/bosses/2417.jpg" alt="" onerror="this.style.visibility='hidden'">Stone Legion Generals</td><td>Sep 14, 2022</td><td>19</td><td><span class="q-uncommon">2,798</span></td><td><span class="q-uncommon">949</span></td><td><span class="q-uncommon">43</span></td></tr><tr class=""><td><img src="images/bosses/2407.jpg" alt="" onerror="this.style.visibility='hidden'">Sire Denathrius</td><td>—</td><td>1</td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr></tbody>
+                    </table>
+                </details>
+                <details class="raid-row">
+                    <summary>
+                        <span class="raid-name">Sanctum of Domination</span>
+                        <span class="raid-prog"><b>9/10</b> M · 10/10 H</span>
+                        <span class="ach aotc">Ahead of the Curve</span>
+                        <div class="rank-trio small"><span><small>World</small><span class="q-uncommon">2,403</span></span><span><small>Region</small><span class="q-uncommon">865</span></span><span><small>Realm</small><span class="q-uncommon">34</span></span></div>
+                    </summary>
+                    <table class="boss-table">
+                        <thead><tr><th>Boss</th><th>Mythic kill</th><th>Pulls</th><th>World</th><th>Region</th><th>Realm</th></tr></thead>
+                        <tbody><tr class="k"><td><img src="images/bosses/2423.jpg" alt="" onerror="this.style.visibility='hidden'">The Tarragrue</td><td>Aug 10, 2022</td><td>1</td><td><span class="q-rare">1,112</span></td><td><span class="q-rare">440</span></td><td><span class="q-rare">20</span></td></tr><tr class="k"><td><img src="images/bosses/2433.jpg" alt="" onerror="this.style.visibility='hidden'">The Eye of the Jailer</td><td>Aug 10, 2022</td><td>5</td><td><span class="q-uncommon">2,609</span></td><td><span class="q-uncommon">928</span></td><td><span class="q-uncommon">42</span></td></tr><tr class="k"><td><img src="images/bosses/2429.jpg" alt="" onerror="this.style.visibility='hidden'">The Nine</td><td>Aug 10, 2022</td><td>2</td><td><span class="q-uncommon">2,598</span></td><td><span class="q-uncommon">938</span></td><td><span class="q-uncommon">42</span></td></tr><tr class="k"><td><img src="images/bosses/2432.jpg" alt="" onerror="this.style.visibility='hidden'">Remnant of Ner&#x27;zhul</td><td>Aug 31, 2022</td><td>29</td><td><span class="q-uncommon">2,358</span></td><td><span class="q-uncommon">826</span></td><td><span class="q-uncommon">41</span></td></tr><tr class="k"><td><img src="images/bosses/2434.jpg" alt="" onerror="this.style.visibility='hidden'">Soulrender Dormazain</td><td>Aug 10, 2022</td><td>7</td><td><span class="q-uncommon">2,546</span></td><td><span class="q-uncommon">923</span></td><td><span class="q-uncommon">40</span></td></tr><tr class="k"><td><img src="images/bosses/2430.jpg" alt="" onerror="this.style.visibility='hidden'">Painsmith Raznal</td><td>Killed</td><td>8</td><td><span class="q-uncommon">2,093</span></td><td><span class="q-uncommon">739</span></td><td><span class="q-uncommon">30</span></td></tr><tr class="k"><td><img src="images/bosses/2436.jpg" alt="" onerror="this.style.visibility='hidden'">Guardian of the First Ones</td><td>Aug 31, 2022</td><td>22</td><td><span class="q-uncommon">2,075</span></td><td><span class="q-uncommon">731</span></td><td><span class="q-uncommon">28</span></td></tr><tr class="k"><td><img src="images/bosses/2431.jpg" alt="" onerror="this.style.visibility='hidden'">Fatescribe Roh-Kalo</td><td>Killed</td><td></td><td><span class="q-uncommon">2,029</span></td><td><span class="q-uncommon">718</span></td><td><span class="q-uncommon">29</span></td></tr><tr class="k"><td><img src="images/bosses/2422.jpg" alt="" onerror="this.style.visibility='hidden'">Kel&#x27;Thuzad</td><td>Sep 21, 2022</td><td>27</td><td><span class="q-rare">1,984</span></td><td><span class="q-rare">693</span></td><td><span class="q-uncommon">29</span></td></tr><tr class=""><td><img src="images/bosses/2435.jpg" alt="" onerror="this.style.visibility='hidden'">Sylvanas Windrunner</td><td>—</td><td></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr></tbody>
+                    </table>
+                </details>
+                <details class="raid-row">
+                    <summary>
+                        <span class="raid-name">Sepulcher of the First Ones</span>
+                        <span class="raid-prog"><b>7/11</b> M · 11/11 H</span>
+                        <span class="ach aotc">Ahead of the Curve</span>
+                        <div class="rank-trio small"><span><small>World</small><span class="q-rare">1,854</span></span><span><small>Region</small><span class="q-rare">694</span></span><span><small>Realm</small><span class="q-uncommon">28</span></span></div>
+                    </summary>
+                    <table class="boss-table">
+                        <thead><tr><th>Boss</th><th>Mythic kill</th><th>Pulls</th><th>World</th><th>Region</th><th>Realm</th></tr></thead>
+                        <tbody><tr class="k"><td><img src="images/bosses/2512.jpg" alt="" onerror="this.style.visibility='hidden'">Vigilant Guardian</td><td>Aug 17, 2022</td><td>4</td><td><span class="q-uncommon">2,048</span></td><td><span class="q-uncommon">721</span></td><td><span class="q-uncommon">30</span></td></tr><tr class="k"><td><img src="images/bosses/2542.jpg" alt="" onerror="this.style.visibility='hidden'">Skolex, the Insatiable Ravener</td><td>Aug 17, 2022</td><td>4</td><td><span class="q-rare">1,819</span></td><td><span class="q-rare">641</span></td><td><span class="q-uncommon">28</span></td></tr><tr class="k"><td><img src="images/bosses/2553.jpg" alt="" onerror="this.style.visibility='hidden'">Artificer Xy&#x27;mox</td><td>Aug 17, 2022</td><td>3</td><td><span class="q-rare">1,259</span></td><td><span class="q-rare">454</span></td><td><span class="q-rare">20</span></td></tr><tr class="k"><td><img src="images/bosses/2540.jpg" alt="" onerror="this.style.visibility='hidden'">Dausegne, the Fallen Oracle</td><td>Sep 6, 2022</td><td>16</td><td><span class="q-rare">1,867</span></td><td><span class="q-rare">668</span></td><td><span class="q-uncommon">26</span></td></tr><tr class="k"><td><img src="images/bosses/2544.jpg" alt="" onerror="this.style.visibility='hidden'">Prototype Pantheon</td><td>Sep 7, 2022</td><td>16</td><td><span class="q-rare">1,825</span></td><td><span class="q-rare">639</span></td><td><span class="q-uncommon">26</span></td></tr><tr class="k"><td><img src="images/bosses/2539.jpg" alt="" onerror="this.style.visibility='hidden'">Lihuvim, Principal Architect</td><td>Killed</td><td>4</td><td><span class="q-rare">1,840</span></td><td><span class="q-rare">647</span></td><td><span class="q-uncommon">27</span></td></tr><tr class="k"><td><img src="images/bosses/2529.jpg" alt="" onerror="this.style.visibility='hidden'">Halondrus the Reclaimer</td><td>Killed</td><td></td><td><span class="q-rare">1,428</span></td><td><span class="q-rare">505</span></td><td><span class="q-rare">23</span></td></tr><tr class=""><td><img src="images/bosses/2546.jpg" alt="" onerror="this.style.visibility='hidden'">Anduin Wrynn</td><td>—</td><td></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr><tr class=""><td><img src="images/bosses/2543.jpg" alt="" onerror="this.style.visibility='hidden'">Lords of Dread</td><td>—</td><td></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr><tr class=""><td><img src="images/bosses/2549.jpg" alt="" onerror="this.style.visibility='hidden'">Rygelon</td><td>—</td><td></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr><tr class=""><td><img src="images/bosses/2537.jpg" alt="" onerror="this.style.visibility='hidden'">The Jailer</td><td>—</td><td></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr></tbody>
+                    </table>
+                </details>
+            </div>
+            <div class="season-card" id="season-shadowlands-season-3">
+                <div class="season-name">Shadowlands Season 3</div>
+                <details class="raid-row">
+                    <summary>
+                        <span class="raid-name">Sepulcher of the First Ones</span>
+                        <span class="raid-prog"><b>7/11</b> M · 11/11 H</span>
+                        <span class="ach aotc">Ahead of the Curve</span>
+                        <div class="rank-trio small"><span><small>World</small><span class="q-rare">1,854</span></span><span><small>Region</small><span class="q-rare">694</span></span><span><small>Realm</small><span class="q-uncommon">28</span></span></div>
+                    </summary>
+                    <table class="boss-table">
+                        <thead><tr><th>Boss</th><th>Mythic kill</th><th>Pulls</th><th>World</th><th>Region</th><th>Realm</th></tr></thead>
+                        <tbody><tr class="k"><td><img src="images/bosses/2512.jpg" alt="" onerror="this.style.visibility='hidden'">Vigilant Guardian</td><td>Apr 6, 2022</td><td>3</td><td><span class="q-uncommon">2,048</span></td><td><span class="q-uncommon">721</span></td><td><span class="q-uncommon">30</span></td></tr><tr class="k"><td><img src="images/bosses/2542.jpg" alt="" onerror="this.style.visibility='hidden'">Skolex, the Insatiable Ravener</td><td>Apr 6, 2022</td><td>9</td><td><span class="q-rare">1,819</span></td><td><span class="q-rare">641</span></td><td><span class="q-uncommon">28</span></td></tr><tr class="k"><td><img src="images/bosses/2553.jpg" alt="" onerror="this.style.visibility='hidden'">Artificer Xy&#x27;mox</td><td>Apr 13, 2022</td><td>50</td><td><span class="q-rare">1,259</span></td><td><span class="q-rare">454</span></td><td><span class="q-rare">20</span></td></tr><tr class="k"><td><img src="images/bosses/2540.jpg" alt="" onerror="this.style.visibility='hidden'">Dausegne, the Fallen Oracle</td><td>Apr 20, 2022</td><td>13</td><td><span class="q-rare">1,867</span></td><td><span class="q-rare">668</span></td><td><span class="q-uncommon">26</span></td></tr><tr class="k"><td><img src="images/bosses/2544.jpg" alt="" onerror="this.style.visibility='hidden'">Prototype Pantheon</td><td>May 11, 2022</td><td>67</td><td><span class="q-rare">1,825</span></td><td><span class="q-rare">639</span></td><td><span class="q-uncommon">26</span></td></tr><tr class="k"><td><img src="images/bosses/2539.jpg" alt="" onerror="this.style.visibility='hidden'">Lihuvim, Principal Architect</td><td>Jun 14, 2022</td><td>76</td><td><span class="q-rare">1,840</span></td><td><span class="q-rare">647</span></td><td><span class="q-uncommon">27</span></td></tr><tr class="k"><td><img src="images/bosses/2529.jpg" alt="" onerror="this.style.visibility='hidden'">Halondrus the Reclaimer</td><td>Jun 1, 2022</td><td>169</td><td><span class="q-rare">1,428</span></td><td><span class="q-rare">505</span></td><td><span class="q-rare">23</span></td></tr><tr class=""><td><img src="images/bosses/2546.jpg" alt="" onerror="this.style.visibility='hidden'">Anduin Wrynn</td><td>—</td><td>90</td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr><tr class=""><td><img src="images/bosses/2543.jpg" alt="" onerror="this.style.visibility='hidden'">Lords of Dread</td><td>—</td><td></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr><tr class=""><td><img src="images/bosses/2549.jpg" alt="" onerror="this.style.visibility='hidden'">Rygelon</td><td>—</td><td></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr><tr class=""><td><img src="images/bosses/2537.jpg" alt="" onerror="this.style.visibility='hidden'">The Jailer</td><td>—</td><td></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr></tbody>
+                    </table>
+                </details>
+            </div>
+            <div class="season-card" id="season-shadowlands-season-2">
+                <div class="season-name">Shadowlands Season 2</div>
+                <details class="raid-row">
+                    <summary>
+                        <span class="raid-name">Sanctum of Domination</span>
+                        <span class="raid-prog"><b>9/10</b> M · 10/10 H</span>
+                        <span class="ach aotc">Ahead of the Curve</span>
+                        <div class="rank-trio small"><span><small>World</small><span class="q-uncommon">2,403</span></span><span><small>Region</small><span class="q-uncommon">865</span></span><span><small>Realm</small><span class="q-uncommon">34</span></span></div>
+                    </summary>
+                    <table class="boss-table">
+                        <thead><tr><th>Boss</th><th>Mythic kill</th><th>Pulls</th><th>World</th><th>Region</th><th>Realm</th></tr></thead>
+                        <tbody><tr class="k"><td><img src="images/bosses/2423.jpg" alt="" onerror="this.style.visibility='hidden'">The Tarragrue</td><td>Jul 14, 2021</td><td>9</td><td><span class="q-rare">1,112</span></td><td><span class="q-rare">440</span></td><td><span class="q-rare">20</span></td></tr><tr class="k"><td><img src="images/bosses/2433.jpg" alt="" onerror="this.style.visibility='hidden'">The Eye of the Jailer</td><td>Aug 4, 2021</td><td>48</td><td><span class="q-uncommon">2,609</span></td><td><span class="q-uncommon">928</span></td><td><span class="q-uncommon">42</span></td></tr><tr class="k"><td><img src="images/bosses/2429.jpg" alt="" onerror="this.style.visibility='hidden'">The Nine</td><td>Aug 8, 2021</td><td>9</td><td><span class="q-uncommon">2,598</span></td><td><span class="q-uncommon">938</span></td><td><span class="q-uncommon">42</span></td></tr><tr class="k"><td><img src="images/bosses/2432.jpg" alt="" onerror="this.style.visibility='hidden'">Remnant of Ner&#x27;zhul</td><td>Aug 25, 2021</td><td>44</td><td><span class="q-uncommon">2,358</span></td><td><span class="q-uncommon">826</span></td><td><span class="q-uncommon">41</span></td></tr><tr class="k"><td><img src="images/bosses/2434.jpg" alt="" onerror="this.style.visibility='hidden'">Soulrender Dormazain</td><td>Sep 15, 2021</td><td>57</td><td><span class="q-uncommon">2,546</span></td><td><span class="q-uncommon">923</span></td><td><span class="q-uncommon">40</span></td></tr><tr class="k"><td><img src="images/bosses/2430.jpg" alt="" onerror="this.style.visibility='hidden'">Painsmith Raznal</td><td>Oct 19, 2021</td><td>182</td><td><span class="q-uncommon">2,093</span></td><td><span class="q-uncommon">739</span></td><td><span class="q-uncommon">30</span></td></tr><tr class="k"><td><img src="images/bosses/2436.jpg" alt="" onerror="this.style.visibility='hidden'">Guardian of the First Ones</td><td>Oct 20, 2021</td><td>34</td><td><span class="q-uncommon">2,075</span></td><td><span class="q-uncommon">731</span></td><td><span class="q-uncommon">28</span></td></tr><tr class="k"><td><img src="images/bosses/2431.jpg" alt="" onerror="this.style.visibility='hidden'">Fatescribe Roh-Kalo</td><td>Nov 9, 2021</td><td>119</td><td><span class="q-uncommon">2,029</span></td><td><span class="q-uncommon">718</span></td><td><span class="q-uncommon">29</span></td></tr><tr class="k"><td><img src="images/bosses/2422.jpg" alt="" onerror="this.style.visibility='hidden'">Kel&#x27;Thuzad</td><td>Nov 17, 2021</td><td>67</td><td><span class="q-rare">1,984</span></td><td><span class="q-rare">693</span></td><td><span class="q-uncommon">29</span></td></tr><tr class=""><td><img src="images/bosses/2435.jpg" alt="" onerror="this.style.visibility='hidden'">Sylvanas Windrunner</td><td>—</td><td>268</td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr></tbody>
+                    </table>
+                </details>
+            </div>
+            <div class="season-card" id="season-shadowlands-season-1">
+                <div class="season-name">Shadowlands Season 1</div>
+                <details class="raid-row">
+                    <summary>
+                        <span class="raid-name">Castle Nathria</span>
+                        <span class="raid-prog"><b>9/10</b> M · 10/10 H</span>
+                        <span class="ach aotc">Ahead of the Curve</span>
+                        <div class="rank-trio small"><span><small>World</small><span class="q-uncommon">3,263</span></span><span><small>Region</small><span class="q-uncommon">1,172</span></span><span><small>Realm</small><span class="q-uncommon">50</span></span></div>
+                    </summary>
+                    <table class="boss-table">
+                        <thead><tr><th>Boss</th><th>Mythic kill</th><th>Pulls</th><th>World</th><th>Region</th><th>Realm</th></tr></thead>
+                        <tbody><tr class="k"><td><img src="images/bosses/2398.jpg" alt="" onerror="this.style.visibility='hidden'">Shriekwing</td><td>Jan 6, 2021</td><td>7</td><td><span class="q-uncommon">3,663</span></td><td><span class="q-uncommon">1,192</span></td><td><span class="q-uncommon">60</span></td></tr><tr class="k"><td><img src="images/bosses/2418.jpg" alt="" onerror="this.style.visibility='hidden'">Huntsman Altimor</td><td>Jan 12, 2021</td><td>20</td><td><span class="q-uncommon">3,394</span></td><td><span class="q-uncommon">1,077</span></td><td><span class="q-uncommon">49</span></td></tr><tr class="k"><td><img src="images/bosses/2383.jpg" alt="" onerror="this.style.visibility='hidden'">Hungering Destroyer</td><td>Jan 20, 2021</td><td>38</td><td><span class="q-uncommon">2,694</span></td><td><span class="q-uncommon">909</span></td><td><span class="q-uncommon">47</span></td></tr><tr class="k"><td><img src="images/bosses/2402.jpg" alt="" onerror="this.style.visibility='hidden'">Sun King&#x27;s Salvation</td><td>Feb 3, 2021</td><td>60</td><td><span class="q-uncommon">2,827</span></td><td><span class="q-uncommon">931</span></td><td><span class="q-uncommon">43</span></td></tr><tr class="k"><td><img src="images/bosses/2405.jpg" alt="" onerror="this.style.visibility='hidden'">Artificer Xy&#x27;mox</td><td>Feb 23, 2021</td><td>61</td><td><span class="q-uncommon">3,049</span></td><td><span class="q-uncommon">971</span></td><td><span class="q-uncommon">47</span></td></tr><tr class="k"><td><img src="images/bosses/2406.jpg" alt="" onerror="this.style.visibility='hidden'">Lady Inerva Darkvein</td><td>Feb 10, 2021</td><td>33</td><td><span class="q-uncommon">2,456</span></td><td><span class="q-uncommon">816</span></td><td><span class="q-uncommon">41</span></td></tr><tr class="k"><td><img src="images/bosses/2412.jpg" alt="" onerror="this.style.visibility='hidden'">The Council of Blood</td><td>Mar 25, 2021</td><td>124</td><td><span class="q-uncommon">2,930</span></td><td><span class="q-uncommon">945</span></td><td><span class="q-uncommon">44</span></td></tr><tr class="k"><td><img src="images/bosses/2399.jpg" alt="" onerror="this.style.visibility='hidden'">Sludgefist</td><td>Apr 13, 2021</td><td>165</td><td><span class="q-uncommon">2,819</span></td><td><span class="q-uncommon">927</span></td><td><span class="q-uncommon">39</span></td></tr><tr class="k"><td><img src="images/bosses/2417.jpg" alt="" onerror="this.style.visibility='hidden'">Stone Legion Generals</td><td>Jun 9, 2021</td><td>367</td><td><span class="q-uncommon">2,798</span></td><td><span class="q-uncommon">949</span></td><td><span class="q-uncommon">43</span></td></tr><tr class=""><td><img src="images/bosses/2407.jpg" alt="" onerror="this.style.visibility='hidden'">Sire Denathrius</td><td>—</td><td>36</td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr></tbody>
+                    </table>
+                </details>
+            </div>
+            <div class="season-card" id="season-battle-for-azeroth-season-4">
+                <div class="season-name">Battle for Azeroth Season 4</div>
+                <details class="raid-row">
+                    <summary>
+                        <span class="raid-name">Ny&#x27;alotha</span>
+                        <span class="raid-prog"><b>12/12</b> M · 12/12 H</span>
+                        <span class="ach ce">Cutting Edge</span>
+                        <div class="rank-trio small"><span><small>World</small><span class="q-uncommon">2,386</span></span><span><small>Region</small><span class="q-uncommon">869</span></span><span><small>Realm</small><span class="q-uncommon">48</span></span></div>
+                    </summary>
+                    <table class="boss-table">
+                        <thead><tr><th>Boss</th><th>Mythic kill</th><th>Pulls</th><th>World</th><th>Region</th><th>Realm</th></tr></thead>
+                        <tbody><tr class="k"><td><img src="images/bosses/2329.jpg" alt="" onerror="this.style.visibility='hidden'">Wrathion</td><td>Mar 3, 2020</td><td>2</td><td><span class="q-uncommon">3,139</span></td><td><span class="q-uncommon">1,009</span></td><td><span class="q-common">62</span></td></tr><tr class="k"><td><img src="images/bosses/2327.jpg" alt="" onerror="this.style.visibility='hidden'">Maut</td><td>Mar 10, 2020</td><td>26</td><td><span class="q-uncommon">3,086</span></td><td><span class="q-uncommon">1,007</span></td><td><span class="q-common">62</span></td></tr><tr class="k"><td><img src="images/bosses/2334.jpg" alt="" onerror="this.style.visibility='hidden'">Prophet Skitra</td><td>Mar 3, 2020</td><td>2</td><td><span class="q-uncommon">3,029</span></td><td><span class="q-uncommon">969</span></td><td><span class="q-common">61</span></td></tr><tr class="k"><td><img src="images/bosses/2328.jpg" alt="" onerror="this.style.visibility='hidden'">Dark Inquisitor Xanesh</td><td>May 27, 2020</td><td>151</td><td><span class="q-uncommon">2,492</span></td><td><span class="q-uncommon">809</span></td><td><span class="q-uncommon">49</span></td></tr><tr class="k"><td><img src="images/bosses/2333.jpg" alt="" onerror="this.style.visibility='hidden'">The Hivemind</td><td>Mar 31, 2020</td><td>44</td><td><span class="q-uncommon">2,677</span></td><td><span class="q-uncommon">865</span></td><td><span class="q-uncommon">58</span></td></tr><tr class="k"><td><img src="images/bosses/2335.jpg" alt="" onerror="this.style.visibility='hidden'">Shad&#x27;har the Insatiable</td><td>Mar 11, 2020</td><td>9</td><td><span class="q-uncommon">2,185</span></td><td><span class="q-uncommon">725</span></td><td><span class="q-uncommon">51</span></td></tr><tr class="k"><td><img src="images/bosses/2343.jpg" alt="" onerror="this.style.visibility='hidden'">Drest&#x27;agath</td><td>Jun 3, 2020</td><td>15</td><td><span class="q-uncommon">2,601</span></td><td><span class="q-uncommon">858</span></td><td><span class="q-uncommon">50</span></td></tr><tr class="k"><td><img src="images/bosses/2345.jpg" alt="" onerror="this.style.visibility='hidden'">Il&#x27;gynoth, Corruption Reborn</td><td>Jun 30, 2020</td><td>35</td><td><span class="q-uncommon">2,852</span></td><td><span class="q-uncommon">945</span></td><td><span class="q-uncommon">54</span></td></tr><tr class="k"><td><img src="images/bosses/2336.jpg" alt="" onerror="this.style.visibility='hidden'">Vexiona</td><td>Jun 17, 2020</td><td>64</td><td><span class="q-uncommon">2,654</span></td><td><span class="q-uncommon">844</span></td><td><span class="q-uncommon">48</span></td></tr><tr class="k"><td><img src="images/bosses/2331.jpg" alt="" onerror="this.style.visibility='hidden'">Ra-den the Despoiled</td><td>May 26, 2020</td><td>93</td><td><span class="q-uncommon">2,604</span></td><td><span class="q-uncommon">856</span></td><td><span class="q-uncommon">47</span></td></tr><tr class="k"><td><img src="images/bosses/2337.jpg" alt="" onerror="this.style.visibility='hidden'">Carapace of N&#x27;Zoth</td><td>Jul 16, 2020</td><td>96</td><td><span class="q-uncommon">2,522</span></td><td><span class="q-uncommon">857</span></td><td><span class="q-uncommon">48</span></td></tr><tr class="k"><td><img src="images/bosses/2344.jpg" alt="" onerror="this.style.visibility='hidden'">N&#x27;Zoth the Corruptor</td><td>Sep 16, 2020</td><td>373</td><td><span class="q-uncommon">2,450</span></td><td><span class="q-uncommon">900</span></td><td><span class="q-uncommon">50</span></td></tr></tbody>
+                    </table>
+                </details>
+            </div>
+            <div class="season-card" id="season-battle-for-azeroth-season-3">
+                <div class="season-name">Battle for Azeroth Season 3</div>
+                <details class="raid-row">
+                    <summary>
+                        <span class="raid-name">The Eternal Palace</span>
+                        <span class="raid-prog"><b>5/8</b> M · 8/8 H</span>
+                        <span class="ach aotc">Ahead of the Curve</span>
+                        <div class="rank-trio small"><span><small>World</small><span class="q-uncommon">2,887</span></span><span><small>Region</small><span class="q-uncommon">994</span></span><span><small>Realm</small><span class="q-common">62</span></span></div>
+                    </summary>
+                    <table class="boss-table">
+                        <thead><tr><th>Boss</th><th>Mythic kill</th><th>Pulls</th><th>World</th><th>Region</th><th>Realm</th></tr></thead>
+                        <tbody><tr class="k"><td><img src="images/bosses/2298.jpg" alt="" onerror="this.style.visibility='hidden'">Abyssal Commander Sivara</td><td>Aug 13, 2019</td><td>3</td><td><span class="q-rare">1,738</span></td><td><span class="q-rare">597</span></td><td><span class="q-uncommon">32</span></td></tr><tr class="k"><td><img src="images/bosses/2305.jpg" alt="" onerror="this.style.visibility='hidden'">Radiance of Azshara</td><td>Aug 13, 2019</td><td>2</td><td><span class="q-uncommon">2,016</span></td><td><span class="q-rare">683</span></td><td><span class="q-uncommon">38</span></td></tr><tr class="k"><td><img src="images/bosses/2289.jpg" alt="" onerror="this.style.visibility='hidden'">Blackwater Behemoth</td><td>Aug 13, 2019</td><td>3</td><td><span class="q-uncommon">2,307</span></td><td><span class="q-uncommon">794</span></td><td><span class="q-uncommon">45</span></td></tr><tr class="k"><td><img src="images/bosses/2304.jpg" alt="" onerror="this.style.visibility='hidden'">Lady Ashvane</td><td>Sep 25, 2019</td><td>131</td><td><span class="q-uncommon">2,525</span></td><td><span class="q-uncommon">897</span></td><td><span class="q-uncommon">54</span></td></tr><tr class="k"><td><img src="images/bosses/2303.jpg" alt="" onerror="this.style.visibility='hidden'">Orgozoa</td><td>Killed</td><td>130</td><td><span class="q-uncommon">2,657</span></td><td><span class="q-uncommon">902</span></td><td><span class="q-uncommon">56</span></td></tr><tr class=""><td><img src="images/bosses/2311.jpg" alt="" onerror="this.style.visibility='hidden'">The Queen&#x27;s Court</td><td>—</td><td></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr><tr class=""><td><img src="images/bosses/2293.jpg" alt="" onerror="this.style.visibility='hidden'">Za&#x27;qul</td><td>—</td><td></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr><tr class=""><td><img src="images/bosses/2299.jpg" alt="" onerror="this.style.visibility='hidden'">Queen Azshara</td><td>—</td><td></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr></tbody>
+                    </table>
+                </details>
+            </div>
+            <div class="season-card" id="season-battle-for-azeroth-season-2">
+                <div class="season-name">Battle for Azeroth Season 2</div>
+                <details class="raid-row">
+                    <summary>
+                        <span class="raid-name">Battle of Dazar&#x27;alor</span>
+                        <span class="raid-prog"><b>8/9</b> M · 9/9 H</span>
+                        <span class="ach aotc">Ahead of the Curve</span>
+                        <div class="rank-trio small"><span><small>World</small><span class="q-common">5,083</span></span><span><small>Region</small><span class="q-common">1,923</span></span><span><small>Realm</small><span class="q-common">89</span></span></div>
+                    </summary>
+                    <table class="boss-table">
+                        <thead><tr><th>Boss</th><th>Mythic kill</th><th>Pulls</th><th>World</th><th>Region</th><th>Realm</th></tr></thead>
+                        <tbody><tr class="k"><td><img src="images/bosses/2265.jpg" alt="" onerror="this.style.visibility='hidden'">Champion of the Light</td><td>Feb 12, 2019</td><td>1</td><td><span class="q-uncommon">4,252</span></td><td><span class="q-uncommon">1,463</span></td><td><span class="q-common">89</span></td></tr><tr class="k"><td><img src="images/bosses/2266.jpg" alt="" onerror="this.style.visibility='hidden'">Jadefire Masters</td><td>Feb 19, 2019</td><td>12</td><td><span class="q-uncommon">2,583</span></td><td><span class="q-uncommon">848</span></td><td><span class="q-common">63</span></td></tr><tr class="k"><td><img src="images/bosses/2263.jpg" alt="" onerror="this.style.visibility='hidden'">Grong</td><td>Feb 26, 2019</td><td>28</td><td><span class="q-uncommon">3,127</span></td><td><span class="q-uncommon">1,067</span></td><td><span class="q-uncommon">58</span></td></tr><tr class="k"><td><img src="images/bosses/2271.jpg" alt="" onerror="this.style.visibility='hidden'">Opulence</td><td>Mar 27, 2019</td><td>89</td><td><span class="q-uncommon">3,059</span></td><td><span class="q-uncommon">1,042</span></td><td><span class="q-common">66</span></td></tr><tr class="k"><td><img src="images/bosses/2268.jpg" alt="" onerror="this.style.visibility='hidden'">Conclave of the Chosen</td><td>Apr 30, 2019</td><td>47</td><td><span class="q-uncommon">3,358</span></td><td><span class="q-uncommon">1,156</span></td><td><span class="q-common">73</span></td></tr><tr class="k"><td><img src="images/bosses/2272.jpg" alt="" onerror="this.style.visibility='hidden'">King Rastakhan</td><td>May 8, 2019</td><td>38</td><td><span class="q-uncommon">2,961</span></td><td><span class="q-uncommon">1,035</span></td><td><span class="q-common">62</span></td></tr><tr class="k"><td><img src="images/bosses/2276.jpg" alt="" onerror="this.style.visibility='hidden'">Mekkatorque</td><td>Killed</td><td>125</td><td><span class="q-uncommon">3,012</span></td><td><span class="q-uncommon">1,068</span></td><td><span class="q-common">67</span></td></tr><tr class=""><td><img src="images/bosses/2280.jpg" alt="" onerror="this.style.visibility='hidden'">Stormwall Blockade</td><td>—</td><td></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr><tr class="k"><td><img src="images/bosses/2281.jpg" alt="" onerror="this.style.visibility='hidden'">Lady Jaina Proudmoore</td><td>Killed</td><td></td><td><span class="q-common">5,182</span></td><td><span class="q-common">2,186</span></td><td><span class="q-common">92</span></td></tr></tbody>
+                    </table>
+                </details>
+                <details class="raid-row">
+                    <summary>
+                        <span class="raid-name">Crucible of Storms</span>
+                        <span class="raid-prog"><b>0/2</b> M · 2/2 H</span>
+                        <span class="ach aotc">Ahead of the Curve</span>
+                        <div class="rank-trio small none">Not ranked</div>
+                    </summary>
+                    <table class="boss-table">
+                        <thead><tr><th>Boss</th><th>Mythic kill</th><th>Pulls</th><th>World</th><th>Region</th><th>Realm</th></tr></thead>
+                        <tbody><tr class=""><td><img src="images/bosses/2269.jpg" alt="" onerror="this.style.visibility='hidden'">The Restless Cabal</td><td>—</td><td></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr><tr class=""><td><img src="images/bosses/2273.jpg" alt="" onerror="this.style.visibility='hidden'">Uu&#x27;nat, Harbinger of the Void</td><td>—</td><td></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr></tbody>
+                    </table>
+                </details>
+            </div>
+            <div class="season-card" id="season-battle-for-azeroth-season-1">
+                <div class="season-name">Battle for Azeroth Season 1</div>
+                <details class="raid-row">
+                    <summary>
+                        <span class="raid-name">Uldir</span>
+                        <span class="raid-prog"><b>8/8</b> M · 8/8 H</span>
+                        <span class="ach ce">Cutting Edge</span>
+                        <div class="rank-trio small"><span><small>World</small><span class="q-common">5,481</span></span><span><small>Region</small><span class="q-common">2,071</span></span><span><small>Realm</small><span class="q-common">101</span></span></div>
+                    </summary>
+                    <table class="boss-table">
+                        <thead><tr><th>Boss</th><th>Mythic kill</th><th>Pulls</th><th>World</th><th>Region</th><th>Realm</th></tr></thead>
+                        <tbody><tr class="k"><td><img src="images/bosses/2144.jpg" alt="" onerror="this.style.visibility='hidden'">Taloc</td><td>Oct 2, 2018</td><td>1</td><td><span class="q-common">6,791</span></td><td><span class="q-common">2,476</span></td><td><span class="q-common">164</span></td></tr><tr class="k"><td><img src="images/bosses/2141.jpg" alt="" onerror="this.style.visibility='hidden'">MOTHER</td><td>Oct 17, 2018</td><td>13</td><td><span class="q-common">6,354</span></td><td><span class="q-common">2,238</span></td><td><span class="q-common">145</span></td></tr><tr class="k"><td><img src="images/bosses/2128.jpg" alt="" onerror="this.style.visibility='hidden'">Fetid Devourer</td><td>Jan 16, 2019</td><td>59</td><td><span class="q-uncommon">4,025</span></td><td><span class="q-uncommon">1,395</span></td><td><span class="q-common">88</span></td></tr><tr class="k"><td><img src="images/bosses/2136.jpg" alt="" onerror="this.style.visibility='hidden'">Zek&#x27;voz</td><td>Nov 14, 2018</td><td>51</td><td><span class="q-uncommon">4,993</span></td><td><span class="q-common">1,708</span></td><td><span class="q-common">108</span></td></tr><tr class="k"><td><img src="images/bosses/2134.jpg" alt="" onerror="this.style.visibility='hidden'">Vectis</td><td>Dec 12, 2018</td><td>53</td><td><span class="q-uncommon">4,123</span></td><td><span class="q-uncommon">1,382</span></td><td><span class="q-common">87</span></td></tr><tr class="k"><td><img src="images/bosses/2145.jpg" alt="" onerror="this.style.visibility='hidden'">Zul</td><td>May 15, 2024</td><td>1</td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr><tr class="k"><td><img src="images/bosses/2135.jpg" alt="" onerror="this.style.visibility='hidden'">Mythrax</td><td>May 15, 2024</td><td>1</td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr><tr class="k"><td><img src="images/bosses/2122.jpg" alt="" onerror="this.style.visibility='hidden'">G&#x27;huun</td><td>May 15, 2024</td><td>1</td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr></tbody>
+                    </table>
+                </details>
+            </div>
+            <div class="season-card" id="season-legion-season-3">
+                <div class="season-name">Legion Season 3</div>
+                <details class="raid-row">
+                    <summary>
+                        <span class="raid-name">Antorus, the Burning Throne</span>
+                        <span class="raid-prog"><b>5/11</b> M · 11/11 H</span>
+                        <span class="ach aotc">Ahead of the Curve</span>
+                        <div class="rank-trio small"><span><small>World</small><span class="q-common">5,027</span></span><span><small>Region</small><span class="q-common">1,791</span></span><span><small>Realm</small><span class="q-common">125</span></span></div>
+                    </summary>
+                    <table class="boss-table">
+                        <thead><tr><th>Boss</th><th>Mythic kill</th><th>Pulls</th><th>World</th><th>Region</th><th>Realm</th></tr></thead>
+                        <tbody><tr class="k"><td><img src="images/bosses/2076.jpg" alt="" onerror="this.style.visibility='hidden'">Garothi Worldbreaker</td><td>Dec 27, 2017</td><td>13</td><td><span class="q-uncommon">3,914</span></td><td><span class="q-uncommon">1,365</span></td><td><span class="q-common">100</span></td></tr><tr class="k"><td><img src="images/bosses/2074.jpg" alt="" onerror="this.style.visibility='hidden'">Felhounds of Sargeras</td><td>Jan 24, 2018</td><td>19</td><td><span class="q-uncommon">4,884</span></td><td><span class="q-uncommon">1,692</span></td><td><span class="q-common">129</span></td></tr><tr class="k"><td><img src="images/bosses/2070.jpg" alt="" onerror="this.style.visibility='hidden'">Antoran High Command</td><td>Feb 13, 2018</td><td>46</td><td><span class="q-uncommon">4,132</span></td><td><span class="q-uncommon">1,401</span></td><td><span class="q-common">113</span></td></tr><tr class="k"><td><img src="images/bosses/2075.jpg" alt="" onerror="this.style.visibility='hidden'">The Defense of Eonar</td><td>Feb 28, 2018</td><td>16</td><td><span class="q-uncommon">4,466</span></td><td><span class="q-uncommon">1,591</span></td><td><span class="q-common">120</span></td></tr><tr class="k"><td><img src="images/bosses/2064.jpg" alt="" onerror="this.style.visibility='hidden'">Portal Keeper Hasabel</td><td>Apr 25, 2018</td><td>68</td><td><span class="q-uncommon">4,697</span></td><td><span class="q-uncommon">1,644</span></td><td><span class="q-common">116</span></td></tr><tr class=""><td><img src="images/bosses/2082.jpg" alt="" onerror="this.style.visibility='hidden'">Imonar the Soulhunter</td><td>—</td><td>107</td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr><tr class=""><td><img src="images/bosses/2088.jpg" alt="" onerror="this.style.visibility='hidden'">Kin&#x27;garoth</td><td>—</td><td></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr><tr class=""><td><img src="images/bosses/2069.jpg" alt="" onerror="this.style.visibility='hidden'">Varimathras</td><td>—</td><td></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr><tr class=""><td><img src="images/bosses/2073.jpg" alt="" onerror="this.style.visibility='hidden'">The Coven of Shivarra</td><td>—</td><td></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr><tr class=""><td><img src="images/bosses/2063.jpg" alt="" onerror="this.style.visibility='hidden'">Aggramar</td><td>—</td><td></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr><tr class=""><td><img src="images/bosses/2092.jpg" alt="" onerror="this.style.visibility='hidden'">Argus the Unmaker</td><td>—</td><td></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr></tbody>
+                    </table>
+                </details>
+            </div>
+            <div class="season-card" id="season-legion-season-2">
+                <div class="season-name">Legion Season 2</div>
+                <details class="raid-row">
+                    <summary>
+                        <span class="raid-name">Tomb of Sargeras</span>
+                        <span class="raid-prog"><b>4/9</b> M · 9/9 H</span>
+                        <span class="ach aotc">Ahead of the Curve</span>
+                        <div class="rank-trio small"><span><small>World</small><span class="q-common">5,764</span></span><span><small>Region</small><span class="q-common">2,058</span></span><span><small>Realm</small><span class="q-common">137</span></span></div>
+                    </summary>
+                    <table class="boss-table">
+                        <thead><tr><th>Boss</th><th>Mythic kill</th><th>Pulls</th><th>World</th><th>Region</th><th>Realm</th></tr></thead>
+                        <tbody><tr class="k"><td><img src="images/bosses/2032.jpg" alt="" onerror="this.style.visibility='hidden'">Goroth</td><td>Oct 3, 2017</td><td>24</td><td><span class="q-common">6,222</span></td><td><span class="q-common">2,288</span></td><td><span class="q-common">159</span></td></tr><tr class="k"><td><img src="images/bosses/2048.jpg" alt="" onerror="this.style.visibility='hidden'">Demonic Inquisition</td><td>Oct 24, 2017</td><td>12</td><td><span class="q-common">6,142</span></td><td><span class="q-common">2,217</span></td><td><span class="q-common">152</span></td></tr><tr class="k"><td><img src="images/bosses/2036.jpg" alt="" onerror="this.style.visibility='hidden'">Harjatan</td><td>Oct 10, 2017</td><td>17</td><td><span class="q-common">5,742</span></td><td><span class="q-common">2,089</span></td><td><span class="q-common">149</span></td></tr><tr class=""><td><img src="images/bosses/2037.jpg" alt="" onerror="this.style.visibility='hidden'">Mistress Sassz&#x27;ine</td><td>—</td><td></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr><tr class="k"><td><img src="images/bosses/2050.jpg" alt="" onerror="this.style.visibility='hidden'">Sisters of the Moon</td><td>Killed</td><td>31</td><td><span class="q-common">5,587</span></td><td><span class="q-common">1,988</span></td><td><span class="q-common">135</span></td></tr><tr class=""><td><img src="images/bosses/2054.jpg" alt="" onerror="this.style.visibility='hidden'">The Desolate Host</td><td>—</td><td></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr><tr class=""><td><img src="images/bosses/2052.jpg" alt="" onerror="this.style.visibility='hidden'">Maiden of Vigilance</td><td>—</td><td></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr><tr class=""><td><img src="images/bosses/2038.jpg" alt="" onerror="this.style.visibility='hidden'">Fallen Avatar</td><td>—</td><td></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr><tr class=""><td><img src="images/bosses/2051.jpg" alt="" onerror="this.style.visibility='hidden'">Kil&#x27;jaeden</td><td>—</td><td></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr></tbody>
+                    </table>
+                </details>
+            </div>
+            <div class="season-card" id="season-legion-season-1">
+                <div class="season-name">Legion Season 1</div>
+                <details class="raid-row">
+                    <summary>
+                        <span class="raid-name">Emerald Nightmare</span>
+                        <span class="raid-prog"><b>7/7</b> M · 7/7 H</span>
+                        <span class="ach ce">Cutting Edge</span>
+                        <div class="rank-trio small"><span><small>World</small><span class="q-common">14,485</span></span><span><small>Region</small><span class="q-common">5,654</span></span><span><small>Realm</small><span class="q-common">272</span></span></div>
+                    </summary>
+                    <table class="boss-table">
+                        <thead><tr><th>Boss</th><th>Mythic kill</th><th>Pulls</th><th>World</th><th>Region</th><th>Realm</th></tr></thead>
+                        <tbody><tr class="k"><td><img src="images/bosses/1853.jpg" alt="" onerror="this.style.visibility='hidden'">Nythendra</td><td>Oct 4, 2016</td><td>47</td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr><tr class="k"><td><img src="images/bosses/1873.jpg" alt="" onerror="this.style.visibility='hidden'">Il&#x27;gynoth, The Heart of Corruption</td><td>Oct 27, 2016</td><td>63</td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr><tr class="k"><td><img src="images/bosses/1876.jpg" alt="" onerror="this.style.visibility='hidden'">Elerethe Renferal</td><td>Oct 6, 2016</td><td>45</td><td><span class="q-common">10,519</span></td><td><span class="q-common">3,859</span></td><td><span class="q-common">225</span></td></tr><tr class="k"><td><img src="images/bosses/1841.jpg" alt="" onerror="this.style.visibility='hidden'">Ursoc</td><td>Oct 25, 2016</td><td>52</td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr><tr class="k"><td><img src="images/bosses/1854.jpg" alt="" onerror="this.style.visibility='hidden'">Dragons of Nightmare</td><td>Oct 19, 2016</td><td>47</td><td><span class="q-common">10,600</span></td><td><span class="q-common">3,892</span></td><td><span class="q-common">226</span></td></tr><tr class="k"><td><img src="images/bosses/1877.jpg" alt="" onerror="this.style.visibility='hidden'">Cenarius</td><td>Nov 15, 2016</td><td>106</td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr><tr class="k"><td><img src="images/bosses/1864.jpg" alt="" onerror="this.style.visibility='hidden'">Xavius</td><td>Nov 16, 2016</td><td>21</td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr></tbody>
+                    </table>
+                </details>
+                <details class="raid-row">
+                    <summary>
+                        <span class="raid-name">Trial of Valor</span>
+                        <span class="raid-prog"><b>2/3</b> M · 3/3 H</span>
+                        <span class="ach aotc">Ahead of the Curve</span>
+                        <div class="rank-trio small none">Not ranked</div>
+                    </summary>
+                    <table class="boss-table">
+                        <thead><tr><th>Boss</th><th>Mythic kill</th><th>Pulls</th><th>World</th><th>Region</th><th>Realm</th></tr></thead>
+                        <tbody><tr class="k"><td><img src="images/bosses/1958.jpg" alt="" onerror="this.style.visibility='hidden'">Odyn</td><td>Jan 4, 2017</td><td>85</td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr><tr class="k"><td><img src="images/bosses/1962.jpg" alt="" onerror="this.style.visibility='hidden'">Guarm</td><td>Jan 11, 2017</td><td>43</td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr><tr class=""><td><img src="images/bosses/2008.jpg" alt="" onerror="this.style.visibility='hidden'">Helya</td><td>—</td><td></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr></tbody>
+                    </table>
+                </details>
+                <details class="raid-row">
+                    <summary>
+                        <span class="raid-name">The Nighthold</span>
+                        <span class="raid-prog"><b>9/10</b> M · 10/10 H</span>
+                        <span class="ach aotc">Ahead of the Curve</span>
+                        <div class="rank-trio small"><span><small>World</small><span class="q-uncommon">3,658</span></span><span><small>Region</small><span class="q-uncommon">1,292</span></span><span><small>Realm</small><span class="q-common">82</span></span></div>
+                    </summary>
+                    <table class="boss-table">
+                        <thead><tr><th>Boss</th><th>Mythic kill</th><th>Pulls</th><th>World</th><th>Region</th><th>Realm</th></tr></thead>
+                        <tbody><tr class="k"><td><img src="images/bosses/1849.jpg" alt="" onerror="this.style.visibility='hidden'">Skorpyron</td><td>Jan 26, 2017</td><td>6</td><td><span class="q-common">11,699</span></td><td><span class="q-common">4,356</span></td><td><span class="q-common">268</span></td></tr><tr class="k"><td><img src="images/bosses/1865.jpg" alt="" onerror="this.style.visibility='hidden'">Chronomatic Anomaly</td><td>Feb 8, 2017</td><td>59</td><td><span class="q-common">9,900</span></td><td><span class="q-common">3,571</span></td><td><span class="q-common">225</span></td></tr><tr class="k"><td><img src="images/bosses/1867.jpg" alt="" onerror="this.style.visibility='hidden'">Trilliax</td><td>Feb 8, 2017</td><td>9</td><td><span class="q-common">9,397</span></td><td><span class="q-common">3,359</span></td><td><span class="q-common">214</span></td></tr><tr class="k"><td><img src="images/bosses/1871.jpg" alt="" onerror="this.style.visibility='hidden'">Spellblade Aluriel</td><td>Killed</td><td>13</td><td><span class="q-common">6,590</span></td><td><span class="q-common">2,393</span></td><td><span class="q-common">161</span></td></tr><tr class="k"><td><img src="images/bosses/1862.jpg" alt="" onerror="this.style.visibility='hidden'">Tichondrius</td><td>Killed</td><td></td><td><span class="q-common">6,182</span></td><td><span class="q-common">2,258</span></td><td><span class="q-common">153</span></td></tr><tr class="k"><td><img src="images/bosses/1863.jpg" alt="" onerror="this.style.visibility='hidden'">Star Augur Etraeus</td><td>Killed</td><td></td><td><span class="q-uncommon">4,314</span></td><td><span class="q-uncommon">1,528</span></td><td><span class="q-common">101</span></td></tr><tr class="k"><td><img src="images/bosses/1842.jpg" alt="" onerror="this.style.visibility='hidden'">Krosus</td><td>Mar 1, 2017</td><td>112</td><td><span class="q-common">6,698</span></td><td><span class="q-common">2,383</span></td><td><span class="q-common">177</span></td></tr><tr class="k"><td><img src="images/bosses/1886.jpg" alt="" onerror="this.style.visibility='hidden'">High Botanist Tel&#x27;arn</td><td>Killed</td><td>13</td><td><span class="q-uncommon">4,957</span></td><td><span class="q-common">1,723</span></td><td><span class="q-common">120</span></td></tr><tr class="k"><td><img src="images/bosses/1872.jpg" alt="" onerror="this.style.visibility='hidden'">Grand Magistrix Elisande</td><td>Killed</td><td></td><td><span class="q-uncommon">4,289</span></td><td><span class="q-uncommon">1,510</span></td><td><span class="q-common">97</span></td></tr><tr class=""><td><img src="images/bosses/1866.jpg" alt="" onerror="this.style.visibility='hidden'">Gul&#x27;dan</td><td>—</td><td></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr></tbody>
+                    </table>
+                </details>
+            </div>
+            <div class="season-card" id="season-warlords-of-draenor-season-3">
+                <div class="season-name">Warlords of Draenor Season 3</div>
+                <details class="raid-row">
+                    <summary>
+                        <span class="raid-name">Hellfire Citadel</span>
+                        <span class="raid-prog"><b>9/13</b> M · 13/13 H</span>
+                        <span class="ach aotc">Ahead of the Curve</span>
+                        <div class="rank-trio small none">Not ranked</div>
+                    </summary>
+                    <table class="boss-table">
+                        <thead><tr><th>Boss</th><th>Mythic kill</th><th>Pulls</th><th>World</th><th>Region</th><th>Realm</th></tr></thead>
+                        <tbody><tr class="k"><td><img src="images/bosses/1778.jpg" alt="" onerror="this.style.visibility='hidden'">Hellfire Assault</td><td>Aug 19, 2015</td><td>17</td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr><tr class="k"><td><img src="images/bosses/1785.jpg" alt="" onerror="this.style.visibility='hidden'">Iron Reaver</td><td>Aug 26, 2015</td><td>29</td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr><tr class="k"><td><img src="images/bosses/1787.jpg" alt="" onerror="this.style.visibility='hidden'">Kormrok</td><td>Sep 2, 2015</td><td>39</td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr><tr class="k"><td><img src="images/bosses/1798.jpg" alt="" onerror="this.style.visibility='hidden'">Hellfire High Council</td><td>Sep 9, 2015</td><td>46</td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr><tr class="k"><td><img src="images/bosses/1786.jpg" alt="" onerror="this.style.visibility='hidden'">Kilrogg Deadeye</td><td>Sep 10, 2015</td><td>23</td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr><tr class="k"><td><img src="images/bosses/1783.jpg" alt="" onerror="this.style.visibility='hidden'">Gorefiend</td><td>Sep 24, 2015</td><td>100</td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr><tr class="k"><td><img src="images/bosses/1788.jpg" alt="" onerror="this.style.visibility='hidden'">Shadow-Lord Iskar</td><td>Oct 1, 2015</td><td>45</td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr><tr class="k"><td><img src="images/bosses/1777.jpg" alt="" onerror="this.style.visibility='hidden'">Fel Lord Zakuun</td><td>Feb 4, 2016</td><td>63</td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr><tr class=""><td><img src="images/bosses/1800.jpg" alt="" onerror="this.style.visibility='hidden'">Xhul&#x27;horac</td><td>—</td><td></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr><tr class="k"><td><img src="images/bosses/1794.jpg" alt="" onerror="this.style.visibility='hidden'">Socrethar the Eternal</td><td>Sep 30, 2015</td><td>17</td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr><tr class=""><td><img src="images/bosses/1784.jpg" alt="" onerror="this.style.visibility='hidden'">Tyrant Velhari</td><td>—</td><td></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr><tr class=""><td><img src="images/bosses/1795.jpg" alt="" onerror="this.style.visibility='hidden'">Mannoroth</td><td>—</td><td></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr><tr class=""><td><img src="images/bosses/1799.jpg" alt="" onerror="this.style.visibility='hidden'">Archimonde</td><td>—</td><td></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr></tbody>
+                    </table>
+                </details>
+            </div>
+            <div class="season-card" id="season-warlords-of-draenor-season-2">
+                <div class="season-name">Warlords of Draenor Season 2</div>
+                <details class="raid-row">
+                    <summary>
+                        <span class="raid-name">Blackrock Foundry</span>
+                        <span class="raid-prog"><b>1/10</b> M · 10/10 H</span>
+                        <span class="ach aotc">Ahead of the Curve</span>
+                        <div class="rank-trio small none">Not ranked</div>
+                    </summary>
+                    <table class="boss-table">
+                        <thead><tr><th>Boss</th><th>Mythic kill</th><th>Pulls</th><th>World</th><th>Region</th><th>Realm</th></tr></thead>
+                        <tbody><tr class=""><td><img src="images/bosses/1691.jpg" alt="" onerror="this.style.visibility='hidden'">Gruul</td><td>—</td><td>9</td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr><tr class=""><td><img src="images/bosses/1696.jpg" alt="" onerror="this.style.visibility='hidden'">Oregorger the Devourer</td><td>—</td><td>21</td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr><tr class=""><td><img src="images/bosses/1690.jpg" alt="" onerror="this.style.visibility='hidden'">Blast Furnace</td><td>—</td><td></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr><tr class=""><td><img src="images/bosses/1693.jpg" alt="" onerror="this.style.visibility='hidden'">Hans&#x27;gar &amp; Franzok</td><td>—</td><td>29</td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr><tr class=""><td><img src="images/bosses/1689.jpg" alt="" onerror="this.style.visibility='hidden'">Flamebender Ka&#x27;graz</td><td>—</td><td></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr><tr class=""><td><img src="images/bosses/1713.jpg" alt="" onerror="this.style.visibility='hidden'">Kromog, Legend of the Mountain</td><td>—</td><td></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr><tr class="k"><td><img src="images/bosses/1694.jpg" alt="" onerror="this.style.visibility='hidden'">Beastlord Darmac</td><td>Apr 14, 2015</td><td>14</td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr><tr class=""><td><img src="images/bosses/1692.jpg" alt="" onerror="this.style.visibility='hidden'">Operator Thogar</td><td>—</td><td></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr><tr class=""><td><img src="images/bosses/1695.jpg" alt="" onerror="this.style.visibility='hidden'">The Iron Maidens</td><td>—</td><td></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr><tr class=""><td><img src="images/bosses/1704.jpg" alt="" onerror="this.style.visibility='hidden'">Blackhand</td><td>—</td><td></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr></tbody>
+                    </table>
+                </details>
+            </div>
+            <div class="season-card" id="season-warlords-of-draenor-season-1">
+                <div class="season-name">Warlords of Draenor Season 1</div>
+                <details class="raid-row">
+                    <summary>
+                        <span class="raid-name">Highmaul</span>
+                        <span class="raid-prog"><b>7/7</b> M · 1/7 H</span>
+                        <span class="ach ce">Cutting Edge</span>
+                        <div class="rank-trio small none">Not ranked</div>
+                    </summary>
+                    <table class="boss-table">
+                        <thead><tr><th>Boss</th><th>Mythic kill</th><th>Pulls</th><th>World</th><th>Region</th><th>Realm</th></tr></thead>
+                        <tbody><tr class="k"><td><img src="images/bosses/1721.jpg" alt="" onerror="this.style.visibility='hidden'">Kargath Bladefist</td><td>Aug 12, 2015</td><td>1</td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr><tr class="k"><td><img src="images/bosses/1706.jpg" alt="" onerror="this.style.visibility='hidden'">The Butcher</td><td>Aug 12, 2015</td><td>1</td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr><tr class="k"><td><img src="images/bosses/1722.jpg" alt="" onerror="this.style.visibility='hidden'">Tectus, The Living Mountain</td><td>Aug 12, 2015</td><td>2</td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr><tr class="k"><td><img src="images/bosses/1720.jpg" alt="" onerror="this.style.visibility='hidden'">Brackenspore</td><td>Aug 12, 2015</td><td>1</td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr><tr class="k"><td><img src="images/bosses/1719.jpg" alt="" onerror="this.style.visibility='hidden'">Twin Ogron</td><td>Aug 12, 2015</td><td>1</td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr><tr class="k"><td><img src="images/bosses/1723.jpg" alt="" onerror="this.style.visibility='hidden'">Ko&#x27;ragh</td><td>Aug 12, 2015</td><td>1</td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr><tr class="k"><td><img src="images/bosses/1705.jpg" alt="" onerror="this.style.visibility='hidden'">Imperator Mar&#x27;gok</td><td>Aug 12, 2015</td><td>3</td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td><td><span class="q-common">–</span></td></tr></tbody>
+                    </table>
+                </details>
+            </div>
+    </div>
+    <p class="prog-updated">Ranks and progression updated Oct 22, 2026</p>
+
         </div>
     </main>
 
     <footer class="footer">
         <div class="social-icons">
             <a href="https://twitter.com/HKCSargeras" target="_blank" title="Twitter/X">
-                <img src="images/icons8-x-100.png" alt="Twitter/X" class="social-icon">
+                <img src="images/social/x.svg" alt="Twitter/X" class="social-icon">
+            </a>
+            <a href="https://bsky.app/profile/hkcsargeras.bsky.social" target="_blank" title="BlueSky">
+                <img src="images/social/bluesky.svg" alt="BlueSky" class="social-icon">
             </a>
             <a href="https://www.instagram.com/hkcsargeras/" target="_blank" title="Instagram">
-                <img src="images/icons8-instagram-100.png" alt="Instagram" class="social-icon">
+                <img src="images/social/instagram.svg" alt="Instagram" class="social-icon">
             </a>
             <a href="https://www.threads.net/@hkcsargeras" target="_blank" title="Threads">
-                <img src="images/icons8-threads-100.png" alt="Threads" class="social-icon">
+                <img src="images/social/threads.svg" alt="Threads" class="social-icon">
+            </a>
+            <a href="https://www.twitch.tv/hkcsargeras" target="_blank" title="Twitch">
+                <img src="images/social/twitch.svg" alt="Twitch" class="social-icon">
             </a>
             <a href="https://www.youtube.com/@hellokittyclub" target="_blank" title="YouTube">
-                <img src="images/icons8-youtube-100.png" alt="YouTube" class="social-icon">
+                <img src="images/social/youtube.svg" alt="YouTube" class="social-icon">
             </a>
             <a href="https://discord.gg/5SM3q3UE7P" target="_blank" title="Discord">
-                <img src="images/icons8-discord-100.png" alt="Discord" class="social-icon">
+                <img src="images/social/discord.svg" alt="Discord" class="social-icon">
             </a>
         </div>
         <div class="footer-bottom">
-            © 2005-2026 by HKC Sargeras. All rights reserved.<br>
+            © 2006-2026 by HKC Sargeras. All rights reserved.<br>
             Art designed by <a href="https://lilena.carrd.co/" target="_blank">LilenaTalem</a> & <a href="https://vgen.co/boredoreo" target="_blank">Salmon</a>.
         </div>
+        <nav class="footer-legal" aria-label="Policies"><a href="terms.html">Terms &amp; Conditions</a> · <a href="privacy.html">Privacy Policy</a> · <a href="cookies.html">Cookie Policy</a> · <a href="store-policy.html">Store Policy</a> · <a href="accessibility.html">Accessibility</a> · <a href="ai-disclaimer.html">AI Disclaimer</a></nav>
     </footer>
+    <script src="page-timeline.js?v=1"></script>
+    <script src="lightbox.js?v=5"></script>
 </body>
 </html>

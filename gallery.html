@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Hello Kitty Club</title>
+    <link rel="stylesheet" href="styles.css?v=18">
+    <style>
+        main {
+            max-width: 1000px;
+            margin: 80px auto 0;
+            padding: 0 20px 40px;
+            display: block;
+        }
+        
+        .page-title {
+            font-size: 2.5rem;
+            color: #d4af37;
+            text-align: center;
+            margin: 40px 0;
+            letter-spacing: 2px;
+        }
+        
+        .content-box {
+            background: rgba(45, 27, 78, 0.5);
+            border: 2px solid #d4af37;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 40px;
+            color: #f4e4b8;
+            line-height: 1.8;
+        }
+        
+        .content-box h2 {
+            color: #d4af37;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .content-box p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        .tier-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .tier-card {
+            background: rgba(10, 14, 39, 0.8);
+            border: 2px solid #b8860b;
+            border-radius: 8px;
+            padding: 25px;
+        }
+        
+        .tier-card h3 {
+            color: #d4af37;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+        
+        .tier-card p {
+            color: #f4e4b8;
+            line-height: 1.6;
+            font-size: 1rem;
+        }
+        
+        .join-section {
+            text-align: center;
+            margin: 40px 0;
+        }
+        
+        .apply-btn {
+            background: linear-gradient(135deg, #d4af37 0%, #f4e4b8 50%, #d4af37 100%);
+            color: #050810;
+            padding: 18px 50px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 8px;
+            border: 2px solid #d4af37;
+            display: inline-block;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        
+        .apply-btn:hover {
+            transform: translateY(-2px);
+        }
+        
+        .contact-box {
+            background: rgba(10, 14, 39, 0.8);
+            border: 1px solid #b8860b;
+            border-radius: 4px;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: left;
+        }
+        
+        .contact-box p {
+            margin-bottom: 8px;
+            color: #f4e4b8;
+        }
+        
+        .contact-box strong {
+            color: #d4af37;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo-section" title="Home">
+                <img src="images/XalatathKitty.jpg" alt="HKC Logo" class="nav-logo">
+                <div class="logo-text">
+                    <div class="guild-name">Hello Kitty Club</div>
+                    <div class="server-name">Sargeras US</div>
+                </div>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="progression.html">Progression</a></li>
+                <li><a href="members.html">Members</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="policies.html">Policies</a></li>
+                <li><a href="coming-soon.html">Guild Tools</a></li>
+                <li><a href="https://arma.gg/collections/hello-kitty-club" target="_blank" class="nav-store"><img src="images/StoreLogo.jpg" alt="Store">Store</a></li>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeGvWhN58axBGpihLhEaJ8JaHqRQLBWti2DVzmFm7hB1NTozg/viewform" target="_blank" class="nav-apply">Apply Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="gallery-main story-main with-timeline">
+        <aside class="history-timeline page-timeline" aria-label="Gallery navigation">
+            <div class="timeline-track"><div class="timeline-fill"></div></div>
+            <ol class="timeline-list">
+                <li class="tl-era" data-sec="guild-history" data-tab="images">
+                    <a href="#guild-history" class="tl-era-link"><span class="tl-icon dot"><span class="tl-dot"></span></span><span class="tl-name">Guild History</span></a>
+                    <ol class="tl-subs">
+                        <li><a href="#g-the-burning-crusade" data-target="g-the-burning-crusade" class="tl-sub-icon"><span class="sub-ic"><img src="images/eras/icon-the-burning-crusade.gif" alt=""></span>The Burning Crusade</a></li>
+                        <li><a href="#g-wrath-of-the-lich-king" data-target="g-wrath-of-the-lich-king" class="tl-sub-icon"><span class="sub-ic"><img src="images/eras/icon-wrath-of-the-lich-king.gif" alt=""></span>Wrath of the Lich King</a></li>
+                        <li><a href="#g-cataclysm" data-target="g-cataclysm" class="tl-sub-icon"><span class="sub-ic"><img src="images/eras/icon-cataclysm.gif" alt=""></span>Cataclysm</a></li>
+                        <li><a href="#g-mists-of-pandaria" data-target="g-mists-of-pandaria" class="tl-sub-icon"><span class="sub-ic"><img src="images/eras/icon-mists-of-pandaria.png" alt=""></span>Mists of Pandaria</a></li>
+                        <li><a href="#g-warlords-of-draenor" data-target="g-warlords-of-draenor" class="tl-sub-icon"><span class="sub-ic"><img src="images/eras/icon-warlords-of-draenor.png" alt=""></span>Warlords of Draenor</a></li>
+                        <li><a href="#g-legion" data-target="g-legion" class="tl-sub-icon"><span class="sub-ic"><img src="images/eras/icon-legion.png" alt=""></span>Legion</a></li>
+                        <li><a href="#g-battle-for-azeroth" data-target="g-battle-for-azeroth" class="tl-sub-icon"><span class="sub-ic"><img src="images/eras/icon-battle-for-azeroth.png" alt=""></span>Battle for Azeroth</a></li>
+                        <li><a href="#g-shadowlands" data-target="g-shadowlands" class="tl-sub-icon"><span class="sub-ic"><img src="images/eras/icon-shadowlands.png" alt=""></span>Shadowlands</a></li>
+                        <li><a href="#g-dragonflight" data-target="g-dragonflight" class="tl-sub-icon"><span class="sub-ic"><img src="images/eras/icon-dragonflight.png" alt=""></span>Dragonflight</a></li>
+                        <li><a href="#g-hkc-blizzcon" data-target="g-hkc-blizzcon" class="tl-sub-icon"><span class="sub-ic"><img src="images/eras/blizzcon-logo.webp" alt=""></span>HKC @ Blizzcon</a></li>
+                    </ol>
+                </li>
+                <li class="tl-era" data-sec="first-ten-years" data-tab="images">
+                    <a href="#first-ten-years" class="tl-era-link"><span class="tl-icon dot"><span class="tl-dot"></span></span><span class="tl-name">Boss Kills</span></a>
+                </li>
+                <li class="tl-era" data-sec="panel-videos" data-tab="videos">
+                    <a href="#panel-videos" class="tl-era-link"><span class="tl-icon dot"><span class="tl-dot"></span></span><span class="tl-name">Videos</span></a>
+                    <ol class="tl-subs">
+                        <li><a href="#video-1" data-target="video-1">Impossible Kills</a></li>
+                        <li><a href="#video-2" data-target="video-2">N'Zoth the Corruptor - Cutting Edge</a></li>
+                        <li><a href="#video-3" data-target="video-3">Kel'Thuzad - "The Immortal" attempt</a></li>
+                    </ol>
+                </li>
+            </ol>
+        </aside>
+        <div class="story-body">
+        <h1 class="page-title" id="gallery-top">Gallery</h1>
+
+        <div class="gallery-tabs" role="tablist" aria-label="Gallery type">
+            <button type="button" role="tab" id="tab-images" aria-controls="panel-images" aria-selected="true" class="active" data-tab="images">Images</button>
+            <button type="button" role="tab" id="tab-videos" aria-controls="panel-videos" aria-selected="false" data-tab="videos">Videos</button>
+        </div>
+
+        <section class="gallery-panel" id="panel-images" role="tabpanel" aria-labelledby="tab-images">
+        <div class="era-nav" id="guild-history">
+            <a href="#g-the-burning-crusade" title="The Burning Crusade" style="background-image: url('images/eras/the-burning-crusade-art.webp')"><img src="images/eras/the-burning-crusade-logo.webp" alt="The Burning Crusade"></a>
+            <a href="#g-wrath-of-the-lich-king" title="Wrath of the Lich King" style="background-image: url('images/eras/wrath-of-the-lich-king-art.webp')"><img src="images/eras/wrath-of-the-lich-king-logo.webp" alt="Wrath of the Lich King"></a>
+            <a href="#g-cataclysm" title="Cataclysm" style="background-image: url('images/eras/cataclysm-art.webp')"><img src="images/eras/cataclysm-logo.webp" alt="Cataclysm"></a>
+            <a href="#g-mists-of-pandaria" title="Mists of Pandaria" style="background-image: url('images/eras/mists-of-pandaria-art.webp')"><img src="images/eras/mists-of-pandaria-logo.webp" alt="Mists of Pandaria"></a>
+            <a href="#g-warlords-of-draenor" title="Warlords of Draenor" style="background-image: url('images/eras/warlords-of-draenor-art.webp')"><img src="images/eras/warlords-of-draenor-logo.webp" alt="Warlords of Draenor"></a>
+            <a href="#g-legion" title="Legion" style="background-image: url('images/eras/legion-art.webp')"><img src="images/eras/legion-logo.webp" alt="Legion"></a>
+            <a href="#g-battle-for-azeroth" title="Battle for Azeroth" style="background-image: url('images/eras/battle-for-azeroth-art.webp')"><img src="images/eras/battle-for-azeroth-logo.webp" alt="Battle for Azeroth"></a>
+            <a href="#g-shadowlands" title="Shadowlands" style="background-image: url('images/eras/shadowlands-art.webp')"><img src="images/eras/shadowlands-logo.webp" alt="Shadowlands"></a>
+            <a href="#g-dragonflight" title="Dragonflight" style="background-image: url('images/eras/dragonflight-art.webp')"><img src="images/eras/dragonflight-logo.webp" alt="Dragonflight"></a>
+            <a href="#g-hkc-blizzcon" title="HKC @ Blizzcon" style="background-image: url('images/eras/blizzcon-art.webp')"><img src="images/eras/blizzcon-logo.webp" alt="HKC @ Blizzcon"></a>
+        </div>
+        <h3 class="gallery-era" id="g-the-burning-crusade">The Burning Crusade</h3>
+            <div class="photo-grid">
+                <a href="images/wix/history/the-burning-crusade-the-melona-aurongodx-years-01.jpg"><img src="images/wix/history/the-burning-crusade-the-melona-aurongodx-years-01.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/the-burning-crusade-the-melona-aurongodx-years-02.jpg"><img src="images/wix/history/the-burning-crusade-the-melona-aurongodx-years-02.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/the-burning-crusade-the-melona-aurongodx-years-03.jpg"><img src="images/wix/history/the-burning-crusade-the-melona-aurongodx-years-03.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/the-burning-crusade-the-melona-aurongodx-years-04.jpg"><img src="images/wix/history/the-burning-crusade-the-melona-aurongodx-years-04.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/the-burning-crusade-the-melona-aurongodx-years-05.jpg"><img src="images/wix/history/the-burning-crusade-the-melona-aurongodx-years-05.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/the-burning-crusade-the-melona-aurongodx-years-06.jpg"><img src="images/wix/history/the-burning-crusade-the-melona-aurongodx-years-06.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/the-burning-crusade-the-melona-aurongodx-years-07.jpg"><img src="images/wix/history/the-burning-crusade-the-melona-aurongodx-years-07.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/the-burning-crusade-the-melona-aurongodx-years-08.jpg"><img src="images/wix/history/the-burning-crusade-the-melona-aurongodx-years-08.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/the-burning-crusade-the-melona-aurongodx-years-09.jpg"><img src="images/wix/history/the-burning-crusade-the-melona-aurongodx-years-09.jpg" alt="" loading="lazy"></a>
+            </div>
+        <h3 class="gallery-era" id="g-wrath-of-the-lich-king">Wrath of the Lich King</h3>
+            <div class="photo-grid">
+                <a href="images/wix/history/wrath-of-the-lich-king-the-aurongodx-warant-years-01.jpg"><img src="images/wix/history/wrath-of-the-lich-king-the-aurongodx-warant-years-01.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/wrath-of-the-lich-king-the-aurongodx-warant-years-02.jpg"><img src="images/wix/history/wrath-of-the-lich-king-the-aurongodx-warant-years-02.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/wrath-of-the-lich-king-the-aurongodx-warant-years-03.jpg"><img src="images/wix/history/wrath-of-the-lich-king-the-aurongodx-warant-years-03.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/wrath-of-the-lich-king-the-aurongodx-warant-years-04.jpg"><img src="images/wix/history/wrath-of-the-lich-king-the-aurongodx-warant-years-04.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/wrath-of-the-lich-king-the-aurongodx-warant-years-05.jpg"><img src="images/wix/history/wrath-of-the-lich-king-the-aurongodx-warant-years-05.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/wrath-of-the-lich-king-the-aurongodx-warant-years-06.jpg"><img src="images/wix/history/wrath-of-the-lich-king-the-aurongodx-warant-years-06.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/wrath-of-the-lich-king-the-aurongodx-warant-years-07.jpg"><img src="images/wix/history/wrath-of-the-lich-king-the-aurongodx-warant-years-07.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/wrath-of-the-lich-king-the-aurongodx-warant-years-08.jpg"><img src="images/wix/history/wrath-of-the-lich-king-the-aurongodx-warant-years-08.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/wrath-of-the-lich-king-the-aurongodx-warant-years-09.jpg"><img src="images/wix/history/wrath-of-the-lich-king-the-aurongodx-warant-years-09.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/wrath-of-the-lich-king-the-aurongodx-warant-years-10.png"><img src="images/wix/history/wrath-of-the-lich-king-the-aurongodx-warant-years-10.png" alt="" loading="lazy"></a>
+            </div>
+        <h3 class="gallery-era" id="g-cataclysm">Cataclysm</h3>
+            <div class="photo-grid">
+                <a href="images/wix/history/cataclysm-the-warant-beastcloud-years-01.png"><img src="images/wix/history/cataclysm-the-warant-beastcloud-years-01.png" alt="" loading="lazy"></a>
+                <a href="images/wix/history/cataclysm-the-warant-beastcloud-years-02.jpg"><img src="images/wix/history/cataclysm-the-warant-beastcloud-years-02.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/cataclysm-the-warant-beastcloud-years-03.png"><img src="images/wix/history/cataclysm-the-warant-beastcloud-years-03.png" alt="" loading="lazy"></a>
+                <a href="images/wix/history/cataclysm-the-warant-beastcloud-years-04.jpg"><img src="images/wix/history/cataclysm-the-warant-beastcloud-years-04.jpg" alt="" loading="lazy"></a>
+            </div>
+        <h3 class="gallery-era" id="g-mists-of-pandaria">Mists of Pandaria</h3>
+            <div class="photo-grid">
+                <a href="images/wix/history/mists-of-pandaria-aurongodx-returns-01.jpg"><img src="images/wix/history/mists-of-pandaria-aurongodx-returns-01.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/mists-of-pandaria-aurongodx-returns-02.jpg"><img src="images/wix/history/mists-of-pandaria-aurongodx-returns-02.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/mists-of-pandaria-aurongodx-returns-03.jpg"><img src="images/wix/history/mists-of-pandaria-aurongodx-returns-03.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/mists-of-pandaria-the-hkc-revival-01.jpg"><img src="images/wix/history/mists-of-pandaria-the-hkc-revival-01.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/mists-of-pandaria-the-hkc-revival-02.jpg"><img src="images/wix/history/mists-of-pandaria-the-hkc-revival-02.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/mists-of-pandaria-the-hkc-revival-03.jpg"><img src="images/wix/history/mists-of-pandaria-the-hkc-revival-03.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/mists-of-pandaria-the-hkc-revival-04.jpg"><img src="images/wix/history/mists-of-pandaria-the-hkc-revival-04.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/mists-of-pandaria-the-hkc-revival-05.jpg"><img src="images/wix/history/mists-of-pandaria-the-hkc-revival-05.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/mists-of-pandaria-the-hkc-revival-06.jpg"><img src="images/wix/history/mists-of-pandaria-the-hkc-revival-06.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/mists-of-pandaria-the-hkc-25m-raid-resurgence-01.jpg"><img src="images/wix/history/mists-of-pandaria-the-hkc-25m-raid-resurgence-01.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/mists-of-pandaria-the-hkc-25m-raid-resurgence-02.jpg"><img src="images/wix/history/mists-of-pandaria-the-hkc-25m-raid-resurgence-02.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/mists-of-pandaria-the-hkc-25m-raid-resurgence-03.jpg"><img src="images/wix/history/mists-of-pandaria-the-hkc-25m-raid-resurgence-03.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/mists-of-pandaria-the-content-lull-01.jpg"><img src="images/wix/history/mists-of-pandaria-the-content-lull-01.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/mists-of-pandaria-the-content-lull-02.jpg"><img src="images/wix/history/mists-of-pandaria-the-content-lull-02.jpg" alt="" loading="lazy"></a>
+            </div>
+        <h3 class="gallery-era" id="g-warlords-of-draenor">Warlords of Draenor</h3>
+            <div class="photo-grid">
+                <a href="images/wix/history/warlords-of-draenor-all-hype-no-content-01.jpg"><img src="images/wix/history/warlords-of-draenor-all-hype-no-content-01.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/warlords-of-draenor-all-hype-no-content-02.jpg"><img src="images/wix/history/warlords-of-draenor-all-hype-no-content-02.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/warlords-of-draenor-all-hype-no-content-03.jpg"><img src="images/wix/history/warlords-of-draenor-all-hype-no-content-03.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/warlords-of-draenor-raiding-the-warlords-01.jpg"><img src="images/wix/history/warlords-of-draenor-raiding-the-warlords-01.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/warlords-of-draenor-raiding-the-warlords-02.jpg"><img src="images/wix/history/warlords-of-draenor-raiding-the-warlords-02.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/warlords-of-draenor-raiding-the-warlords-03.jpg"><img src="images/wix/history/warlords-of-draenor-raiding-the-warlords-03.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/warlords-of-draenor-raiding-the-warlords-04.jpg"><img src="images/wix/history/warlords-of-draenor-raiding-the-warlords-04.jpg" alt="" loading="lazy"></a>
+            </div>
+        <h3 class="gallery-era" id="g-legion">Legion</h3>
+            <div class="photo-grid">
+                <a href="images/wix/history/legion-back-to-the-basics-01.jpg"><img src="images/wix/history/legion-back-to-the-basics-01.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/legion-back-to-the-basics-02.jpg"><img src="images/wix/history/legion-back-to-the-basics-02.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/legion-back-to-the-basics-03.jpg"><img src="images/wix/history/legion-back-to-the-basics-03.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/legion-back-to-the-basics-04.jpg"><img src="images/wix/history/legion-back-to-the-basics-04.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/legion-back-to-the-basics-05.jpg"><img src="images/wix/history/legion-back-to-the-basics-05.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/legion-back-to-the-basics-06.jpg"><img src="images/wix/history/legion-back-to-the-basics-06.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/legion-raiding-on-sargeras-01.jpg"><img src="images/wix/history/legion-raiding-on-sargeras-01.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/legion-raiding-on-sargeras-02.jpg"><img src="images/wix/history/legion-raiding-on-sargeras-02.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/legion-raiding-on-sargeras-03.jpg"><img src="images/wix/history/legion-raiding-on-sargeras-03.jpg" alt="" loading="lazy"></a>
+            </div>
+        <h3 class="gallery-era" id="g-battle-for-azeroth">Battle for Azeroth</h3>
+            <div class="photo-grid">
+                <a href="images/wix/history/battle-for-azeroth-the-reset-01.jpg"><img src="images/wix/history/battle-for-azeroth-the-reset-01.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/battle-for-azeroth-the-reset-02.jpg"><img src="images/wix/history/battle-for-azeroth-the-reset-02.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/battle-for-azeroth-the-reset-03.jpg"><img src="images/wix/history/battle-for-azeroth-the-reset-03.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/battle-for-azeroth-the-phantom-ghuunies-01.jpg"><img src="images/wix/history/battle-for-azeroth-the-phantom-ghuunies-01.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/battle-for-azeroth-the-phantom-ghuunies-02.jpg"><img src="images/wix/history/battle-for-azeroth-the-phantom-ghuunies-02.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/battle-for-azeroth-the-phantom-ghuunies-03.jpg"><img src="images/wix/history/battle-for-azeroth-the-phantom-ghuunies-03.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/battle-for-azeroth-attack-of-the-bob-salami-01.jpg"><img src="images/wix/history/battle-for-azeroth-attack-of-the-bob-salami-01.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/battle-for-azeroth-attack-of-the-bob-salami-02.jpg"><img src="images/wix/history/battle-for-azeroth-attack-of-the-bob-salami-02.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/battle-for-azeroth-attack-of-the-bob-salami-03.jpg"><img src="images/wix/history/battle-for-azeroth-attack-of-the-bob-salami-03.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/battle-for-azeroth-attack-of-the-bob-salami-04.jpg"><img src="images/wix/history/battle-for-azeroth-attack-of-the-bob-salami-04.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/battle-for-azeroth-attack-of-the-bob-salami-05.jpg"><img src="images/wix/history/battle-for-azeroth-attack-of-the-bob-salami-05.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/battle-for-azeroth-revenge-of-the-beguiling-01.jpg"><img src="images/wix/history/battle-for-azeroth-revenge-of-the-beguiling-01.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/battle-for-azeroth-revenge-of-the-beguiling-02.jpg"><img src="images/wix/history/battle-for-azeroth-revenge-of-the-beguiling-02.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/battle-for-azeroth-revenge-of-the-beguiling-03.jpg"><img src="images/wix/history/battle-for-azeroth-revenge-of-the-beguiling-03.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/battle-for-azeroth-revenge-of-the-beguiling-04.jpg"><img src="images/wix/history/battle-for-azeroth-revenge-of-the-beguiling-04.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/battle-for-azeroth-awaken-the-corruption-01.jpg"><img src="images/wix/history/battle-for-azeroth-awaken-the-corruption-01.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/battle-for-azeroth-awaken-the-corruption-02.jpg"><img src="images/wix/history/battle-for-azeroth-awaken-the-corruption-02.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/battle-for-azeroth-awaken-the-corruption-03.jpg"><img src="images/wix/history/battle-for-azeroth-awaken-the-corruption-03.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/battle-for-azeroth-raiding-in-nyalotha-01.jpg"><img src="images/wix/history/battle-for-azeroth-raiding-in-nyalotha-01.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/battle-for-azeroth-raiding-in-nyalotha-02.jpg"><img src="images/wix/history/battle-for-azeroth-raiding-in-nyalotha-02.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/battle-for-azeroth-raiding-in-nyalotha-03.jpg"><img src="images/wix/history/battle-for-azeroth-raiding-in-nyalotha-03.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/battle-for-azeroth-a-fitting-end-and-cutting-edge-01.jpg"><img src="images/wix/history/battle-for-azeroth-a-fitting-end-and-cutting-edge-01.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/battle-for-azeroth-a-fitting-end-and-cutting-edge-02.jpg"><img src="images/wix/history/battle-for-azeroth-a-fitting-end-and-cutting-edge-02.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/battle-for-azeroth-a-fitting-end-and-cutting-edge-03.jpg"><img src="images/wix/history/battle-for-azeroth-a-fitting-end-and-cutting-edge-03.jpg" alt="" loading="lazy"></a>
+            </div>
+        <h3 class="gallery-era" id="g-shadowlands">Shadowlands</h3>
+            <div class="photo-grid">
+                <a href="images/wix/history/shadowlands-time-to-be-prideful-01.jpg"><img src="images/wix/history/shadowlands-time-to-be-prideful-01.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/shadowlands-time-to-be-prideful-02.jpg"><img src="images/wix/history/shadowlands-time-to-be-prideful-02.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/shadowlands-time-to-be-prideful-03.jpg"><img src="images/wix/history/shadowlands-time-to-be-prideful-03.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/shadowlands-raiding-nathria-01.jpg"><img src="images/wix/history/shadowlands-raiding-nathria-01.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/shadowlands-raiding-nathria-02.jpg"><img src="images/wix/history/shadowlands-raiding-nathria-02.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/shadowlands-raiding-nathria-03.jpg"><img src="images/wix/history/shadowlands-raiding-nathria-03.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/shadowlands-tormenting-the-soggodon-01.jpg"><img src="images/wix/history/shadowlands-tormenting-the-soggodon-01.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/shadowlands-tormenting-the-soggodon-02.jpg"><img src="images/wix/history/shadowlands-tormenting-the-soggodon-02.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/shadowlands-tormenting-the-soggodon-03.jpg"><img src="images/wix/history/shadowlands-tormenting-the-soggodon-03.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/shadowlands-raiding-sanctum-01.jpg"><img src="images/wix/history/shadowlands-raiding-sanctum-01.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/shadowlands-raiding-sanctum-02.jpg"><img src="images/wix/history/shadowlands-raiding-sanctum-02.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/shadowlands-raiding-sanctum-03.jpg"><img src="images/wix/history/shadowlands-raiding-sanctum-03.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/shadowlands-encrypting-the-urh-01.jpg"><img src="images/wix/history/shadowlands-encrypting-the-urh-01.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/shadowlands-encrypting-the-urh-02.jpg"><img src="images/wix/history/shadowlands-encrypting-the-urh-02.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/shadowlands-encrypting-the-urh-03.jpg"><img src="images/wix/history/shadowlands-encrypting-the-urh-03.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/shadowlands-raiding-sepulcher-01.jpg"><img src="images/wix/history/shadowlands-raiding-sepulcher-01.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/shadowlands-raiding-sepulcher-02.jpg"><img src="images/wix/history/shadowlands-raiding-sepulcher-02.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/shadowlands-raiding-sepulcher-03.jpg"><img src="images/wix/history/shadowlands-raiding-sepulcher-03.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/shadowlands-fated-recycling-01.jpg"><img src="images/wix/history/shadowlands-fated-recycling-01.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/shadowlands-fated-recycling-02.jpg"><img src="images/wix/history/shadowlands-fated-recycling-02.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/shadowlands-fated-recycling-03.jpg"><img src="images/wix/history/shadowlands-fated-recycling-03.jpg" alt="" loading="lazy"></a>
+            </div>
+        <h3 class="gallery-era" id="g-dragonflight">Dragonflight</h3>
+            <div class="photo-grid">
+                <a href="images/wix/history/dragonflight-thundering-dragons-01.jpg"><img src="images/wix/history/dragonflight-thundering-dragons-01.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/dragonflight-thundering-dragons-02.jpg"><img src="images/wix/history/dragonflight-thundering-dragons-02.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/history/dragonflight-thundering-dragons-03.jpg"><img src="images/wix/history/dragonflight-thundering-dragons-03.jpg" alt="" loading="lazy"></a>
+            </div>
+        <h3 class="gallery-era" id="g-hkc-blizzcon">HKC @ Blizzcon</h3>
+            <div class="photo-grid">
+                <a href="images/wix/blizzcon/blizzcon-2017-01.jpg"><img src="images/wix/blizzcon/blizzcon-2017-01.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/blizzcon/blizzcon-2017-02.jpg"><img src="images/wix/blizzcon/blizzcon-2017-02.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/blizzcon/blizzcon-2017-03.jpg"><img src="images/wix/blizzcon/blizzcon-2017-03.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/blizzcon/blizzcon-2017-04.jpg"><img src="images/wix/blizzcon/blizzcon-2017-04.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/blizzcon/blizzcon-2017-05.jpg"><img src="images/wix/blizzcon/blizzcon-2017-05.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/blizzcon/blizzcon-2018-01.jpg"><img src="images/wix/blizzcon/blizzcon-2018-01.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/blizzcon/blizzcon-2018-02.jpg"><img src="images/wix/blizzcon/blizzcon-2018-02.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/blizzcon/blizzcon-2018-03.jpg"><img src="images/wix/blizzcon/blizzcon-2018-03.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/blizzcon/blizzcon-2018-04.jpg"><img src="images/wix/blizzcon/blizzcon-2018-04.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/blizzcon/blizzcon-2018-05.jpg"><img src="images/wix/blizzcon/blizzcon-2018-05.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/blizzcon/blizzcon-2018-06.jpg"><img src="images/wix/blizzcon/blizzcon-2018-06.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/blizzcon/blizzcon-2018-07.jpg"><img src="images/wix/blizzcon/blizzcon-2018-07.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/blizzcon/blizzcon-2018-08.jpg"><img src="images/wix/blizzcon/blizzcon-2018-08.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/blizzcon/blizzcon-2018-09.jpg"><img src="images/wix/blizzcon/blizzcon-2018-09.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/blizzcon/blizzcon-2018-10.jpg"><img src="images/wix/blizzcon/blizzcon-2018-10.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/blizzcon/blizzcon-2018-11.jpg"><img src="images/wix/blizzcon/blizzcon-2018-11.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/blizzcon/blizzcon-2018-12.jpg"><img src="images/wix/blizzcon/blizzcon-2018-12.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/blizzcon/blizzcon-2019-01.jpg"><img src="images/wix/blizzcon/blizzcon-2019-01.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/blizzcon/blizzcon-2019-02.jpg"><img src="images/wix/blizzcon/blizzcon-2019-02.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/blizzcon/blizzcon-2019-03.jpg"><img src="images/wix/blizzcon/blizzcon-2019-03.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/blizzcon/blizzcon-2019-04.jpg"><img src="images/wix/blizzcon/blizzcon-2019-04.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/blizzcon/blizzcon-2019-05.jpg"><img src="images/wix/blizzcon/blizzcon-2019-05.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/blizzcon/blizzcon-2019-06.jpg"><img src="images/wix/blizzcon/blizzcon-2019-06.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/blizzcon/blizzcon-2019-07.jpg"><img src="images/wix/blizzcon/blizzcon-2019-07.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/blizzcon/blizzcon-2019-08.jpg"><img src="images/wix/blizzcon/blizzcon-2019-08.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/blizzcon/blizzcon-2019-09.jpg"><img src="images/wix/blizzcon/blizzcon-2019-09.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/blizzcon/blizzcon-2019-10.jpg"><img src="images/wix/blizzcon/blizzcon-2019-10.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/blizzcon/blizzcon-2019-11.jpg"><img src="images/wix/blizzcon/blizzcon-2019-11.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/blizzcon/blizzcon-2019-12.jpg"><img src="images/wix/blizzcon/blizzcon-2019-12.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/blizzcon/blizzcon-2019-13.jpg"><img src="images/wix/blizzcon/blizzcon-2019-13.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/blizzcon/blizzcon-2019-14.jpg"><img src="images/wix/blizzcon/blizzcon-2019-14.jpg" alt="" loading="lazy"></a>
+                <a href="images/wix/blizzcon/blizzcon-2019-15.jpg"><img src="images/wix/blizzcon/blizzcon-2019-15.jpg" alt="" loading="lazy"></a>
+            </div>
+
+        <h2 class="page-title" id="first-ten-years">Boss Kills</h2>
+        <div class="photo-grid kill-grid">
+            <a href="images/wix/progression/first-ten-years-001-xavius.png" target="_blank"><img src="images/wix/progression/first-ten-years-001-xavius.png" alt="Xavius" loading="lazy"><span>Xavius</span></a>
+            <a href="images/wix/progression/first-ten-years-002-cenarius.png" target="_blank"><img src="images/wix/progression/first-ten-years-002-cenarius.png" alt="Cenarius" loading="lazy"><span>Cenarius</span></a>
+            <a href="images/wix/progression/first-ten-years-003-dragons-of-nightmare.png" target="_blank"><img src="images/wix/progression/first-ten-years-003-dragons-of-nightmare.png" alt="Dragons of Nightmare" loading="lazy"><span>Dragons of Nightmare</span></a>
+            <a href="images/wix/progression/first-ten-years-004-ursoc.png" target="_blank"><img src="images/wix/progression/first-ten-years-004-ursoc.png" alt="Ursoc" loading="lazy"><span>Ursoc</span></a>
+            <a href="images/wix/progression/first-ten-years-005-elerethe-renferal.png" target="_blank"><img src="images/wix/progression/first-ten-years-005-elerethe-renferal.png" alt="Elerethe Renferal" loading="lazy"><span>Elerethe Renferal</span></a>
+            <a href="images/wix/progression/first-ten-years-006-ilgynoth.png" target="_blank"><img src="images/wix/progression/first-ten-years-006-ilgynoth.png" alt="Il&#x27;gynoth" loading="lazy"><span>Il&#x27;gynoth</span></a>
+            <a href="images/wix/progression/first-ten-years-007-kilrogg-deadeye.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-007-kilrogg-deadeye.jpg" alt="Kilrogg Deadeye" loading="lazy"><span>Kilrogg Deadeye</span></a>
+            <a href="images/wix/progression/first-ten-years-008-hellfire-high-council.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-008-hellfire-high-council.jpg" alt="Hellfire High Council" loading="lazy"><span>Hellfire High Council</span></a>
+            <a href="images/wix/history/warlords-of-draenor-raiding-the-warlords-03.jpg" target="_blank"><img src="images/wix/history/warlords-of-draenor-raiding-the-warlords-03.jpg" alt="" loading="lazy"></a>
+            <a href="images/wix/progression/first-ten-years-010-blackhand.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-010-blackhand.jpg" alt="Blackhand" loading="lazy"><span>Blackhand</span></a>
+            <a href="images/wix/progression/first-ten-years-011-garrosh-hellscream.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-011-garrosh-hellscream.jpg" alt="Garrosh Hellscream" loading="lazy"><span>Garrosh Hellscream</span></a>
+            <a href="images/wix/progression/first-ten-years-012-siegecrafter-blackfuse.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-012-siegecrafter-blackfuse.jpg" alt="Siegecrafter Blackfuse" loading="lazy"><span>Siegecrafter Blackfuse</span></a>
+            <a href="images/wix/progression/first-ten-years-013-thok-the-bloodthirsty.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-013-thok-the-bloodthirsty.jpg" alt="Thok the Bloodthirsty" loading="lazy"><span>Thok the Bloodthirsty</span></a>
+            <a href="images/wix/history/mists-of-pandaria-the-hkc-revival-04.jpg" target="_blank"><img src="images/wix/history/mists-of-pandaria-the-hkc-revival-04.jpg" alt="Spoils of Pandaria" loading="lazy"><span>Spoils of Pandaria</span></a>
+            <a href="images/wix/progression/first-ten-years-015-malkorok.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-015-malkorok.jpg" alt="Malkorok" loading="lazy"><span>Malkorok</span></a>
+            <a href="images/wix/progression/first-ten-years-016-general-nazgrimm.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-016-general-nazgrimm.jpg" alt="General Nazgrimm" loading="lazy"><span>General Nazgrimm</span></a>
+            <a href="images/wix/progression/first-ten-years-017-korkron-dark-shaman.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-017-korkron-dark-shaman.jpg" alt="Kor&#x27;kron Dark Shaman" loading="lazy"><span>Kor&#x27;kron Dark Shaman</span></a>
+            <a href="images/wix/progression/first-ten-years-018-iron-juggernaut.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-018-iron-juggernaut.jpg" alt="Iron Juggernaut" loading="lazy"><span>Iron Juggernaut</span></a>
+            <a href="images/wix/history/mists-of-pandaria-the-hkc-25m-raid-resurgence-03.jpg" target="_blank"><img src="images/wix/history/mists-of-pandaria-the-hkc-25m-raid-resurgence-03.jpg" alt="Galakras" loading="lazy"><span>Galakras</span></a>
+            <a href="images/wix/progression/first-ten-years-020-norushen.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-020-norushen.jpg" alt="Norushen" loading="lazy"><span>Norushen</span></a>
+            <a href="images/wix/progression/first-ten-years-021-the-fallen-protectors.png" target="_blank"><img src="images/wix/progression/first-ten-years-021-the-fallen-protectors.png" alt="The Fallen Protectors" loading="lazy"><span>The Fallen Protectors</span></a>
+            <a href="images/wix/history/mists-of-pandaria-the-hkc-revival-02.jpg" target="_blank"><img src="images/wix/history/mists-of-pandaria-the-hkc-revival-02.jpg" alt="Immerseus" loading="lazy"><span>Immerseus</span></a>
+            <a href="images/wix/progression/first-ten-years-023-sha-of-fear.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-023-sha-of-fear.jpg" alt="Sha of Fear" loading="lazy"><span>Sha of Fear</span></a>
+            <a href="images/wix/history/mists-of-pandaria-the-hkc-revival-01.jpg" target="_blank"><img src="images/wix/history/mists-of-pandaria-the-hkc-revival-01.jpg" alt="Lei Shen" loading="lazy"><span>Lei Shen</span></a>
+            <a href="images/wix/history/mists-of-pandaria-aurongodx-returns-02.jpg" target="_blank"><img src="images/wix/history/mists-of-pandaria-aurongodx-returns-02.jpg" alt="Will of the Emperor" loading="lazy"><span>Will of the Emperor</span></a>
+            <a href="images/wix/progression/first-ten-years-026-nefarian.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-026-nefarian.jpg" alt="Nefarian" loading="lazy"><span>Nefarian</span></a>
+            <a href="images/wix/history/wrath-of-the-lich-king-the-aurongodx-warant-years-09.jpg" target="_blank"><img src="images/wix/history/wrath-of-the-lich-king-the-aurongodx-warant-years-09.jpg" alt="Halion" loading="lazy"><span>Halion</span></a>
+            <a href="images/wix/history/wrath-of-the-lich-king-the-aurongodx-warant-years-08.jpg" target="_blank"><img src="images/wix/history/wrath-of-the-lich-king-the-aurongodx-warant-years-08.jpg" alt="Sindragosa" loading="lazy"><span>Sindragosa</span></a>
+            <a href="images/wix/history/wrath-of-the-lich-king-the-aurongodx-warant-years-06.jpg" target="_blank"><img src="images/wix/history/wrath-of-the-lich-king-the-aurongodx-warant-years-06.jpg" alt="Blood-Queen Lana&#x27;thel" loading="lazy"><span>Blood-Queen Lana&#x27;thel</span></a>
+            <a href="images/wix/progression/first-ten-years-030-blood-prince-council.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-030-blood-prince-council.jpg" alt="Blood Prince Council" loading="lazy"><span>Blood Prince Council</span></a>
+            <a href="images/wix/progression/first-ten-years-031-professor-putricide.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-031-professor-putricide.jpg" alt="Professor Putricide" loading="lazy"><span>Professor Putricide</span></a>
+            <a href="images/wix/progression/first-ten-years-032-rotface.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-032-rotface.jpg" alt="Rotface" loading="lazy"><span>Rotface</span></a>
+            <a href="images/wix/progression/first-ten-years-033-festergut.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-033-festergut.jpg" alt="Festergut" loading="lazy"><span>Festergut</span></a>
+            <a href="images/wix/progression/first-ten-years-034-deathbringer-saurfang.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-034-deathbringer-saurfang.jpg" alt="Deathbringer Saurfang" loading="lazy"><span>Deathbringer Saurfang</span></a>
+            <a href="images/wix/progression/first-ten-years-035-lord-marrowgar.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-035-lord-marrowgar.jpg" alt="Lord Marrowgar" loading="lazy"><span>Lord Marrowgar</span></a>
+            <a href="images/wix/progression/first-ten-years-036-anubarak.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-036-anubarak.jpg" alt="Anub&#x27;arak" loading="lazy"><span>Anub&#x27;arak</span></a>
+            <a href="images/wix/history/wrath-of-the-lich-king-the-aurongodx-warant-years-05.jpg" target="_blank"><img src="images/wix/history/wrath-of-the-lich-king-the-aurongodx-warant-years-05.jpg" alt="Twin Val&#x27;kyr" loading="lazy"><span>Twin Val&#x27;kyr</span></a>
+            <a href="images/wix/progression/first-ten-years-038-lord-jaraxxus.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-038-lord-jaraxxus.jpg" alt="Lord Jaraxxus" loading="lazy"><span>Lord Jaraxxus</span></a>
+            <a href="images/wix/progression/first-ten-years-039-northrend-beasts.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-039-northrend-beasts.jpg" alt="Northrend Beasts" loading="lazy"><span>Northrend Beasts</span></a>
+            <a href="images/wix/progression/first-ten-years-040-yogg-saron.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-040-yogg-saron.jpg" alt="Yogg Saron" loading="lazy"><span>Yogg Saron</span></a>
+            <a href="images/wix/history/wrath-of-the-lich-king-the-aurongodx-warant-years-04.jpg" target="_blank"><img src="images/wix/history/wrath-of-the-lich-king-the-aurongodx-warant-years-04.jpg" alt="General Vezax" loading="lazy"><span>General Vezax</span></a>
+            <a href="images/wix/progression/first-ten-years-042-mimiron.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-042-mimiron.jpg" alt="Mimiron" loading="lazy"><span>Mimiron</span></a>
+            <a href="images/wix/progression/first-ten-years-043-thorim.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-043-thorim.jpg" alt="Thorim" loading="lazy"><span>Thorim</span></a>
+            <a href="images/wix/progression/first-ten-years-044-freya.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-044-freya.jpg" alt="Freya" loading="lazy"><span>Freya</span></a>
+            <a href="images/wix/progression/first-ten-years-045-auriaya.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-045-auriaya.jpg" alt="Auriaya" loading="lazy"><span>Auriaya</span></a>
+            <a href="images/wix/progression/first-ten-years-046-kologarn.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-046-kologarn.jpg" alt="Kologarn" loading="lazy"><span>Kologarn</span></a>
+            <a href="images/wix/progression/first-ten-years-047-assembly-of-iron.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-047-assembly-of-iron.jpg" alt="Assembly of Iron" loading="lazy"><span>Assembly of Iron</span></a>
+            <a href="images/wix/progression/first-ten-years-048-xt-002-deconstructor.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-048-xt-002-deconstructor.jpg" alt="XT-002 Deconstructor" loading="lazy"><span>XT-002 Deconstructor</span></a>
+            <a href="images/wix/progression/first-ten-years-049-razorscale.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-049-razorscale.jpg" alt="Razorscale" loading="lazy"><span>Razorscale</span></a>
+            <a href="images/wix/progression/first-ten-years-050-ignis-the-furnace-master.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-050-ignis-the-furnace-master.jpg" alt="Ignis the Furnace Master" loading="lazy"><span>Ignis the Furnace Master</span></a>
+            <a href="images/wix/progression/first-ten-years-051-flame-leviathan.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-051-flame-leviathan.jpg" alt="Flame Leviathan" loading="lazy"><span>Flame Leviathan</span></a>
+            <a href="images/wix/progression/first-ten-years-052-kelthuzad.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-052-kelthuzad.jpg" alt="Kel&#x27;thuzad" loading="lazy"><span>Kel&#x27;thuzad</span></a>
+            <a href="images/wix/history/wrath-of-the-lich-king-the-aurongodx-warant-years-03.jpg" target="_blank"><img src="images/wix/history/wrath-of-the-lich-king-the-aurongodx-warant-years-03.jpg" alt="Sapphiron" loading="lazy"><span>Sapphiron</span></a>
+            <a href="images/wix/progression/first-ten-years-054-patchwerk.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-054-patchwerk.jpg" alt="Patchwerk" loading="lazy"><span>Patchwerk</span></a>
+            <a href="images/wix/progression/first-ten-years-055-grobbulus.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-055-grobbulus.jpg" alt="Grobbulus" loading="lazy"><span>Grobbulus</span></a>
+            <a href="images/wix/progression/first-ten-years-056-heigan-the-unclean.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-056-heigan-the-unclean.jpg" alt="Heigan the Unclean" loading="lazy"><span>Heigan the Unclean</span></a>
+            <a href="images/wix/progression/first-ten-years-057-noth-the-plaguebringer.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-057-noth-the-plaguebringer.jpg" alt="Noth the Plaguebringer" loading="lazy"><span>Noth the Plaguebringer</span></a>
+            <a href="images/wix/progression/first-ten-years-058-instructor-razuvious.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-058-instructor-razuvious.jpg" alt="Instructor Razuvious" loading="lazy"><span>Instructor Razuvious</span></a>
+            <a href="images/wix/progression/first-ten-years-059-gothik-the-harvester.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-059-gothik-the-harvester.jpg" alt="Gothik the Harvester" loading="lazy"><span>Gothik the Harvester</span></a>
+            <a href="images/wix/progression/first-ten-years-060-thaddius.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-060-thaddius.jpg" alt="Thaddius" loading="lazy"><span>Thaddius</span></a>
+            <a href="images/wix/progression/first-ten-years-061-loatheb.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-061-loatheb.jpg" alt="Loatheb" loading="lazy"><span>Loatheb</span></a>
+            <a href="images/wix/progression/first-ten-years-062-maexxna.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-062-maexxna.jpg" alt="Maexxna" loading="lazy"><span>Maexxna</span></a>
+            <a href="images/wix/progression/first-ten-years-063-anubrekhan.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-063-anubrekhan.jpg" alt="Anub&#x27;Rekhan" loading="lazy"><span>Anub&#x27;Rekhan</span></a>
+            <a href="images/wix/history/wrath-of-the-lich-king-the-aurongodx-warant-years-02.jpg" target="_blank"><img src="images/wix/history/wrath-of-the-lich-king-the-aurongodx-warant-years-02.jpg" alt="Malygos" loading="lazy"><span>Malygos</span></a>
+            <a href="images/wix/progression/first-ten-years-065-sartharion.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-065-sartharion.jpg" alt="Sartharion" loading="lazy"><span>Sartharion</span></a>
+            <a href="images/wix/progression/first-ten-years-066-kiljaden.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-066-kiljaden.jpg" alt="Kil&#x27;jaden" loading="lazy"><span>Kil&#x27;jaden</span></a>
+            <a href="images/wix/progression/first-ten-years-067-muru.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-067-muru.jpg" alt="M&#x27;uru" loading="lazy"><span>M&#x27;uru</span></a>
+            <a href="images/wix/progression/first-ten-years-068-eredar-twins.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-068-eredar-twins.jpg" alt="Eredar Twins" loading="lazy"><span>Eredar Twins</span></a>
+            <a href="images/wix/history/the-burning-crusade-the-melona-aurongodx-years-08.jpg" target="_blank"><img src="images/wix/history/the-burning-crusade-the-melona-aurongodx-years-08.jpg" alt="Felmyst" loading="lazy"><span>Felmyst</span></a>
+            <a href="images/wix/progression/first-ten-years-070-brutallus.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-070-brutallus.jpg" alt="Brutallus" loading="lazy"><span>Brutallus</span></a>
+            <a href="images/wix/history/the-burning-crusade-the-melona-aurongodx-years-07.jpg" target="_blank"><img src="images/wix/history/the-burning-crusade-the-melona-aurongodx-years-07.jpg" alt="Kalecgos" loading="lazy"><span>Kalecgos</span></a>
+            <a href="images/wix/progression/first-ten-years-072-illidan-stormrage.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-072-illidan-stormrage.jpg" alt="Illidan Stormrage" loading="lazy"><span>Illidan Stormrage</span></a>
+            <a href="images/wix/progression/first-ten-years-073-illidari-council.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-073-illidari-council.jpg" alt="Illidari Council" loading="lazy"><span>Illidari Council</span></a>
+            <a href="images/wix/progression/first-ten-years-074-mother-shahraz.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-074-mother-shahraz.jpg" alt="Mother Shahraz" loading="lazy"><span>Mother Shahraz</span></a>
+            <a href="images/wix/progression/first-ten-years-075-reliquary-of-souls.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-075-reliquary-of-souls.jpg" alt="Reliquary of Souls" loading="lazy"><span>Reliquary of Souls</span></a>
+            <a href="images/wix/progression/first-ten-years-076-gurtogg-bloodboil.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-076-gurtogg-bloodboil.jpg" alt="Gurtogg Bloodboil" loading="lazy"><span>Gurtogg Bloodboil</span></a>
+            <a href="images/wix/progression/first-ten-years-077-teron-gorefiend.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-077-teron-gorefiend.jpg" alt="Teron Gorefiend" loading="lazy"><span>Teron Gorefiend</span></a>
+            <a href="images/wix/progression/first-ten-years-078-shade-of-akama.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-078-shade-of-akama.jpg" alt="Shade of Akama" loading="lazy"><span>Shade of Akama</span></a>
+            <a href="images/wix/progression/first-ten-years-079-supremus.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-079-supremus.jpg" alt="Supremus" loading="lazy"><span>Supremus</span></a>
+            <a href="images/wix/progression/first-ten-years-080-warlord-najentus.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-080-warlord-najentus.jpg" alt="Warlord Naj&#x27;entus" loading="lazy"><span>Warlord Naj&#x27;entus</span></a>
+            <a href="images/wix/progression/first-ten-years-081-archimonde.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-081-archimonde.jpg" alt="Archimonde" loading="lazy"><span>Archimonde</span></a>
+            <a href="images/wix/progression/first-ten-years-082-azgalor.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-082-azgalor.jpg" alt="Azgalor" loading="lazy"><span>Azgalor</span></a>
+            <a href="images/wix/progression/first-ten-years-083-kazrogal.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-083-kazrogal.jpg" alt="Kaz&#x27;rogal" loading="lazy"><span>Kaz&#x27;rogal</span></a>
+            <a href="images/wix/progression/first-ten-years-084-anetheron.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-084-anetheron.jpg" alt="Anetheron" loading="lazy"><span>Anetheron</span></a>
+            <a href="images/wix/history/the-burning-crusade-the-melona-aurongodx-years-05.jpg" target="_blank"><img src="images/wix/history/the-burning-crusade-the-melona-aurongodx-years-05.jpg" alt="Rage Winterchill" loading="lazy"><span>Rage Winterchill</span></a>
+            <a href="images/wix/history/the-burning-crusade-the-melona-aurongodx-years-04.jpg" target="_blank"><img src="images/wix/history/the-burning-crusade-the-melona-aurongodx-years-04.jpg" alt="Kael&#x27;thas Sunstrider" loading="lazy"><span>Kael&#x27;thas Sunstrider</span></a>
+            <a href="images/wix/progression/first-ten-years-087-high-astromancer.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-087-high-astromancer.jpg" alt="High Astromancer" loading="lazy"><span>High Astromancer</span></a>
+            <a href="images/wix/progression/first-ten-years-088-void-reaver.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-088-void-reaver.jpg" alt="Void Reaver" loading="lazy"><span>Void Reaver</span></a>
+            <a href="images/wix/progression/first-ten-years-089-alar.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-089-alar.jpg" alt="Al&#x27;ar" loading="lazy"><span>Al&#x27;ar</span></a>
+            <a href="images/wix/progression/first-ten-years-090-lady-vashj.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-090-lady-vashj.jpg" alt="Lady Vashj" loading="lazy"><span>Lady Vashj</span></a>
+            <a href="images/wix/progression/first-ten-years-091-morogrim-tidewalker.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-091-morogrim-tidewalker.jpg" alt="Morogrim Tidewalker" loading="lazy"><span>Morogrim Tidewalker</span></a>
+            <a href="images/wix/progression/first-ten-years-092-fathom-lord-karathress.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-092-fathom-lord-karathress.jpg" alt="Fathom-Lord Karathress" loading="lazy"><span>Fathom-Lord Karathress</span></a>
+            <a href="images/wix/history/the-burning-crusade-the-melona-aurongodx-years-03.jpg" target="_blank"><img src="images/wix/history/the-burning-crusade-the-melona-aurongodx-years-03.jpg" alt="Leotheras the Blind" loading="lazy"><span>Leotheras the Blind</span></a>
+            <a href="images/wix/progression/first-ten-years-094-the-lurker-below.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-094-the-lurker-below.jpg" alt="The Lurker Below" loading="lazy"><span>The Lurker Below</span></a>
+            <a href="images/wix/progression/first-ten-years-095-hydross-the-unstable.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-095-hydross-the-unstable.jpg" alt="Hydross the Unstable" loading="lazy"><span>Hydross the Unstable</span></a>
+            <a href="images/wix/progression/first-ten-years-096-magtheridon.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-096-magtheridon.jpg" alt="Magtheridon" loading="lazy"><span>Magtheridon</span></a>
+            <a href="images/wix/progression/first-ten-years-097-gruul-the-dragonkiller.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-097-gruul-the-dragonkiller.jpg" alt="Gruul the Dragonkiller" loading="lazy"><span>Gruul the Dragonkiller</span></a>
+            <a href="images/wix/progression/first-ten-years-098-high-king-maulgar.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-098-high-king-maulgar.jpg" alt="High King Maulgar" loading="lazy"><span>High King Maulgar</span></a>
+            <a href="images/wix/progression/first-ten-years-099-nightbane.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-099-nightbane.jpg" alt="Nightbane" loading="lazy"><span>Nightbane</span></a>
+            <a href="images/wix/progression/first-ten-years-100-prince-malchezaar.jpg" target="_blank"><img src="images/wix/progression/first-ten-years-100-prince-malchezaar.jpg" alt="Prince Malchezaar" loading="lazy"><span>Prince Malchezaar</span></a>
+        </div>
+
+        </section>
+
+        <section class="gallery-panel" id="panel-videos" role="tabpanel" aria-labelledby="tab-videos" hidden>
+            <div class="video-grid">
+                <figure class="video-card" id="video-1">
+                    <div class="video-frame"><iframe data-src="https://player.twitch.tv/?video=2789682125&autoplay=false&parent=hkcsargeras.github.io&parent=sinsie9698.github.io&parent=hkcsargeras.com&parent=www.hkcsargeras.com&parent=localhost" title="Impossible Kills" allowfullscreen loading="lazy"></iframe></div>
+                    <figcaption><b>Impossible Kills</b><span>Twitch</span></figcaption>
+                </figure>
+                <figure class="video-card" id="video-2">
+                    <div class="video-frame"><iframe data-src="https://player.twitch.tv/?video=744074459&autoplay=false&parent=hkcsargeras.github.io&parent=sinsie9698.github.io&parent=hkcsargeras.com&parent=www.hkcsargeras.com&parent=localhost" title="N'Zoth the Corruptor - Cutting Edge" allowfullscreen loading="lazy"></iframe></div>
+                    <figcaption><b>N'Zoth the Corruptor - Cutting Edge</b><span>Twitch</span></figcaption>
+                </figure>
+                <figure class="video-card" id="video-3">
+                    <div class="video-frame"><iframe data-src="https://www.youtube-nocookie.com/embed/yxYgq-u8CyA" title="Kel'Thuzad - "The Immortal" attempt" allowfullscreen loading="lazy"></iframe></div>
+                    <figcaption><b>Kel'Thuzad - "The Immortal" attempt</b><span>YouTube</span></figcaption>
+                </figure>
+            </div>
+            <div class="video-channels">
+                <a href="https://www.twitch.tv/hkcsargeras" target="_blank"><img src="images/social/twitch.svg" alt="">Twitch channel</a>
+                <a href="https://www.youtube.com/@hellokittyclub" target="_blank"><img src="images/social/youtube.svg" alt="">YouTube channel</a>
+            </div>
+        </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="https://twitter.com/HKCSargeras" target="_blank" title="Twitter/X">
+                <img src="images/social/x.svg" alt="Twitter/X" class="social-icon">
+            </a>
+            <a href="https://bsky.app/profile/hkcsargeras.bsky.social" target="_blank" title="BlueSky">
+                <img src="images/social/bluesky.svg" alt="BlueSky" class="social-icon">
+            </a>
+            <a href="https://www.instagram.com/hkcsargeras/" target="_blank" title="Instagram">
+                <img src="images/social/instagram.svg" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://www.threads.net/@hkcsargeras" target="_blank" title="Threads">
+                <img src="images/social/threads.svg" alt="Threads" class="social-icon">
+            </a>
+            <a href="https://www.twitch.tv/hkcsargeras" target="_blank" title="Twitch">
+                <img src="images/social/twitch.svg" alt="Twitch" class="social-icon">
+            </a>
+            <a href="https://www.youtube.com/@hellokittyclub" target="_blank" title="YouTube">
+                <img src="images/social/youtube.svg" alt="YouTube" class="social-icon">
+            </a>
+            <a href="https://discord.gg/5SM3q3UE7P" target="_blank" title="Discord">
+                <img src="images/social/discord.svg" alt="Discord" class="social-icon">
+            </a>
+        </div>
+        <div class="footer-bottom">
+            © 2006-2026 by HKC Sargeras. All rights reserved.<br>
+            Art designed by <a href="https://lilena.carrd.co/" target="_blank">LilenaTalem</a> & <a href="https://vgen.co/boredoreo" target="_blank">Salmon</a>.
+        </div>
+        <nav class="footer-legal" aria-label="Policies"><a href="terms.html">Terms &amp; Conditions</a> · <a href="privacy.html">Privacy Policy</a> · <a href="cookies.html">Cookie Policy</a> · <a href="store-policy.html">Store Policy</a> · <a href="accessibility.html">Accessibility</a> · <a href="ai-disclaimer.html">AI Disclaimer</a></nav>
+    </footer>
+
+    <script>
+        (function () {
+            const tabs = [...document.querySelectorAll('.gallery-tabs [data-tab]')];
+            function open(name, push) {
+                tabs.forEach(t => {
+                    const on = t.dataset.tab === name;
+                    t.classList.toggle('active', on);
+                    t.setAttribute('aria-selected', on);
+                    document.getElementById('panel-' + t.dataset.tab).hidden = !on;
+                });
+                if (name === 'videos') document.querySelectorAll('#panel-videos iframe[data-src]').forEach(f => { f.src = f.dataset.src; f.removeAttribute('data-src'); });
+                if (push) history.replaceState(null, '', name === 'videos' ? '#videos' : location.pathname);
+                document.querySelectorAll('.page-timeline .tl-era[data-tab]').forEach(li => { li.hidden = li.dataset.tab !== name; });
+                if (window.hkcTimelineUpdate) window.hkcTimelineUpdate();
+            }
+            window.hkcGalleryOpen = open;
+            tabs.forEach(t => t.addEventListener('click', () => open(t.dataset.tab, true)));
+            open(location.hash === '#videos' ? 'videos' : 'images');
+        })();
+    </script>
+    <script src="page-timeline.js?v=1"></script>
+    <script src="lightbox.js?v=5"></script>
+</body>
+</html>

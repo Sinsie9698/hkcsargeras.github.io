@@ -1,0 +1,10 @@
+# Helper scripts and source files (not part of the website)
+download-wix-images.ps1
+HKC-Policies-and-Procedures.pdf
+images/HomePage.zip
+images/placeholder.txt
+
+# OS junk
+Thumbs.db
+desktop.ini
+.DS_Store
