@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        // GitHub Pages serves this page for any missing address, even nested ones,
+        // so point every relative link back at the site root.
+        (function () {
+            var h = location.hostname, seg = location.pathname.split('/')[1];
+            var root = (/\.github\.io$/.test(h) && h !== 'hkcsargeras.github.io' && seg) ? '/' + seg + '/' : '/';
+            if (location.protocol !== 'file:') document.write('<base href="' + root + '">');
+        })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found | Hello Kitty Club</title>
+    <meta name="description" content="This page could not be found.">
+    <meta name="theme-color" content="#0a0e27">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Hello Kitty Club">
+    <meta property="og:title" content="Page Not Found | Hello Kitty Club">
+    <meta property="og:description" content="This page could not be found.">
+    <meta property="og:url" content="https://sinsie9698.github.io/hkcsargeras.github.io/404.html">
+    <meta property="og:image" content="https://sinsie9698.github.io/hkcsargeras.github.io/images/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Hello Kitty Club, Sargeras US">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="robots" content="noindex">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192.png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="stylesheet" href="styles.css?v=29">
+</head>
+<body class="pg-std">
+    <div id="site-header"></div>
+    <script src="js/layout.js?v=1"></script>
+
+    <main class="coming-soon-main notfound-main">
+        <div class="nf-code" aria-hidden="true">404</div>
+        <h1 class="page-title">Lost in the Void</h1>
+        <p class="nf-text">The page you're looking for has been consumed by the Void, or it never existed.</p>
+        <div class="nf-actions">
+            <a href="index.html" class="nav-apply">Return Home</a>
+            <a href="history.html" class="nf-secondary">Read our History</a>
+        </div>
+    </main>
+
+    <div id="site-footer"></div>
+
+    <script src="js/lightbox.js?v=5"></script>
+    <script src="js/bg-slideshow.js?v=2"></script>
+</body>
+</html>

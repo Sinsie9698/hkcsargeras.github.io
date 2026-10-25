@@ -8,3 +8,4 @@ images/placeholder.txt
 Thumbs.db
 desktop.ini
 .DS_Store
+cleanup-unused.ps1
