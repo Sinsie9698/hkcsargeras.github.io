@@ -30,6 +30,8 @@ Website for the Hello Kitty Club World of Warcraft guild, hosted on GitHub Pages
 
 All boss kills, pulls and ranks live in `data/progression.js`. Edit the numbers there (instructions are at the top of the file) and the Progression page updates itself.
 
+The current raid updates itself once a day from Raider.IO (`.github/workflows/update-progression.yml` runs `scripts/update-progression.mjs`). It fills in new Mythic kills, ranks and Heroic kills. To run it on demand: GitHub → Actions → Update raid progression → Run workflow. When a new season starts, move the current raid into `history` and set `rio` / `rioExpansion` for the new raid.
+
 ## Updating the site
 
 Edit the files, then from this folder run:

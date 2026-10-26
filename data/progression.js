@@ -18,15 +18,19 @@
 //                killed:      { killed: "YYYY-MM-DD", pulls: 40, nights: 2, minutes: 95,
 //                               world: 812, region: 230, realm: 11 }
 //      Ranks you don't know yet can simply be left out.
+//  rio / rioExpansion - Raider.IO raid slug and expansion id used by the daily
+//              auto-update (scripts/update-progression.mjs). Update these when a new season starts.
 //  sideRaids - optional one-boss raids shown under the current raid (same format as history raids;
 //              noBadge: true hides the Cutting Edge / Ahead of the Curve badge)
 // =====================================================================
 window.HKC_PROGRESSION = {
-    updated: "2026-10-25",
+    updated: "2026-10-26",
     current: {
         season: "Midnight Season 2",
         raid: "The Venomous Abyss",
-        ranks: { world: 724, region: 227, realm: 11 },
+        rio: "the-venomous-abyss",
+        rioExpansion: 11,
+        ranks: { world: 733, region: 233, realm: 11 },
         bosses: [
             { name: "Nek'zali the Soulcoiler", icon: 3470, heroic: true, mythic: { killed: "2026-08-30", world: 809, region: 228, realm: 11 } },
             { name: "Entombed Sentinels", icon: 3445, heroic: true, mythic: { killed: "2026-09-03", pulls: 20, nights: 1, minutes: 88, world: 546, region: 202, realm: 9 } },
@@ -40,6 +44,7 @@ window.HKC_PROGRESSION = {
         sideRaids: [
             {
                 name: "The Tidebound Grotto",
+                rio: "the-tidebound-grotto",
                 noBadge: true,
                 ranks: { world: 1729, region: 470, realm: 25 },
                 bosses: [
@@ -48,6 +53,7 @@ window.HKC_PROGRESSION = {
             },
             {
                 name: "The Unbinding of Kith'ix",
+                rio: "the-unbinding-of-kithix",
                 noBadge: true,
                 ranks: null,
                 bosses: [

@@ -18,6 +18,7 @@
     const nice = s => { const [y, m, d] = s.split('-').map(Number); return MONTHS[m - 1] + ' ' + d + ', ' + y; };
     const dur = min => { const h = Math.floor(min / 60), m = min % 60; return h ? h + 'h ' + m + 'm' : m + 'm'; };
     const plural = (n, w) => n + ' ' + w + (n !== 1 ? 's' : '');
+    const stats = m => [m.pulls && plural(m.pulls, 'pull'), m.nights && plural(m.nights, 'night'), m.minutes && dur(m.minutes)].filter(Boolean).join(' · ');
     const icon = id => 'images/bosses/' + id + '.jpg';
     const killed = b => !!(b.mythic && b.mythic.killed);
     const rankOf = m => (m && (m.world || m.region || m.realm)) ? { world: m.world, region: m.region, realm: m.realm } : null;
@@ -42,17 +43,17 @@
     const mk = bs.filter(killed).length, hk = bs.filter(b => b.heroic).length;
     const pulls = bs.reduce((a, b) => a + ((b.mythic && b.mythic.pulls) || 0), 0);
     const mins = bs.reduce((a, b) => a + ((b.mythic && b.mythic.minutes) || 0), 0);
-    const prog = bs.find(b => !killed(b) && b.mythic && b.mythic.pulls);
+    const prog = bs.find(b => !killed(b) && b.mythic && (b.mythic.pulls || typeof b.mythic.progress === 'number'));
     const cards = bs.map(b => {
         const m = b.mythic || {};
         let st, meta = '', rk = '', cls;
         if (killed(b)) {
             st = '<span class="pstat killed">' + (typeof m.killed === 'string' ? 'Killed ' + nice(m.killed) : 'Killed') + '</span>';
-            if (m.pulls) meta = plural(m.pulls, 'pull') + ' · ' + plural(m.nights, 'night') + ' · ' + dur(m.minutes);
+            meta = stats(m);
             rk = trio(rankOf(m)); cls = 'killed';
-        } else if (m.pulls) {
+        } else if (m.pulls || typeof m.progress === 'number') {
             st = '<span class="pstat prog">In progress' + (typeof m.progress === 'number' ? ' · best ' + m.progress.toFixed(1) + '%' : '') + '</span>';
-            meta = m.pulls + ' pulls · ' + plural(m.nights, 'night') + ' · ' + dur(m.minutes);
+            meta = stats(m);
             cls = 'progress';
         } else {
             st = '<span class="pstat none">Not started</span>'; cls = 'notstarted';
