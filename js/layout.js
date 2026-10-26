@@ -1,6 +1,13 @@
 // Shared site header and footer.
 // Edit the lists below to change the menu, quick links, social links or legal links on every page.
 (function () {
+    // Anonymous, cookie-free visit counting (dashboard: https://hkcsargeras.goatcounter.com)
+    const gc = document.createElement('script');
+    gc.async = true;
+    gc.src = 'https://gc.zgo.at/count.js';
+    gc.setAttribute('data-goatcounter', 'https://hkcsargeras.goatcounter.com/count');
+    document.head.appendChild(gc);
+
     const NAV = [
         ['index.html', 'Home'],
         ['history.html', 'History'],
