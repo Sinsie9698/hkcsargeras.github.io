@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sinsie9698.github.io/hkcsargeras.github.io/sitemap.xml

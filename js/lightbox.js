@@ -22,7 +22,7 @@
         img.onload = () => img.classList.add('loaded');
         img.src = item.src;
         img.alt = item.alt;
-        caption.textContent = item.alt && !IMG_RE.test(item.alt) ? item.alt : '';
+        caption.textContent = item.caption !== undefined ? item.caption : (item.alt && !IMG_RE.test(item.alt) ? item.alt : '');
     }
 
     function open(items, i) {
@@ -47,7 +47,8 @@
         const a = e.target.closest('a[href]');
         if (a && IMG_RE.test(a.getAttribute('href')) && !box.contains(a)) {
             e.preventDefault();
-            open([{ src: a.getAttribute('href'), alt: (a.querySelector('img') || {}).alt || '' }], 0);
+            const im = a.querySelector('img') || {};
+            open([{ src: a.getAttribute('href'), alt: im.alt || '', caption: (im.dataset && im.dataset.caption) || '' }], 0);
             return;
         }
         // Members page: big image in a thumbnail gallery
