@@ -22,6 +22,21 @@
     const killed = b => !!(b.mythic && b.mythic.killed);
     const rankOf = m => (m && (m.world || m.region || m.realm)) ? { world: m.world, region: m.region, realm: m.realm } : null;
 
+    const raidRow = r => {
+        const m = r.bosses.filter(killed).length, h = r.bosses.filter(b => b.heroic).length, n = r.bosses.length;
+        const badge = r.noBadge ? '<span></span>' : m === n ? '<span class="ach ce">Cutting Edge</span>' : h === n ? '<span class="ach aotc">Ahead of the Curve</span>' : '<span></span>';
+        const brows = r.bosses.map(b => {
+            const x = b.mythic || {};
+            const kd = typeof x.killed === 'string' ? nice(x.killed) : (killed(b) ? 'Killed' : '—');
+            return '<tr class="' + (killed(b) ? 'k' : '') + '"><td><img src="' + icon(b.icon) + '" alt="" onerror="this.style.visibility=\'hidden\'">' + esc(b.name) + '</td>' +
+                '<td>' + kd + '</td><td>' + (x.pulls || '') + '</td><td>' + rv('world', x.world) + '</td><td>' + rv('region', x.region) + '</td><td>' + rv('realm', x.realm) + '</td></tr>';
+        }).join('');
+        return '<details class="raid-row"><summary><span class="raid-name">' + esc(r.name) + '</span>' +
+            '<span class="raid-prog"><b>' + m + '/' + n + '</b> M · ' + h + '/' + n + ' H</span>' + badge + trio(r.ranks, 'rank-trio small') + '</summary>' +
+            '<table class="boss-table"><thead><tr><th>Boss</th><th>Mythic kill</th><th>Pulls</th><th>World</th><th>Region</th><th>Realm</th></tr></thead>' +
+            '<tbody>' + brows + '</tbody></table></details>';
+    };
+
     // ---------- current season ----------
     const cur = D.current, bs = cur.bosses;
     const mk = bs.filter(killed).length, hk = bs.filter(b => b.heroic).length;
@@ -56,25 +71,13 @@
         '<div><small>Time in combat</small><b>' + dur(mins) + '</b></div>' +
         '<div><small>Current boss</small><b>' + (prog ? esc(prog.name) : 'Cleared') + '</b>' +
         (prog && typeof prog.mythic.progress === 'number' ? '<span>best ' + prog.mythic.progress.toFixed(1) + '%</span>' : '') + '</div></div></div>' +
-        '<div class="boss-grid">' + cards + '</div>';
+        '<div class="boss-grid">' + cards + '</div>' +
+        (cur.sideRaids && cur.sideRaids.length ? '<div class="side-raids">' + cur.sideRaids.map(raidRow).join('') + '</div>' : '');
 
     // ---------- raid history ----------
     const histEl = document.getElementById('prog-history');
     if (histEl) histEl.innerHTML = D.history.map(s => {
-        const rows = s.raids.map(r => {
-            const m = r.bosses.filter(killed).length, h = r.bosses.filter(b => b.heroic).length, n = r.bosses.length;
-            const badge = m === n ? '<span class="ach ce">Cutting Edge</span>' : h === n ? '<span class="ach aotc">Ahead of the Curve</span>' : '<span></span>';
-            const brows = r.bosses.map(b => {
-                const x = b.mythic || {};
-                const kd = typeof x.killed === 'string' ? nice(x.killed) : (killed(b) ? 'Killed' : '—');
-                return '<tr class="' + (killed(b) ? 'k' : '') + '"><td><img src="' + icon(b.icon) + '" alt="" onerror="this.style.visibility=\'hidden\'">' + esc(b.name) + '</td>' +
-                    '<td>' + kd + '</td><td>' + (x.pulls || '') + '</td><td>' + rv('world', x.world) + '</td><td>' + rv('region', x.region) + '</td><td>' + rv('realm', x.realm) + '</td></tr>';
-            }).join('');
-            return '<details class="raid-row"><summary><span class="raid-name">' + esc(r.name) + '</span>' +
-                '<span class="raid-prog"><b>' + m + '/' + n + '</b> M · ' + h + '/' + n + ' H</span>' + badge + trio(r.ranks, 'rank-trio small') + '</summary>' +
-                '<table class="boss-table"><thead><tr><th>Boss</th><th>Mythic kill</th><th>Pulls</th><th>World</th><th>Region</th><th>Realm</th></tr></thead>' +
-                '<tbody>' + brows + '</tbody></table></details>';
-        }).join('');
+        const rows = s.raids.map(raidRow).join('');
         return '<div class="season-card" id="season-' + slug(s.season) + '"><div class="season-name">' + esc(s.season) + '</div>' + rows + '</div>';
     }).join('');
 

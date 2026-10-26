@@ -18,6 +18,8 @@
 //                killed:      { killed: "YYYY-MM-DD", pulls: 40, nights: 2, minutes: 95,
 //                               world: 812, region: 230, realm: 11 }
 //      Ranks you don't know yet can simply be left out.
+//  sideRaids - optional one-boss raids shown under the current raid (same format as history raids;
+//              noBadge: true hides the Cutting Edge / Ahead of the Curve badge)
 // =====================================================================
 window.HKC_PROGRESSION = {
     updated: "2026-10-25",
@@ -34,6 +36,24 @@ window.HKC_PROGRESSION = {
             { name: "The Twin Fangs", icon: 3421, heroic: true, mythic: { killed: "2026-09-24", pulls: 56, nights: 3, minutes: 141, world: 598, region: 191, realm: 8 } },
             { name: "The Coiled Altar", icon: 3429, heroic: true, mythic: { killed: "2026-10-20", pulls: 242, nights: 10, minutes: 855, region: 179, realm: 8 } },
             { name: "Ula'tek", icon: 3492, heroic: true, mythic: { progress: 69.9, pulls: 107, nights: 3, minutes: 236 } }
+        ],
+        sideRaids: [
+            {
+                name: "The Tidebound Grotto",
+                noBadge: true,
+                ranks: { world: 1729, region: 470, realm: 25 },
+                bosses: [
+                    { name: "Nymrissa Wavecaller", icon: 3379, heroic: true, mythic: { killed: "2026-09-16", pulls: 9, world: 1729, region: 470, realm: 25 } }
+                ]
+            },
+            {
+                name: "The Unbinding of Kith'ix",
+                noBadge: true,
+                ranks: null,
+                bosses: [
+                    { name: "Kith'ix", icon: 3513, heroic: true, mythic: null }
+                ]
+            }
         ]
     },
     history: [
