@@ -37,8 +37,8 @@ function prevSlide() {
 
 function resetAutoRotate() {
     clearInterval(autoRotateTimer);
-    autoRotateTimer = setInterval(nextSlide, 5000);
+    autoRotateTimer = setInterval(nextSlide, 30000);
 }
 
-// Auto-rotate every 5 seconds
-autoRotateTimer = setInterval(nextSlide, 5000);
+// Auto-rotate every 30 seconds
+autoRotateTimer = setInterval(nextSlide, 30000);
