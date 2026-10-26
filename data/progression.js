@@ -30,7 +30,7 @@ window.HKC_PROGRESSION = {
         raid: "The Venomous Abyss",
         rio: "the-venomous-abyss",
         rioExpansion: 11,
-        ranks: { world: 733, region: 233, realm: 11 },
+        ranks: { world: 734, region: 233, realm: 11 },
         bosses: [
             { name: "Nek'zali the Soulcoiler", icon: 3470, heroic: true, mythic: { killed: "2026-08-30", world: 809, region: 228, realm: 11 } },
             { name: "Entombed Sentinels", icon: 3445, heroic: true, mythic: { killed: "2026-09-03", pulls: 20, nights: 1, minutes: 88, world: 546, region: 202, realm: 9 } },
