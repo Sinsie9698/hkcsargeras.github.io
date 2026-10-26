@@ -36,7 +36,7 @@
             if (m.pulls) meta = plural(m.pulls, 'pull') + ' · ' + plural(m.nights, 'night') + ' · ' + dur(m.minutes);
             rk = trio(rankOf(m)); cls = 'killed';
         } else if (m.pulls) {
-            st = '<span class="pstat prog">In progress · best ' + Number(m.progress).toFixed(1) + '%</span>';
+            st = '<span class="pstat prog">In progress' + (typeof m.progress === 'number' ? ' · best ' + m.progress.toFixed(1) + '%' : '') + '</span>';
             meta = m.pulls + ' pulls · ' + plural(m.nights, 'night') + ' · ' + dur(m.minutes);
             cls = 'progress';
         } else {
@@ -55,7 +55,7 @@
         '<div class="prog-hero-stats"><div><small>Progression pulls</small><b>' + pulls.toLocaleString('en-US') + '</b></div>' +
         '<div><small>Time in combat</small><b>' + dur(mins) + '</b></div>' +
         '<div><small>Current boss</small><b>' + (prog ? esc(prog.name) : 'Cleared') + '</b>' +
-        (prog ? '<span>best ' + Number(prog.mythic.progress).toFixed(1) + '%</span>' : '') + '</div></div></div>' +
+        (prog && typeof prog.mythic.progress === 'number' ? '<span>best ' + prog.mythic.progress.toFixed(1) + '%</span>' : '') + '</div></div></div>' +
         '<div class="boss-grid">' + cards + '</div>';
 
     // ---------- raid history ----------
