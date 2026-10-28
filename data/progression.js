@@ -24,13 +24,13 @@
 //              noBadge: true hides the Cutting Edge / Ahead of the Curve badge)
 // =====================================================================
 window.HKC_PROGRESSION = {
-    updated: "2026-10-27",
+    updated: "2026-10-28",
     current: {
         season: "Midnight Season 2",
         raid: "The Venomous Abyss",
         rio: "the-venomous-abyss",
         rioExpansion: 11,
-        ranks: { world: 757, region: 236, realm: 11 },
+        ranks: { world: 785, region: 254, realm: 14 },
         bosses: [
             { name: "Nek'zali the Soulcoiler", icon: 3470, heroic: true, mythic: { killed: "2026-08-30", world: 809, region: 228, realm: 11 } },
             { name: "Entombed Sentinels", icon: 3445, heroic: true, mythic: { killed: "2026-09-03", pulls: 20, nights: 1, minutes: 88, world: 546, region: 202, realm: 9 } },
@@ -46,7 +46,7 @@ window.HKC_PROGRESSION = {
                 name: "The Tidebound Grotto",
                 rio: "the-tidebound-grotto",
                 noBadge: true,
-                ranks: { world: 1728, region: 470, realm: 25 },
+                ranks: { world: 1729, region: 470, realm: 25 },
                 bosses: [
                     { name: "Nymrissa Wavecaller", icon: 3379, heroic: true, mythic: { killed: "2026-09-16", pulls: 9, world: 1729, region: 470, realm: 25 } }
                 ]
