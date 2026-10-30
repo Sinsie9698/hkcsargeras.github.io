@@ -24,13 +24,13 @@
 //              noBadge: true hides the Cutting Edge / Ahead of the Curve badge)
 // =====================================================================
 window.HKC_PROGRESSION = {
-    updated: "2026-10-29",
+    updated: "2026-10-30",
     current: {
         season: "Midnight Season 2",
         raid: "The Venomous Abyss",
         rio: "the-venomous-abyss",
         rioExpansion: 11,
-        ranks: { world: 834, region: 270, realm: 14 },
+        ranks: { world: 888, region: 289, realm: 16 },
         bosses: [
             { name: "Nek'zali the Soulcoiler", icon: 3470, heroic: true, mythic: { killed: "2026-08-30", world: 809, region: 228, realm: 11 } },
             { name: "Entombed Sentinels", icon: 3445, heroic: true, mythic: { killed: "2026-09-03", pulls: 20, nights: 1, minutes: 88, world: 546, region: 202, realm: 9 } },
