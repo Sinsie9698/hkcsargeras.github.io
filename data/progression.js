@@ -24,13 +24,13 @@
 //              noBadge: true hides the Cutting Edge / Ahead of the Curve badge)
 // =====================================================================
 window.HKC_PROGRESSION = {
-    updated: "2026-11-12",
+    updated: "2026-11-13",
     current: {
         season: "Midnight Season 2",
         raid: "The Venomous Abyss",
         rio: "the-venomous-abyss",
         rioExpansion: 11,
-        ranks: { world: 1429, region: 506, realm: 24 },
+        ranks: { world: 737, region: 222, realm: 11 },
         bosses: [
             { name: "Nek'zali the Soulcoiler", icon: 3470, heroic: true, mythic: { killed: "2026-08-30", world: 809, region: 228, realm: 11 } },
             { name: "Entombed Sentinels", icon: 3445, heroic: true, mythic: { killed: "2026-09-03", pulls: 20, nights: 1, minutes: 88, world: 546, region: 202, realm: 9 } },
@@ -39,7 +39,7 @@ window.HKC_PROGRESSION = {
             { name: "Sszorak", icon: 3420, heroic: true, mythic: { killed: "2026-09-17", pulls: 49, nights: 2, minutes: 110, world: 706, region: 218, realm: 10 } },
             { name: "The Twin Fangs", icon: 3421, heroic: true, mythic: { killed: "2026-09-24", pulls: 56, nights: 3, minutes: 141, world: 598, region: 191, realm: 8 } },
             { name: "The Coiled Altar", icon: 3429, heroic: true, mythic: { killed: "2026-10-20", pulls: 242, nights: 10, minutes: 855, region: 179, realm: 8 } },
-            { name: "Ula'tek", icon: 3492, heroic: true, mythic: { progress: 69.9, pulls: 107, nights: 3, minutes: 236 } }
+            { name: "Ula'tek", icon: 3492, heroic: true, mythic: { killed: "2026-11-12", region: 222, realm: 11 } }
         ],
         sideRaids: [
             {
